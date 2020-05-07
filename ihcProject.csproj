@@ -136,7 +136,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="views\LandingPageWindow.xaml">
+    <Page Include="Pages\LandingPageWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -144,7 +144,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="views\LandingPageWindow.xaml.cs">
+    <Compile Include="Pages\LandingPageWindow.xaml.cs">
       <DependentUpon>LandingPageWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
