@@ -17,10 +17,10 @@ using MahApps.Metro.Controls;
 namespace ihcProject
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LandingPageWindow.xaml
     /// </summary>
-    public partial class MainWindow : MetroWindow {
-        public MainWindow()
+    public partial class LandingPageWindow : MetroWindow {
+        public LandingPageWindow()
         {
             InitializeComponent();
         }
