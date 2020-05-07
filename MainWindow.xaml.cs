@@ -24,5 +24,15 @@ namespace ihcProject
         {
             InitializeComponent();
         }
+
+        private void b_login_Click(object sender, RoutedEventArgs e)
+        {
+            // TODO Add redirection to login form
+        }
+
+        private void b_register_Click(object sender, RoutedEventArgs e)
+        {
+            // Todo Add redirection to register form
+        }
     }
 }
