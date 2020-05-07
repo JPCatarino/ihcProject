@@ -1,0 +1,24 @@
+﻿<mah:MetroWindow x:Class="ihcProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ihcProject"
+        mc:Ignorable="d"
+        Title="Osu!Stats" Height="450" Width="800"
+        Icon="assets/images/logo_stats.png"
+        ShowIconOnTitleBar="True">
+
+    <mah:MetroWindow.RightWindowCommands>
+        <mah:WindowCommands>
+            <Button Content="Login"></Button>
+            <Button Content="Register"></Button>
+        </mah:WindowCommands>
+    </mah:MetroWindow.RightWindowCommands>
+
+    
+    <Grid>
+        <!--Content goes here-->
+    </Grid>
+</mah:MetroWindow>
