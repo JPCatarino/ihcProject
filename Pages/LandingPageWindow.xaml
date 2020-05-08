@@ -36,8 +36,18 @@
         </mah:WindowCommands>
     </mah:MetroWindow.RightWindowCommands>
 
-    
-    <Grid>
-        <!--Content goes here-->
-    </Grid>
+
+    <Canvas>
+        <Grid>
+            <Image x:Name="logo_big" HorizontalAlignment="Left" Height="157" Margin="137,62,0,0" VerticalAlignment="Top" Width="177" Source="../assets/images/logo_stats.png"/>
+            <Label x:Name="logo_label" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Margin="314,157,242.6,0" Height="62" Width="237" VerticalAlignment="Top">
+                <TextBlock TextAlignment="Center" FontSize="36" FontFamily="{DynamicResource AllerDisplay}">Osu!Stats</TextBlock>
+            </Label>
+            <Label x:Name="logo_subtext" Content="For every osu! enthusiast" Margin="319,203,166.6,175" FontFamily="{DynamicResource Aller}" Opacity="0.7" Foreground="Gray" HorizontalContentAlignment="Left"></Label>
+        </Grid>
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Canvas.Left="424" Canvas.Top="270"><Run Text="Have an a"/><Run Text="ccount? Login!"/></TextBlock>
+        <TextBlock x:Name="register_textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="157" Canvas.Left="208" Canvas.Top="270"><Run Text="Join Our Community Today!"/></TextBlock>
+        <Button x:Name="reg_button" Content="Register" HorizontalAlignment="Left" Margin="243,305,0,0" VerticalAlignment="Top" Width="75" Background="Pink"/>
+        <Button x:Name="log_button" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Canvas.Left="455" Canvas.Top="305"/>
+    </Canvas>
 </mah:MetroWindow>

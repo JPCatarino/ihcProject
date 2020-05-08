@@ -12,6 +12,8 @@
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Pink.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="Aller">pack://application:,,,/assets/fonts/Aller/#Aller</FontFamily>
+            <FontFamily x:Key="AllerDisplay">pack://application:,,,/assets/fonts/Aller/#Aller Display</FontFamily>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

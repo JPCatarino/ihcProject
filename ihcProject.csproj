@@ -167,6 +167,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="assets\fonts\Aller\AllerDisplay.ttf" />
+    <Resource Include="assets\fonts\Aller\Aller_Bd.ttf" />
+    <Resource Include="assets\fonts\Aller\Aller_BdIt.ttf" />
+    <Resource Include="assets\fonts\Aller\Aller_It.ttf" />
+    <Resource Include="assets\fonts\Aller\Aller_Lt.ttf" />
+    <Resource Include="assets\fonts\Aller\Aller_LtIt.ttf" />
+    <Resource Include="assets\fonts\Aller\Aller_Rg.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -178,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\images\logo_stats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\fonts\Aller\Aller Font License.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
