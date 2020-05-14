@@ -65,5 +65,13 @@ namespace ihcProject.Pages
                 passHasBeenClicked = false;
             }
         }
+
+        private void b_login_Click(object sender, RoutedEventArgs e)
+        {
+            // TODO : CHECK CREDENTIALS
+            // TODO : READ WHAT TYPE OF THE USER IS THE PERSON LOGIN IN
+            // TODO : NAVIGATE TO PROPER PAGE AFTER.
+            NavigationService.Navigate(new PlayerHomePage());
+        }
     }
 }
