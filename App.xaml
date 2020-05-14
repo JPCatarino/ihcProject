@@ -15,6 +15,7 @@
             <FontFamily x:Key="Aller">pack://application:,,,/assets/fonts/Aller/#Aller</FontFamily>
             <FontFamily x:Key="AllerDisplay">pack://application:,,,/assets/fonts/Aller/#Aller Display</FontFamily>
             <FontFamily x:Key="AllerBold">pack://application:,,,/assets/fonts/Aller/#Aller Bold</FontFamily>
+            <Color x:Key="BannerPink">#f68ed9</Color>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

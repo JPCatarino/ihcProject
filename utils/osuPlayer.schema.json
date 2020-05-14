@@ -1,0 +1,1353 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "avatar_url": "https://a.ppy.sh/3386388?1380995773.jpg",
+      "country_code": "PT",
+      "default_group": "default",
+      "id": 3386388,
+      "is_active": true,
+      "is_bot": false,
+      "is_online": true,
+      "is_supporter": false,
+      "last_visit": "2020-05-14T03:04:00+00:00",
+      "pm_friends_only": false,
+      "profile_colour": null,
+      "username": "Sharptap",
+      "cover_url": "https://osu.ppy.sh/images/headers/profile-covers/c5.jpg",
+      "discord": null,
+      "has_supported": false,
+      "interests": null,
+      "join_date": "2013-10-05T17:48:24+00:00",
+      "kudosu": {
+        "total": 0,
+        "available": 0
+      },
+      "lastfm": null,
+      "location": null,
+      "max_blocks": 25,
+      "max_friends": 250,
+      "occupation": null,
+      "playmode": "osu",
+      "playstyle": [
+        "mouse",
+        "keyboard"
+      ],
+      "post_count": 0,
+      "profile_order": [
+        "me",
+        "recent_activity",
+        "top_ranks",
+        "medals",
+        "historical",
+        "beatmaps",
+        "kudosu"
+      ],
+      "skype": null,
+      "title": null,
+      "twitter": null,
+      "website": null,
+      "country": {
+        "code": "PT",
+        "name": "Portugal"
+      },
+      "cover": {
+        "custom_url": null,
+        "url": "https://osu.ppy.sh/images/headers/profile-covers/c5.jpg",
+        "id": "5"
+      },
+      "account_history": [],
+      "active_tournament_banner": [],
+      "badges": [],
+      "favourite_beatmapset_count": 0,
+      "follower_count": 0,
+      "graveyard_beatmapset_count": 0,
+      "loved_beatmapset_count": 0,
+      "monthly_playcounts": [
+        {
+          "start_date": "2013-10-01",
+          "count": 27
+        },
+        {
+          "start_date": "2013-11-01",
+          "count": 1
+        },
+        {
+          "start_date": "2013-12-01",
+          "count": 82
+        },
+        {
+          "start_date": "2014-03-01",
+          "count": 36
+        },
+        {
+          "start_date": "2014-04-01",
+          "count": 31
+        },
+        {
+          "start_date": "2014-05-01",
+          "count": 15
+        },
+        {
+          "start_date": "2014-06-01",
+          "count": 7
+        },
+        {
+          "start_date": "2014-08-01",
+          "count": 6
+        },
+        {
+          "start_date": "2014-09-01",
+          "count": 7
+        },
+        {
+          "start_date": "2015-11-01",
+          "count": 17
+        },
+        {
+          "start_date": "2015-12-01",
+          "count": 1
+        }
+      ],
+      "page": {
+        "html": "",
+        "raw": ""
+      },
+      "previous_usernames": [],
+      "ranked_and_approved_beatmapset_count": 0,
+      "replays_watched_counts": [],
+      "scores_first_count": 0,
+      "statistics": {
+        "level": {
+          "current": 2,
+          "progress": 92
+        },
+        "pp": 0,
+        "pp_rank": 0,
+        "ranked_score": 0,
+        "hit_accuracy": 0,
+        "play_count": 1,
+        "play_time": 30,
+        "total_score": 122342,
+        "total_hits": 333,
+        "maximum_combo": 0,
+        "replays_watched_by_others": 0,
+        "is_ranked": false,
+        "grade_counts": {
+          "ss": 0,
+          "ssh": 0,
+          "s": 0,
+          "sh": 0,
+          "a": 0
+        },
+        "rank": {
+          "global": null,
+          "country": null
+        }
+      },
+      "support_level": 0,
+      "unranked_beatmapset_count": 0,
+      "user_achievements": [
+        {
+          "achieved_at": "2014-04-14T11:27:56+00:00",
+          "achievement_id": 1
+        },
+        {
+          "achieved_at": "2014-04-14T11:20:57+00:00",
+          "achievement_id": 15
+        }
+      ],
+      "rankHistory": null
+    }
+  ],
+  "required": [
+    "avatar_url",
+    "country_code",
+    "default_group",
+    "id",
+    "is_active",
+    "is_bot",
+    "is_online",
+    "is_supporter",
+    "last_visit",
+    "pm_friends_only",
+    "profile_colour",
+    "username",
+    "cover_url",
+    "discord",
+    "has_supported",
+    "interests",
+    "join_date",
+    "kudosu",
+    "lastfm",
+    "location",
+    "max_blocks",
+    "max_friends",
+    "occupation",
+    "playmode",
+    "playstyle",
+    "post_count",
+    "profile_order",
+    "skype",
+    "title",
+    "twitter",
+    "website",
+    "country",
+    "cover",
+    "account_history",
+    "active_tournament_banner",
+    "badges",
+    "favourite_beatmapset_count",
+    "follower_count",
+    "graveyard_beatmapset_count",
+    "loved_beatmapset_count",
+    "monthly_playcounts",
+    "page",
+    "previous_usernames",
+    "ranked_and_approved_beatmapset_count",
+    "replays_watched_counts",
+    "scores_first_count",
+    "statistics",
+    "support_level",
+    "unranked_beatmapset_count",
+    "user_achievements",
+    "rankHistory"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "avatar_url": {
+      "$id": "#/properties/avatar_url",
+      "type": "string",
+      "title": "The avatar_url schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "https://a.ppy.sh/3386388?1380995773.jpg"
+      ]
+    },
+    "country_code": {
+      "$id": "#/properties/country_code",
+      "type": "string",
+      "title": "The country_code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "PT"
+      ]
+    },
+    "default_group": {
+      "$id": "#/properties/default_group",
+      "type": "string",
+      "title": "The default_group schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "default"
+      ]
+    },
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The id schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        3386388
+      ]
+    },
+    "is_active": {
+      "$id": "#/properties/is_active",
+      "type": "boolean",
+      "title": "The is_active schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "is_bot": {
+      "$id": "#/properties/is_bot",
+      "type": "boolean",
+      "title": "The is_bot schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "is_online": {
+      "$id": "#/properties/is_online",
+      "type": "boolean",
+      "title": "The is_online schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "is_supporter": {
+      "$id": "#/properties/is_supporter",
+      "type": "boolean",
+      "title": "The is_supporter schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "last_visit": {
+      "$id": "#/properties/last_visit",
+      "type": "string",
+      "title": "The last_visit schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2020-05-14T03:04:00+00:00"
+      ]
+    },
+    "pm_friends_only": {
+      "$id": "#/properties/pm_friends_only",
+      "type": "boolean",
+      "title": "The pm_friends_only schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "profile_colour": {
+      "$id": "#/properties/profile_colour",
+      "type": "null",
+      "title": "The profile_colour schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "username": {
+      "$id": "#/properties/username",
+      "type": "string",
+      "title": "The username schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Sharptap"
+      ]
+    },
+    "cover_url": {
+      "$id": "#/properties/cover_url",
+      "type": "string",
+      "title": "The cover_url schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "https://osu.ppy.sh/images/headers/profile-covers/c5.jpg"
+      ]
+    },
+    "discord": {
+      "$id": "#/properties/discord",
+      "type": "null",
+      "title": "The discord schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "has_supported": {
+      "$id": "#/properties/has_supported",
+      "type": "boolean",
+      "title": "The has_supported schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "interests": {
+      "$id": "#/properties/interests",
+      "type": "null",
+      "title": "The interests schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "join_date": {
+      "$id": "#/properties/join_date",
+      "type": "string",
+      "title": "The join_date schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2013-10-05T17:48:24+00:00"
+      ]
+    },
+    "kudosu": {
+      "$id": "#/properties/kudosu",
+      "type": "object",
+      "title": "The kudosu schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "total": 0,
+          "available": 0
+        }
+      ],
+      "required": [
+        "total",
+        "available"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "total": {
+          "$id": "#/properties/kudosu/properties/total",
+          "type": "integer",
+          "title": "The total schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "available": {
+          "$id": "#/properties/kudosu/properties/available",
+          "type": "integer",
+          "title": "The available schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        }
+      }
+    },
+    "lastfm": {
+      "$id": "#/properties/lastfm",
+      "type": "null",
+      "title": "The lastfm schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "location": {
+      "$id": "#/properties/location",
+      "type": "null",
+      "title": "The location schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "max_blocks": {
+      "$id": "#/properties/max_blocks",
+      "type": "integer",
+      "title": "The max_blocks schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        25
+      ]
+    },
+    "max_friends": {
+      "$id": "#/properties/max_friends",
+      "type": "integer",
+      "title": "The max_friends schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        250
+      ]
+    },
+    "occupation": {
+      "$id": "#/properties/occupation",
+      "type": "null",
+      "title": "The occupation schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "playmode": {
+      "$id": "#/properties/playmode",
+      "type": "string",
+      "title": "The playmode schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "osu"
+      ]
+    },
+    "playstyle": {
+      "$id": "#/properties/playstyle",
+      "type": "array",
+      "title": "The playstyle schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "mouse",
+          "keyboard"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "anyOf": [
+          {
+            "$id": "#/properties/playstyle/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "mouse",
+              "keyboard"
+            ]
+          }
+        ],
+        "$id": "#/properties/playstyle/items"
+      }
+    },
+    "post_count": {
+      "$id": "#/properties/post_count",
+      "type": "integer",
+      "title": "The post_count schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "profile_order": {
+      "$id": "#/properties/profile_order",
+      "type": "array",
+      "title": "The profile_order schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "me",
+          "recent_activity"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "anyOf": [
+          {
+            "$id": "#/properties/profile_order/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "me",
+              "recent_activity"
+            ]
+          }
+        ],
+        "$id": "#/properties/profile_order/items"
+      }
+    },
+    "skype": {
+      "$id": "#/properties/skype",
+      "type": "null",
+      "title": "The skype schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "title": {
+      "$id": "#/properties/title",
+      "type": "null",
+      "title": "The title schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "twitter": {
+      "$id": "#/properties/twitter",
+      "type": "null",
+      "title": "The twitter schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "website": {
+      "$id": "#/properties/website",
+      "type": "null",
+      "title": "The website schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "country": {
+      "$id": "#/properties/country",
+      "type": "object",
+      "title": "The country schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "code": "PT",
+          "name": "Portugal"
+        }
+      ],
+      "required": [
+        "code",
+        "name"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "code": {
+          "$id": "#/properties/country/properties/code",
+          "type": "string",
+          "title": "The code schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "PT"
+          ]
+        },
+        "name": {
+          "$id": "#/properties/country/properties/name",
+          "type": "string",
+          "title": "The name schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Portugal"
+          ]
+        }
+      }
+    },
+    "cover": {
+      "$id": "#/properties/cover",
+      "type": "object",
+      "title": "The cover schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "custom_url": null,
+          "url": "https://osu.ppy.sh/images/headers/profile-covers/c5.jpg",
+          "id": "5"
+        }
+      ],
+      "required": [
+        "custom_url",
+        "url",
+        "id"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "custom_url": {
+          "$id": "#/properties/cover/properties/custom_url",
+          "type": "null",
+          "title": "The custom_url schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "url": {
+          "$id": "#/properties/cover/properties/url",
+          "type": "string",
+          "title": "The url schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://osu.ppy.sh/images/headers/profile-covers/c5.jpg"
+          ]
+        },
+        "id": {
+          "$id": "#/properties/cover/properties/id",
+          "type": "string",
+          "title": "The id schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "5"
+          ]
+        }
+      }
+    },
+    "account_history": {
+      "$id": "#/properties/account_history",
+      "type": "array",
+      "title": "The account_history schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        []
+      ],
+      "additionalItems": true,
+      "items": {
+        "anyOf": [],
+        "$id": "#/properties/account_history/items"
+      }
+    },
+    "active_tournament_banner": {
+      "$id": "#/properties/active_tournament_banner",
+      "type": "array",
+      "title": "The active_tournament_banner schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        []
+      ],
+      "additionalItems": true,
+      "items": {
+        "anyOf": [],
+        "$id": "#/properties/active_tournament_banner/items"
+      }
+    },
+    "badges": {
+      "$id": "#/properties/badges",
+      "type": "array",
+      "title": "The badges schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        []
+      ],
+      "additionalItems": true,
+      "items": {
+        "anyOf": [],
+        "$id": "#/properties/badges/items"
+      }
+    },
+    "favourite_beatmapset_count": {
+      "$id": "#/properties/favourite_beatmapset_count",
+      "type": "integer",
+      "title": "The favourite_beatmapset_count schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "follower_count": {
+      "$id": "#/properties/follower_count",
+      "type": "integer",
+      "title": "The follower_count schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "graveyard_beatmapset_count": {
+      "$id": "#/properties/graveyard_beatmapset_count",
+      "type": "integer",
+      "title": "The graveyard_beatmapset_count schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "loved_beatmapset_count": {
+      "$id": "#/properties/loved_beatmapset_count",
+      "type": "integer",
+      "title": "The loved_beatmapset_count schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "monthly_playcounts": {
+      "$id": "#/properties/monthly_playcounts",
+      "type": "array",
+      "title": "The monthly_playcounts schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "start_date": "2013-10-01",
+            "count": 27
+          },
+          {
+            "start_date": "2013-11-01",
+            "count": 1
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "anyOf": [
+          {
+            "$id": "#/properties/monthly_playcounts/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "start_date": "2013-10-01",
+                "count": 27
+              }
+            ],
+            "required": [
+              "start_date",
+              "count"
+            ],
+            "additionalProperties": true,
+            "properties": {
+              "start_date": {
+                "$id": "#/properties/monthly_playcounts/items/anyOf/0/properties/start_date",
+                "type": "string",
+                "title": "The start_date schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "2013-10-01"
+                ]
+              },
+              "count": {
+                "$id": "#/properties/monthly_playcounts/items/anyOf/0/properties/count",
+                "type": "integer",
+                "title": "The count schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  27
+                ]
+              }
+            }
+          }
+        ],
+        "$id": "#/properties/monthly_playcounts/items"
+      }
+    },
+    "page": {
+      "$id": "#/properties/page",
+      "type": "object",
+      "title": "The page schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "html": "",
+          "raw": ""
+        }
+      ],
+      "required": [
+        "html",
+        "raw"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "html": {
+          "$id": "#/properties/page/properties/html",
+          "type": "string",
+          "title": "The html schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "raw": {
+          "$id": "#/properties/page/properties/raw",
+          "type": "string",
+          "title": "The raw schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        }
+      }
+    },
+    "previous_usernames": {
+      "$id": "#/properties/previous_usernames",
+      "type": "array",
+      "title": "The previous_usernames schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        []
+      ],
+      "additionalItems": true,
+      "items": {
+        "anyOf": [],
+        "$id": "#/properties/previous_usernames/items"
+      }
+    },
+    "ranked_and_approved_beatmapset_count": {
+      "$id": "#/properties/ranked_and_approved_beatmapset_count",
+      "type": "integer",
+      "title": "The ranked_and_approved_beatmapset_count schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "replays_watched_counts": {
+      "$id": "#/properties/replays_watched_counts",
+      "type": "array",
+      "title": "The replays_watched_counts schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        []
+      ],
+      "additionalItems": true,
+      "items": {
+        "anyOf": [],
+        "$id": "#/properties/replays_watched_counts/items"
+      }
+    },
+    "scores_first_count": {
+      "$id": "#/properties/scores_first_count",
+      "type": "integer",
+      "title": "The scores_first_count schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "statistics": {
+      "$id": "#/properties/statistics",
+      "type": "object",
+      "title": "The statistics schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "level": {
+            "current": 2,
+            "progress": 92
+          },
+          "pp": 0,
+          "pp_rank": 0,
+          "ranked_score": 0,
+          "hit_accuracy": 0,
+          "play_count": 1,
+          "play_time": 30,
+          "total_score": 122342,
+          "total_hits": 333,
+          "maximum_combo": 0,
+          "replays_watched_by_others": 0,
+          "is_ranked": false,
+          "grade_counts": {
+            "ss": 0,
+            "ssh": 0,
+            "s": 0,
+            "sh": 0,
+            "a": 0
+          },
+          "rank": {
+            "global": null,
+            "country": null
+          }
+        }
+      ],
+      "required": [
+        "level",
+        "pp",
+        "pp_rank",
+        "ranked_score",
+        "hit_accuracy",
+        "play_count",
+        "play_time",
+        "total_score",
+        "total_hits",
+        "maximum_combo",
+        "replays_watched_by_others",
+        "is_ranked",
+        "grade_counts",
+        "rank"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "level": {
+          "$id": "#/properties/statistics/properties/level",
+          "type": "object",
+          "title": "The level schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "current": 2,
+              "progress": 92
+            }
+          ],
+          "required": [
+            "current",
+            "progress"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "current": {
+              "$id": "#/properties/statistics/properties/level/properties/current",
+              "type": "integer",
+              "title": "The current schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                2
+              ]
+            },
+            "progress": {
+              "$id": "#/properties/statistics/properties/level/properties/progress",
+              "type": "integer",
+              "title": "The progress schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                92
+              ]
+            }
+          }
+        },
+        "pp": {
+          "$id": "#/properties/statistics/properties/pp",
+          "type": "integer",
+          "title": "The pp schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "pp_rank": {
+          "$id": "#/properties/statistics/properties/pp_rank",
+          "type": "integer",
+          "title": "The pp_rank schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "ranked_score": {
+          "$id": "#/properties/statistics/properties/ranked_score",
+          "type": "integer",
+          "title": "The ranked_score schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "hit_accuracy": {
+          "$id": "#/properties/statistics/properties/hit_accuracy",
+          "type": "integer",
+          "title": "The hit_accuracy schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "play_count": {
+          "$id": "#/properties/statistics/properties/play_count",
+          "type": "integer",
+          "title": "The play_count schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "play_time": {
+          "$id": "#/properties/statistics/properties/play_time",
+          "type": "integer",
+          "title": "The play_time schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            30
+          ]
+        },
+        "total_score": {
+          "$id": "#/properties/statistics/properties/total_score",
+          "type": "integer",
+          "title": "The total_score schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            122342
+          ]
+        },
+        "total_hits": {
+          "$id": "#/properties/statistics/properties/total_hits",
+          "type": "integer",
+          "title": "The total_hits schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            333
+          ]
+        },
+        "maximum_combo": {
+          "$id": "#/properties/statistics/properties/maximum_combo",
+          "type": "integer",
+          "title": "The maximum_combo schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "replays_watched_by_others": {
+          "$id": "#/properties/statistics/properties/replays_watched_by_others",
+          "type": "integer",
+          "title": "The replays_watched_by_others schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "is_ranked": {
+          "$id": "#/properties/statistics/properties/is_ranked",
+          "type": "boolean",
+          "title": "The is_ranked schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "grade_counts": {
+          "$id": "#/properties/statistics/properties/grade_counts",
+          "type": "object",
+          "title": "The grade_counts schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "ss": 0,
+              "ssh": 0,
+              "s": 0,
+              "sh": 0,
+              "a": 0
+            }
+          ],
+          "required": [
+            "ss",
+            "ssh",
+            "s",
+            "sh",
+            "a"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "ss": {
+              "$id": "#/properties/statistics/properties/grade_counts/properties/ss",
+              "type": "integer",
+              "title": "The ss schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "ssh": {
+              "$id": "#/properties/statistics/properties/grade_counts/properties/ssh",
+              "type": "integer",
+              "title": "The ssh schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "s": {
+              "$id": "#/properties/statistics/properties/grade_counts/properties/s",
+              "type": "integer",
+              "title": "The s schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "sh": {
+              "$id": "#/properties/statistics/properties/grade_counts/properties/sh",
+              "type": "integer",
+              "title": "The sh schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "a": {
+              "$id": "#/properties/statistics/properties/grade_counts/properties/a",
+              "type": "integer",
+              "title": "The a schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            }
+          }
+        },
+        "rank": {
+          "$id": "#/properties/statistics/properties/rank",
+          "type": "object",
+          "title": "The rank schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "global": null,
+              "country": null
+            }
+          ],
+          "required": [
+            "global",
+            "country"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "global": {
+              "$id": "#/properties/statistics/properties/rank/properties/global",
+              "type": "null",
+              "title": "The global schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "country": {
+              "$id": "#/properties/statistics/properties/rank/properties/country",
+              "type": "null",
+              "title": "The country schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": null,
+              "examples": [
+                null
+              ]
+            }
+          }
+        }
+      }
+    },
+    "support_level": {
+      "$id": "#/properties/support_level",
+      "type": "integer",
+      "title": "The support_level schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "unranked_beatmapset_count": {
+      "$id": "#/properties/unranked_beatmapset_count",
+      "type": "integer",
+      "title": "The unranked_beatmapset_count schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "user_achievements": {
+      "$id": "#/properties/user_achievements",
+      "type": "array",
+      "title": "The user_achievements schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "achieved_at": "2014-04-14T11:27:56+00:00",
+            "achievement_id": 1
+          },
+          {
+            "achieved_at": "2014-04-14T11:20:57+00:00",
+            "achievement_id": 15
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "anyOf": [
+          {
+            "$id": "#/properties/user_achievements/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "achieved_at": "2014-04-14T11:27:56+00:00",
+                "achievement_id": 1
+              }
+            ],
+            "required": [
+              "achieved_at",
+              "achievement_id"
+            ],
+            "additionalProperties": true,
+            "properties": {
+              "achieved_at": {
+                "$id": "#/properties/user_achievements/items/anyOf/0/properties/achieved_at",
+                "type": "string",
+                "title": "The achieved_at schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "2014-04-14T11:27:56+00:00"
+                ]
+              },
+              "achievement_id": {
+                "$id": "#/properties/user_achievements/items/anyOf/0/properties/achievement_id",
+                "type": "integer",
+                "title": "The achievement_id schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              }
+            }
+          }
+        ],
+        "$id": "#/properties/user_achievements/items"
+      }
+    },
+    "rankHistory": {
+      "$id": "#/properties/rankHistory",
+      "type": "null",
+      "title": "The rankHistory schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    }
+  }
+}

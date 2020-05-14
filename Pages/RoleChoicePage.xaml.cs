@@ -34,5 +34,13 @@ namespace ihcProject.Pages
         {
             this.b_select.IsEnabled = true;
         }
+
+        private void b_select_Click(object sender, RoutedEventArgs e)
+        {
+            if ((bool)b_fan.IsChecked)
+                NavigationService.Navigate(new RegisterPage());
+            else if ((bool)b_player.IsChecked)
+                NavigationService.Navigate(new RegisterPage());
+        }
     }
 }

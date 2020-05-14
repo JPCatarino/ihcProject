@@ -16,9 +16,9 @@
             </Label>
             <Label x:Name="logo_subtext" Content="For every osu! enthusiast" Margin="319,203,166.6,175" FontFamily="{DynamicResource Aller}" Opacity="0.7" Foreground="Gray" HorizontalContentAlignment="Left"></Label>
         </Grid>
-        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Canvas.Left="424" Canvas.Top="270"><Run Text="Have an a"/><Run Text="ccount? Login!"/></TextBlock>
-        <TextBlock x:Name="register_textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="157" Canvas.Left="208" Canvas.Top="270"><Run Text="Join Our Community Today!"/></TextBlock>
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Canvas.Left="424" Canvas.Top="270" FontFamily="{DynamicResource Aller}"><Run Text="Have an a"/><Run Text="ccount? Login!"/></TextBlock>
+        <TextBlock x:Name="register_textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="157" Canvas.Left="208" Canvas.Top="270" FontFamily="{DynamicResource Aller}"><Run Text="Join Our Community Today!"/></TextBlock>
         <Button x:Name="b_register" Content="Register" HorizontalAlignment="Left" Margin="243,305,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Click="b_register_Click" FontFamily="{DynamicResource Aller}"/>
-        <Button x:Name="b_login" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Canvas.Left="455" Canvas.Top="305" FontFamily="{DynamicResource Aller}"/>
+        <Button x:Name="b_login" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Canvas.Left="455" Canvas.Top="305" Click="b_login_Click" FontFamily="{DynamicResource Aller}"/>
     </Canvas>
 </Page>

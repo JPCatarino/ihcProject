@@ -32,5 +32,12 @@ namespace ihcProject
             mainWindow.showBackButton();
             NavigationService.Navigate(new RoleChoicePage());
         }
+
+        private void b_login_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
+            mainWindow.showBackButton();
+            NavigationService.Navigate(new LoginPage());
+        }
     }
 }
