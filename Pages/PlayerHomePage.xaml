@@ -10,6 +10,6 @@
       Title="PlayerHomePage">
 
     <Grid>
-        <uc:PlayerHamMenu></uc:PlayerHamMenu>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,-0.4" TextWrapping="Wrap" Text="PLACEHOLDER TEXT TO TEST MENUS AND STUFF" VerticalAlignment="Top" Height="440" Width="123"/>
     </Grid>
 </Page>

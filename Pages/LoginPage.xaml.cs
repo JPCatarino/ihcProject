@@ -71,7 +71,17 @@ namespace ihcProject.Pages
             // TODO : CHECK CREDENTIALS
             // TODO : READ WHAT TYPE OF THE USER IS THE PERSON LOGIN IN
             // TODO : NAVIGATE TO PROPER PAGE AFTER.
-            NavigationService.Navigate(new PlayerHomePage());
+            /**
+             * Kinda cheating here
+             * Getting the current executing main window and revert it to original state
+             * Then we hide the main window and open the new login window
+             */
+            var mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
+            mainWindow.hideBackButton();
+            NavigationService.GoBack();
+            PlayerWindow n_window = new PlayerWindow();
+            n_window.Show();
+            mainWindow.Hide();
         }
     }
 }

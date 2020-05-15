@@ -9,10 +9,32 @@
              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <mah:HamburgerMenu>
+        <Grid.Resources>
+            <DataTemplate x:Key="MenuItemTemplate" DataType="{x:Type mah:HamburgerMenuIconItem}">
+                <Grid Height="48">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <iconPacks:PackIconJamIcons Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Kind="{Binding Icon}" />
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" FontSize="16" FontFamily="{DynamicResource AllerBold}" Text="{Binding Label}" />
+                </Grid>
+            </DataTemplate>
+        </Grid.Resources>
+
+        <mah:HamburgerMenu ItemTemplate="{StaticResource MenuItemTemplate}" OptionsItemTemplate="{StaticResource MenuItemTemplate}" DisplayMode="CompactInline">
             <mah:HamburgerMenu.PaneBackground>
                 <SolidColorBrush Color="{DynamicResource BannerPink}"/>
             </mah:HamburgerMenu.PaneBackground>
+
+            <mah:HamburgerMenu.ItemsSource>
+                <mah:HamburgerMenuItemCollection>
+                    <mah:HamburgerMenuIconItem Icon="HomeF" Label="Home"></mah:HamburgerMenuIconItem>
+                    <mah:HamburgerMenuIconItem Icon="UserSquare" Label="Profile"></mah:HamburgerMenuIconItem>
+                    <mah:HamburgerMenuIconItem Icon="TrophyF" Label="Leaderboards"></mah:HamburgerMenuIconItem>
+                    <mah:HamburgerMenuIconItem Icon="BarChart" Label="User Stats"></mah:HamburgerMenuIconItem>
+                </mah:HamburgerMenuItemCollection>
+            </mah:HamburgerMenu.ItemsSource>
         </mah:HamburgerMenu>
     </Grid>
 </UserControl>
