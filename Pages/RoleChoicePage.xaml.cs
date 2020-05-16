@@ -42,5 +42,19 @@ namespace ihcProject.Pages
             else if ((bool)b_player.IsChecked)
                 NavigationService.Navigate(new RegisterPage());
         }
+
+        private void b_fan_MouseMove(object sender, MouseEventArgs e)
+        {
+            fan_tt.Placement = System.Windows.Controls.Primitives.PlacementMode.Relative;
+            fan_tt.HorizontalOffset = e.GetPosition((IInputElement)sender).X + 16;
+            fan_tt.VerticalOffset = e.GetPosition((IInputElement)sender).Y + 16;
+        }
+
+        private void b_player_MouseMove(object sender, MouseEventArgs e)
+        {
+            player_tt.Placement = System.Windows.Controls.Primitives.PlacementMode.Relative;
+            player_tt.HorizontalOffset = e.GetPosition((IInputElement)sender).X + 16;
+            player_tt.VerticalOffset = e.GetPosition((IInputElement)sender).Y + 16;
+        }
     }
 }

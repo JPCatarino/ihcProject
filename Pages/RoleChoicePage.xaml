@@ -12,8 +12,24 @@
 
     <Canvas>
 
-        <RadioButton x:Name="b_fan" Content="Fan" Canvas.Left="186" Canvas.Top="149" Width="137" Style="{DynamicResource MahApps.Metro.Styles.MetroCircleToggleButtonStyle}" Height="137" Background="Pink" Foreground="White" FontFamily="{DynamicResource Aller}" FontSize="15" Checked="b_fan_Checked"/>
-        <RadioButton x:Name="b_player" Content="Player" Canvas.Left="481" Canvas.Top="149"  Width="137" Style="{DynamicResource MahApps.Metro.Styles.MetroCircleToggleButtonStyle}" Height="137" Background="Pink" Foreground="White" FontFamily="{DynamicResource Aller}" FontSize="15" Checked="b_player_Checked"/>
+        <RadioButton x:Name="b_fan" Content="Fan" Canvas.Left="186" Canvas.Top="149" Width="137" Style="{DynamicResource MahApps.Metro.Styles.MetroCircleToggleButtonStyle}" Height="137" Background="Pink" Foreground="White" FontFamily="{DynamicResource Aller}" FontSize="15" Checked="b_fan_Checked" MouseMove="b_fan_MouseMove">
+            <RadioButton.ToolTip>
+                <ToolTip x:Name="fan_tt">
+                    The fan account lets you track your favorite players.
+                    Never miss a development on the Osu competitive scene by 
+                    following the newest plays and highest scores.
+                </ToolTip>
+            </RadioButton.ToolTip>
+        </RadioButton>
+        <RadioButton x:Name="b_player" Content="Player" Canvas.Left="481" Canvas.Top="149"  Width="137" Style="{DynamicResource MahApps.Metro.Styles.MetroCircleToggleButtonStyle}" Height="137" Background="Pink" Foreground="White" FontFamily="{DynamicResource Aller}" FontSize="15" Checked="b_player_Checked" MouseMove="b_player_MouseMove">
+            <RadioButton.ToolTip>
+                <ToolTip x:Name="player_tt">
+                    The Player account lets you track all your stats 
+                    and check your evolution. You'll be able to compare 
+                    yourself to other players to see how close you're to beat them.
+                </ToolTip>
+            </RadioButton.ToolTip>
+        </RadioButton>
         <Button x:Name="b_select" Content="Select" Canvas.Left="354" Canvas.Top="344" Width="88" IsEnabled="False" Background="DeepPink" Foreground="White" FontFamily="Aller" Style="{DynamicResource MahApps.Metro.Styles.MetroButton}" Height="37" Click="b_select_Click"/>
         <TextBlock x:Name="textBlock" Canvas.Left="249" TextWrapping="Wrap" Canvas.Top="47" Height="97" Width="309" TextAlignment="Center" FontSize="20" FontFamily="{StaticResource AllerBold}"><Run Text="Nice to meet you!"/><LineBreak/><Run Text="Before we start,"/><LineBreak/><Run Text="you are planning to use Osu!Stats as a..."/></TextBlock>
         <iconPacks:PackIconEntypo Kind="Hand" Canvas.Left="383" Canvas.Top="10" Height="32" Width="32" Foreground="LightPink" />

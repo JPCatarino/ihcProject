@@ -5,6 +5,7 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
+            <!--Mah Apps-->
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
@@ -12,10 +13,25 @@
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Pink.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <!--Fonts-->
             <FontFamily x:Key="Aller">pack://application:,,,/assets/fonts/Aller/#Aller</FontFamily>
             <FontFamily x:Key="AllerDisplay">pack://application:,,,/assets/fonts/Aller/#Aller Display</FontFamily>
             <FontFamily x:Key="AllerBold">pack://application:,,,/assets/fonts/Aller/#Aller Bold</FontFamily>
+            <!--Colors-->
             <Color x:Key="BannerPink">#f68ed9</Color>
+            <!--Styles-->
+            <Style TargetType="ToolTip">
+                <Style.Resources>
+                    <Style TargetType="ContentPresenter">
+                        <Style.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextWrapping" Value="Wrap" />
+                            </Style>
+                        </Style.Resources>
+                    </Style>
+                </Style.Resources>
+                <Setter Property="MaxWidth" Value="300" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
