@@ -42,7 +42,8 @@ namespace ihcProject
         private void b_back_Click(object sender, RoutedEventArgs e)
         {
             this.navFrame.NavigationService.GoBack();
-            hideBackButton();
+            if (!navFrame.NavigationService.CanGoBack)
+                hideBackButton();
         }
 
         public void showBackButton() {
