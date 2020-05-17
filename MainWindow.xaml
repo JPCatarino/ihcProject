@@ -9,7 +9,8 @@
         mc:Ignorable="d"
         Title="Osu!Stats" Height="450" Width="800"
         Icon="/assets/images/logo_stats.png"
-        ShowIconOnTitleBar="True">
+        ShowIconOnTitleBar="True"
+        ResizeMode="CanMinimize">
 
     <mah:MetroWindow.RightWindowCommands>
         <mah:WindowCommands>
