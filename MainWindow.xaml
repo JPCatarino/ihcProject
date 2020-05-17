@@ -10,7 +10,8 @@
         Title="Osu!Stats" Height="450" Width="800"
         Icon="/assets/images/logo_stats.png"
         ShowIconOnTitleBar="True"
-        ResizeMode="CanMinimize">
+        ResizeMode="CanMinimize"
+        TitleCaps="False">
 
     <mah:MetroWindow.RightWindowCommands>
         <mah:WindowCommands>
