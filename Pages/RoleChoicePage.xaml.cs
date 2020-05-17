@@ -38,9 +38,9 @@ namespace ihcProject.Pages
         private void b_select_Click(object sender, RoutedEventArgs e)
         {
             if ((bool)b_fan.IsChecked)
-                NavigationService.Navigate(new RegisterPage());
+                NavigationService.Navigate(new RegisterPage("Fan"));
             else if ((bool)b_player.IsChecked)
-                NavigationService.Navigate(new RegisterPage());
+                NavigationService.Navigate(new RegisterPage("Player"));
         }
 
         private void b_fan_MouseMove(object sender, MouseEventArgs e)

@@ -4,11 +4,135 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ihcProject.Pages"
+      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="RegisterPage">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="390"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="{DynamicResource BannerPink}" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+
+            <StackPanel VerticalAlignment="Center">
+                <Image Source="../assets/images/logo_stats.png" Width="80"/>
+                <TextBlock Text="{Binding RegRole, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Page}}"
+                          Name="tb_head"
+                          FontWeight="Light"
+                          FontFamily="{DynamicResource AllerBold}"
+                          FontSize="22"
+                          Foreground="White"
+                          HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox FontFamily="{DynamicResource Aller}"
+                            Name="tb_username"
+                            FontWeight="Light"
+                            Text="Username"
+                            FontSize="19"
+                            HorizontalAlignment="Center"
+                            Foreground="White"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Width="235"
+                            HorizontalContentAlignment="Left"
+                            Opacity="0.5"
+                            Height="25"
+                            Margin="63,0,0,0"
+                            GotFocus="tb_username_GotFocus"
+                            LostFocus="tb_username_LostFocus"
+                            />
+                    <iconPacks:PackIconMaterial Kind="Account"
+                                               VerticalAlignment="Center"
+                                               HorizontalAlignment="Center"
+                                               Foreground="White"/>
+                </StackPanel>
+                <Border Width="250"
+                       Height="2"
+                       Background="White"
+                       Opacity="0.5"/>
+
+
+
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <PasswordBox FontFamily="{DynamicResource Aller}"
+                            Name="pb_password"
+                            FontWeight="Light"
+                            Password="Password"
+                            FontSize="20"
+                            HorizontalAlignment="Center"
+                            Foreground="White"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Width="235"
+                            HorizontalContentAlignment="Left"
+                            Opacity="0.5"
+                            Height="25"
+                            Margin="63,0,0,0"
+                            GotFocus="pb_password_GotFocus"
+                            LostFocus="pb_password_LostFocus"/>
+                    <iconPacks:PackIconMaterial Kind="FormTextboxPassword"
+                                               VerticalAlignment="Center"
+                                               HorizontalAlignment="Center"
+                                               Foreground="White"/>
+                </StackPanel>
+                <Border Width="250"
+                       Height="2"
+                       Background="White"
+                       Opacity="0.5"/>
+
+                <StackPanel Name="sp_api" Orientation="Horizontal" Margin="0,20,0,0">
+                    <TextBox FontFamily="{DynamicResource Aller}"
+                            Name="tb_api"
+                            FontWeight="Light"
+                            Text="API key"
+                            FontSize="16"
+                            HorizontalAlignment="Center"
+                            Foreground="White"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Width="235"
+                            HorizontalContentAlignment="Left"
+                            Opacity="0.5"
+                            Height="25"
+                            Margin="63,0,0,0"
+                            GotFocus="tb_api_GotFocus"
+                            LostFocus="tb_api_LostFocus"
+                            />
+                    <iconPacks:PackIconMaterial Kind="Key"
+                                               VerticalAlignment="Center"
+                                               HorizontalAlignment="Center"
+                                               Foreground="White"/>
+                </StackPanel>
+                <Border Width="250"
+                       Height="2"
+                       Background="White"
+                       Opacity="0.5"
+                       Name="bd_api"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
+                    <Button Width="100" Height="40" Name="b_register" Content="REGISTER" Margin="150,0,60,0" HorizontalAlignment="Center" Click="b_register_Click"/>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>
