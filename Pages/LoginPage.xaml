@@ -47,7 +47,7 @@
                             Name="tb_username"
                             FontWeight="Light"
                             Text="Username"
-                            FontSize="20"
+                            FontSize="19"
                             HorizontalAlignment="Center"
                             Foreground="White"
                             Background="Transparent"
@@ -89,7 +89,7 @@
                             Margin="63,0,0,0"
                             GotFocus="pb_password_GotFocus"
                             LostFocus="pb_password_LostFocus"/>
-                    <iconPacks:PackIconMaterial Kind="Text"
+                    <iconPacks:PackIconMaterial Kind="FormTextboxPassword"
                                                VerticalAlignment="Center"
                                                HorizontalAlignment="Center"
                                                Foreground="White"/>
