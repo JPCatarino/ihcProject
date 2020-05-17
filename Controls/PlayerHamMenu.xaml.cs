@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,13 @@ namespace ihcProject.Controls
         public PlayerHamMenu()
         {
             InitializeComponent();
+        }
+
+        private void HamburgerMenu_ItemClick(object sender, MahApps.Metro.Controls.ItemClickEventArgs e)
+        {
+            HamburgerMenuIconItem hmi = e.ClickedItem as HamburgerMenuIconItem;
+            this.navFrame.Navigate(new Uri(hmi.Tag.ToString(), UriKind.Relative));
+            this.HamburgueMenuControl.IsPaneOpen = false;
         }
     }
 }

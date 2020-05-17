@@ -22,19 +22,39 @@
             </DataTemplate>
         </Grid.Resources>
 
-        <mah:HamburgerMenu ItemTemplate="{StaticResource MenuItemTemplate}" OptionsItemTemplate="{StaticResource MenuItemTemplate}" DisplayMode="CompactInline">
+        <mah:HamburgerMenu Name="HamburgueMenuControl" ItemTemplate="{StaticResource MenuItemTemplate}" OptionsItemTemplate="{StaticResource MenuItemTemplate}" SelectedIndex="0" ItemClick="HamburgerMenu_ItemClick" DisplayMode="CompactInline">
             <mah:HamburgerMenu.PaneBackground>
                 <SolidColorBrush Color="{DynamicResource BannerPink}"/>
             </mah:HamburgerMenu.PaneBackground>
 
             <mah:HamburgerMenu.ItemsSource>
                 <mah:HamburgerMenuItemCollection>
-                    <mah:HamburgerMenuIconItem Icon="HomeF" Label="Home"></mah:HamburgerMenuIconItem>
-                    <mah:HamburgerMenuIconItem Icon="UserSquare" Label="Profile"></mah:HamburgerMenuIconItem>
-                    <mah:HamburgerMenuIconItem Icon="TrophyF" Label="Leaderboards"></mah:HamburgerMenuIconItem>
-                    <mah:HamburgerMenuIconItem Icon="BarChart" Label="User Stats"></mah:HamburgerMenuIconItem>
+                    <mah:HamburgerMenuIconItem x:Name="b_Home" Icon="HomeF" Label="Home">
+                        <mah:HamburgerMenuIconItem.Tag>
+                           ../Pages/PlayerHomePage.xaml 
+                        </mah:HamburgerMenuIconItem.Tag>
+                    </mah:HamburgerMenuIconItem>
+                    <mah:HamburgerMenuIconItem Icon="UserSquare" Label="Profile">
+                        <mah:HamburgerMenuIconItem.Tag>
+                            ../Pages/ProfilePage.xaml
+                        </mah:HamburgerMenuIconItem.Tag>
+                    </mah:HamburgerMenuIconItem>
+                    <mah:HamburgerMenuIconItem Icon="TrophyF" Label="Leaderboards">
+                        <mah:HamburgerMenuIconItem.Tag>
+                            ../Pages/LeaderboardsPage.xaml
+                        </mah:HamburgerMenuIconItem.Tag>
+                    </mah:HamburgerMenuIconItem>
+                    <mah:HamburgerMenuIconItem Icon="BarChart" Label="User Stats">
+                        <mah:HamburgerMenuIconItem.Tag>
+                            ../Pages/UserStatsPage.xaml
+                        </mah:HamburgerMenuIconItem.Tag>
+                    </mah:HamburgerMenuIconItem>
                 </mah:HamburgerMenuItemCollection>
             </mah:HamburgerMenu.ItemsSource>
+
+            <mah:HamburgerMenu.Content>
+                <Frame Source="../Pages/PlayerHomePage.xaml" NavigationUIVisibility="Hidden" Name="navFrame" Grid.Column="2"></Frame>
+            </mah:HamburgerMenu.Content>
         </mah:HamburgerMenu>
     </Grid>
 </UserControl>

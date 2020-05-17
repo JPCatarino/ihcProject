@@ -28,10 +28,8 @@
 
     <Grid Name="g_main">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="48"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
          <uc:PlayerHamMenu Grid.Column="0" Grid.ColumnSpan="2" Panel.ZIndex="1"></uc:PlayerHamMenu>
-        <Frame Source="Pages/PlayerHomePage.xaml" NavigationUIVisibility="Hidden" Name="navFrame" Grid.Column="2"></Frame>
     </Grid>
 </mah:MetroWindow>

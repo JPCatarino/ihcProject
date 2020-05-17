@@ -197,7 +197,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\UserStats.xaml">
+    <Page Include="Pages\UserStatsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -225,8 +225,8 @@
     <Compile Include="Pages\RoleChoicePage.xaml.cs">
       <DependentUpon>RoleChoicePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\UserStats.xaml.cs">
-      <DependentUpon>UserStats.xaml</DependentUpon>
+    <Compile Include="Pages\UserStatsPage.xaml.cs">
+      <DependentUpon>UserStatsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PlayerWindow.xaml.cs">
       <DependentUpon>PlayerWindow.xaml</DependentUpon>
