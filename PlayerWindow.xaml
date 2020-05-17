@@ -6,8 +6,8 @@
                       xmlns:local="clr-namespace:ihcProject"
                       xmlns:uc="clr-namespace:ihcProject.Controls"
                       Title="Osu!Stats"
-                      Height="450"
-                      Width="800"
+                      Height="720"
+                      Width="1280"
                       Icon="/assets/images/logo_stats.png"
                       ShowIconOnTitleBar="True"
                       Closing="MetroWindow_Closing">
