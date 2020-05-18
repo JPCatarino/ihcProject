@@ -151,6 +151,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ComparePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\LandingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -165,6 +169,9 @@
     </Compile>
     <Compile Include="Controls\PlayerHamMenu.xaml.cs">
       <DependentUpon>PlayerHamMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ComparePage.xaml.cs">
+      <DependentUpon>ComparePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LandingPage.xaml.cs">
       <DependentUpon>LandingPage.xaml</DependentUpon>
