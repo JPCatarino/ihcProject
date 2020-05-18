@@ -50,7 +50,6 @@ namespace ihcProject.Classes
         public int graveyard_beatmapset_count { get; set; }
         public int loved_beatmapset_count { get; set; }
         public Monthly_Playcounts[] monthly_playcounts { get; set; }
-        public Page page { get; set; }
         public object[] previous_usernames { get; set; }
         public int ranked_and_approved_beatmapset_count { get; set; }
         public object[] replays_watched_counts { get; set; }
@@ -79,12 +78,6 @@ namespace ihcProject.Classes
         public object custom_url { get; set; }
         public string url { get; set; }
         public string id { get; set; }
-    }
-
-    public class Page
-    {
-        public string html { get; set; }
-        public string raw { get; set; }
     }
 
     public class Statistics

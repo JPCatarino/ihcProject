@@ -17,14 +17,14 @@ namespace ihcProject.Classes
         }
 
         public void generate() {
-            userTemp.avatar_url = randomAvatar();
+            //userTemp.avatar_url = randomAvatar();
             userTemp.statistics = generateStatistics();
         }
 
         // Grabs a random avatar from the assets and returns it
         private String randomAvatar() {
             var rand = new Random();
-            var files = Directory.GetFiles("../assets/images/avatars", "*.png");
+            var files = Directory.GetFiles("../assets/images/avatars/", "*.png");
             return files[rand.Next(files.Length)];
         }
 
@@ -46,6 +46,10 @@ namespace ihcProject.Classes
             ret.rank.country = rand.Next((int)ret.rank.global);
 
             return ret;
+        }
+
+        public UserTemplate getUser() {
+            return this.userTemp;
         }
     }
 }

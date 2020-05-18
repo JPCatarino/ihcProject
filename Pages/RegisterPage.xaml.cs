@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ihcProject.Classes;
+using Newtonsoft.Json;
+using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
@@ -88,7 +90,10 @@ namespace ihcProject.Pages
 
         private void b_register_Click(object sender, RoutedEventArgs e)
         {
-
+            UserGenerator newUser = new UserGenerator(tb_username.Text, pb_password.Password);
+            newUser.generate();
+            string json = JsonConvert.SerializeObject(newUser.getUser(), Formatting.Indented);
+            Console.WriteLine(json);
         }
 
         private void tb_api_GotFocus(object sender, RoutedEventArgs e)
