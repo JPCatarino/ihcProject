@@ -11,7 +11,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ihcProject.Classes;
 using MahApps.Metro.Controls;
+using Newtonsoft.Json;
 
 namespace ihcProject
 {
@@ -20,8 +22,15 @@ namespace ihcProject
     /// </summary>
     public partial class PlayerWindow : MetroWindow
     {
+        public UserTemplate cUserData; 
         public PlayerWindow()
         {
+            InitializeComponent();
+        }
+
+        public PlayerWindow(UserTemplate cUserData)
+        {
+            this.cUserData = cUserData;
             InitializeComponent();
         }
 

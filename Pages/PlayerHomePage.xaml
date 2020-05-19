@@ -10,6 +10,18 @@
       Title="PlayerHomePage">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,-0.4" TextWrapping="Wrap" Text="PLACEHOLDER TEXT TO TEST MENUS AND STUFF" VerticalAlignment="Top" Height="440" Width="123"/>
+        <StackPanel Grid.Column="1">
+            <Image Name="i_profile" Width="300" Height="300" Source="{Binding Path=avatar_url}"></Image>
+        </StackPanel>
     </Grid>
 </Page>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ihcProject.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,13 @@ namespace ihcProject.Pages
     /// </summary>
     public partial class PlayerHomePage : Page
     {
+
+        UserTemplate cUserData;
         public PlayerHomePage()
         {
+            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().Last();
+            cUserData = PlayerWindow.cUserData;
+            DataContext = cUserData;
             InitializeComponent();
         }
     }

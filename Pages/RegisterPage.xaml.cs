@@ -92,11 +92,13 @@ namespace ihcProject.Pages
 
         private void b_register_Click(object sender, RoutedEventArgs e)
         {
+            // Create a new user and generate data.
             UserGenerator newUser = new UserGenerator(tb_username.Text, pb_password.Password, Role);
             newUser.generate();
+
+            // Read from user DB and add new user to the db
             string dir = Directory.GetCurrentDirectory() + "\\Data\\users.json";
             List<UserTemplate> allUsers;
-            Console.WriteLine(dir);
             using (var streamReader = new StreamReader(dir))
             using (JsonReader reader = new JsonTextReader(streamReader))
             {
@@ -105,13 +107,25 @@ namespace ihcProject.Pages
             }
             allUsers.Add(newUser.getUser());
             string json = JsonConvert.SerializeObject(allUsers, Formatting.Indented);
-            Console.WriteLine(json);
             // Write to resource and to file on PC, ON RELEASE DELETE SYSTEM.IO LINE
             using (var streamWriter = new StreamWriter(dir))
             {
                 streamWriter.Write(json);
             }
             System.IO.File.WriteAllText(System.AppDomain.CurrentDomain.BaseDirectory + "../../Data/users.json", json);
+
+            //Redirect
+            var mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
+            mainWindow.hideBackButton();
+            NavigationService.GoBack();
+            NavigationService.GoBack();
+            if (Role == "Player")
+            {
+                PlayerWindow n_window = new PlayerWindow(newUser.getUser());
+                n_window.Show();
+            }
+            mainWindow.Hide();
+
         }
 
         private void tb_api_GotFocus(object sender, RoutedEventArgs e)
