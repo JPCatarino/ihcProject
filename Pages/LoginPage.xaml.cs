@@ -98,6 +98,7 @@ namespace ihcProject.Pages
             PlayerWindow n_window;
             if (authUser != null)
             {
+                //TODO Check Role
                 mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
                 mainWindow.hideBackButton();
                 NavigationService.GoBack();

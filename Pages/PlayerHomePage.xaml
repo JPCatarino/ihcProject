@@ -21,7 +21,12 @@
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,-0.4" TextWrapping="Wrap" Text="PLACEHOLDER TEXT TO TEST MENUS AND STUFF" VerticalAlignment="Top" Height="440" Width="123"/>
         <StackPanel Grid.Column="1">
-            <Image Name="i_profile" Width="300" Height="300" Source="{Binding Path=avatar_url}"></Image>
+            <Image x:Name="i_profile" Width="100" Height="114" Source="{Binding avatar_url}" HorizontalAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Center" Text="{Binding username}"/>
+            <TextBlock HorizontalAlignment="Center"><Run Text="Level "/><Run Text="{Binding Path=statistics.level.current}"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center"><Run Text="Rank "/><Run Text="{Binding Path=statistics.rank.global}"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center"><Run Text="{Binding Path=statistics.pp}"/><Run Text=" pp"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" Text="Since the last time you were here..."/>
         </StackPanel>
     </Grid>
 </Page>
