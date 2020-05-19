@@ -30,5 +30,25 @@ namespace ihcProject.Pages
             DataContext = cUserData;
             InitializeComponent();
         }
+
+
+    }
+
+    public class ValueColorConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            Console.WriteLine(value);
+            if (value is int)
+            {
+                return (int)value < 0 ? new SolidColorBrush(Colors.Red) : new SolidColorBrush(Colors.Green);
+            }
+            return Binding.DoNothing;
+        }
+
+        public object ConvertBack(object valye, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            throw new NotSupportedException();
+        }
     }
 }

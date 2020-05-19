@@ -18,9 +18,11 @@ namespace ihcProject.Classes
             userTemp.role = role;
         }
 
+        // TODO implement more generating as needed
         public void generate() {
             userTemp.avatar_url = randomAvatar();
             userTemp.statistics = generateStatistics();
+            userTemp.weekly_playcount = generatePlaycounts();
         }
 
         // Grabs a random avatar from the assets and returns it
@@ -43,12 +45,27 @@ namespace ihcProject.Classes
 
             // Generate pp
             ret.pp = rand.Next(19321);
+            ret.pp_change = rand.Next(-200, 200);
 
             // Generate Rank
             // TODO make this aware of other users.
             ret.rank = new Rank();
             ret.rank.global = rand.Next(1000);
             ret.rank.country = rand.Next((int)ret.rank.global);
+            ret.rank.rank_change = rand.Next(-20, 20);
+
+            return ret;
+        }
+
+        private Weekly_Playcount generatePlaycounts() {
+            Weekly_Playcount ret = new Weekly_Playcount();
+            Random random = new Random();
+
+            ret.count_standard = random.Next(100);
+            ret.count_mania = random.Next(100);
+            ret.count_ctb = random.Next(100);
+            ret.count_taiko = random.Next(100);
+            ret.total_count = ret.count_standard + ret.count_mania + ret.count_ctb + ret.count_taiko;
 
             return ret;
         }

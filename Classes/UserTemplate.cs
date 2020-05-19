@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ihcProject.Classes
-{
+{   
+    // TODO Add new parameters as necessary
     public class UserTemplate
     {
         public string avatar_url { get; set; }
@@ -51,6 +52,7 @@ namespace ihcProject.Classes
         public int graveyard_beatmapset_count { get; set; }
         public int loved_beatmapset_count { get; set; }
         public Monthly_Playcounts[] monthly_playcounts { get; set; }
+        public Weekly_Playcount weekly_playcount { get; set; }
         public object[] previous_usernames { get; set; }
         public int ranked_and_approved_beatmapset_count { get; set; }
         public object[] replays_watched_counts { get; set; }
@@ -85,6 +87,7 @@ namespace ihcProject.Classes
     {
         public Level level { get; set; }
         public int pp { get; set; }
+        public int pp_change { get; set; }
         public int pp_rank { get; set; }
         public int ranked_score { get; set; }
         public int hit_accuracy { get; set; }
@@ -118,12 +121,21 @@ namespace ihcProject.Classes
     {
         public object global { get; set; }
         public object country { get; set; }
+        public int rank_change { get; set; }
     }
 
     public class Monthly_Playcounts
     {
         public string start_date { get; set; }
         public int count { get; set; }
+    }
+
+    public class Weekly_Playcount {
+        public int total_count {get; set;}
+        public int count_standard { get; set; }
+        public int count_taiko { get; set; }
+        public int count_ctb { get; set; }
+        public int count_mania { get; set; }
     }
 
     public class User_Achievements

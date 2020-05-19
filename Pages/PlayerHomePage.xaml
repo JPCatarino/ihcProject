@@ -8,7 +8,10 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PlayerHomePage">
-
+    <Page.Resources>
+        <local:ValueColorConverter x:Key="ValueColorConverter"/>
+    </Page.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -22,11 +25,19 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,-0.4" TextWrapping="Wrap" Text="PLACEHOLDER TEXT TO TEST MENUS AND STUFF" VerticalAlignment="Top" Height="440" Width="123"/>
         <StackPanel Grid.Column="1">
             <Image x:Name="i_profile" Width="100" Height="114" Source="{Binding avatar_url}" HorizontalAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Center" Text="{Binding username}"/>
-            <TextBlock HorizontalAlignment="Center"><Run Text="Level "/><Run Text="{Binding Path=statistics.level.current}"/></TextBlock>
-            <TextBlock HorizontalAlignment="Center"><Run Text="Rank "/><Run Text="{Binding Path=statistics.rank.global}"/></TextBlock>
-            <TextBlock HorizontalAlignment="Center"><Run Text="{Binding Path=statistics.pp}"/><Run Text=" pp"/></TextBlock>
-            <TextBlock HorizontalAlignment="Center" Text="Since the last time you were here..."/>
+            <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerDisplay}" FontSize="50" Text="{Binding username}"/>
+            <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerDisplay}" FontSize="40"><Run Text="Level "/><Run Text="{Binding Path=statistics.level.current}"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerBold}"><Run Text="Rank "/><Run Text="{Binding Path=statistics.rank.global}"/><Run Text=" ("/><Run Text="{Binding Path=statistics.rank.rank_change}" Foreground="{Binding Path=statistics.rank.rank_change, Converter={StaticResource ValueColorConverter}}"/><Run Text=" from last week)"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerBold}"><Run Text="{Binding Path=statistics.pp}"/><Run Text=" pp"/><Run Text=" ("/><Run Text="{Binding Path=statistics.pp_change}" Foreground="{Binding Path=statistics.pp_change, Converter={StaticResource ValueColorConverter}}"/><Run Text=" from last week)"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerBold}" Text="Since the last time you were here..."/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <TextBlock FontFamily="{DynamicResource AllerBold}" Text="New Games" HorizontalAlignment="Center"/>
+            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="You played "/><Run Text="{Binding Path=weekly_playcount.total_count}"/><Run Text=" Osu! games:"/></TextBlock>
+            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_standard}"/><Run Text=" on Standard Mode"/></TextBlock>
+            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_taiko}"/><Run Text=" on Taiko Mode"/></TextBlock>
+            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_ctb}"/><Run Text=" on Catch The Beat Mode"/></TextBlock>
+            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_mania}"/><Run Text=" on Mania Mode"/></TextBlock>
         </StackPanel>
     </Grid>
 </Page>

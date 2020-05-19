@@ -43,6 +43,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -53,6 +54,7 @@
         "progress": 0
       },
       "pp": 9084,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -66,7 +68,8 @@
       "grade_counts": null,
       "rank": {
         "global": 691,
-        "country": 415
+        "country": 415,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -118,6 +121,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -128,6 +132,7 @@
         "progress": 0
       },
       "pp": 2878,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -141,7 +146,8 @@
       "grade_counts": null,
       "rank": {
         "global": 233,
-        "country": 216
+        "country": 216,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -193,6 +199,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -203,6 +210,7 @@
         "progress": 0
       },
       "pp": 10431,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -216,7 +224,8 @@
       "grade_counts": null,
       "rank": {
         "global": 385,
-        "country": 230
+        "country": 230,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -268,6 +277,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -278,6 +288,7 @@
         "progress": 0
       },
       "pp": 2390,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -291,7 +302,8 @@
       "grade_counts": null,
       "rank": {
         "global": 530,
-        "country": 225
+        "country": 225,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -343,6 +355,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -353,6 +366,7 @@
         "progress": 0
       },
       "pp": 14759,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -366,7 +380,8 @@
       "grade_counts": null,
       "rank": {
         "global": 760,
-        "country": 354
+        "country": 354,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -418,6 +433,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -428,6 +444,7 @@
         "progress": 0
       },
       "pp": 944,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -441,7 +458,8 @@
       "grade_counts": null,
       "rank": {
         "global": 693,
-        "country": 120
+        "country": 120,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -493,6 +511,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -503,6 +522,7 @@
         "progress": 0
       },
       "pp": 3360,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -516,7 +536,8 @@
       "grade_counts": null,
       "rank": {
         "global": 446,
-        "country": 417
+        "country": 417,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -568,6 +589,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -578,6 +600,7 @@
         "progress": 0
       },
       "pp": 14670,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -591,7 +614,8 @@
       "grade_counts": null,
       "rank": {
         "global": 424,
-        "country": 99
+        "country": 99,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -643,6 +667,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -653,6 +678,7 @@
         "progress": 0
       },
       "pp": 823,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -666,7 +692,8 @@
       "grade_counts": null,
       "rank": {
         "global": 554,
-        "country": 199
+        "country": 199,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -718,6 +745,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -728,6 +756,7 @@
         "progress": 0
       },
       "pp": 17225,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -741,7 +770,8 @@
       "grade_counts": null,
       "rank": {
         "global": 805,
-        "country": 528
+        "country": 528,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -793,6 +823,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -803,6 +834,7 @@
         "progress": 0
       },
       "pp": 1516,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -816,7 +848,8 @@
       "grade_counts": null,
       "rank": {
         "global": 142,
-        "country": 130
+        "country": 130,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -868,6 +901,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -878,6 +912,7 @@
         "progress": 0
       },
       "pp": 8778,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -891,7 +926,8 @@
       "grade_counts": null,
       "rank": {
         "global": 728,
-        "country": 156
+        "country": 156,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -943,6 +979,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -953,6 +990,7 @@
         "progress": 0
       },
       "pp": 15323,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -966,7 +1004,8 @@
       "grade_counts": null,
       "rank": {
         "global": 191,
-        "country": 156
+        "country": 156,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1018,6 +1057,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1028,6 +1068,7 @@
         "progress": 0
       },
       "pp": 1570,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1041,7 +1082,8 @@
       "grade_counts": null,
       "rank": {
         "global": 478,
-        "country": 455
+        "country": 455,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1093,6 +1135,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1103,6 +1146,7 @@
         "progress": 0
       },
       "pp": 5414,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1116,7 +1160,8 @@
       "grade_counts": null,
       "rank": {
         "global": 292,
-        "country": 114
+        "country": 114,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1168,6 +1213,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1178,6 +1224,7 @@
         "progress": 0
       },
       "pp": 6481,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1191,7 +1238,8 @@
       "grade_counts": null,
       "rank": {
         "global": 261,
-        "country": 102
+        "country": 102,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1243,6 +1291,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1253,6 +1302,7 @@
         "progress": 0
       },
       "pp": 15320,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1266,7 +1316,8 @@
       "grade_counts": null,
       "rank": {
         "global": 794,
-        "country": 612
+        "country": 612,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1318,6 +1369,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1328,6 +1380,7 @@
         "progress": 0
       },
       "pp": 2807,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1341,7 +1394,8 @@
       "grade_counts": null,
       "rank": {
         "global": 296,
-        "country": 229
+        "country": 229,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1393,6 +1447,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1403,6 +1458,7 @@
         "progress": 0
       },
       "pp": 14227,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1416,7 +1472,8 @@
       "grade_counts": null,
       "rank": {
         "global": 540,
-        "country": 81
+        "country": 81,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1468,6 +1525,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1478,6 +1536,7 @@
         "progress": 0
       },
       "pp": 8008,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1491,7 +1550,8 @@
       "grade_counts": null,
       "rank": {
         "global": 985,
-        "country": 644
+        "country": 644,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1543,6 +1603,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1553,6 +1614,7 @@
         "progress": 0
       },
       "pp": 2182,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1566,7 +1628,8 @@
       "grade_counts": null,
       "rank": {
         "global": 277,
-        "country": 217
+        "country": 217,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1618,6 +1681,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1628,6 +1692,7 @@
         "progress": 0
       },
       "pp": 16631,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1641,7 +1706,8 @@
       "grade_counts": null,
       "rank": {
         "global": 421,
-        "country": 74
+        "country": 74,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1693,6 +1759,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1703,6 +1770,7 @@
         "progress": 0
       },
       "pp": 15703,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1716,7 +1784,8 @@
       "grade_counts": null,
       "rank": {
         "global": 124,
-        "country": 97
+        "country": 97,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1768,6 +1837,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1778,6 +1848,7 @@
         "progress": 0
       },
       "pp": 14589,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1791,7 +1862,8 @@
       "grade_counts": null,
       "rank": {
         "global": 517,
-        "country": 32
+        "country": 32,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1843,6 +1915,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1853,6 +1926,7 @@
         "progress": 0
       },
       "pp": 719,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1866,7 +1940,8 @@
       "grade_counts": null,
       "rank": {
         "global": 65,
-        "country": 7
+        "country": 7,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1918,6 +1993,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -1928,6 +2004,7 @@
         "progress": 0
       },
       "pp": 13301,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -1941,7 +2018,8 @@
       "grade_counts": null,
       "rank": {
         "global": 828,
-        "country": 713
+        "country": 713,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -1993,6 +2071,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -2003,6 +2082,7 @@
         "progress": 0
       },
       "pp": 13335,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -2016,7 +2096,8 @@
       "grade_counts": null,
       "rank": {
         "global": 200,
-        "country": 95
+        "country": 95,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -2068,6 +2149,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -2078,6 +2160,7 @@
         "progress": 0
       },
       "pp": 3900,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -2091,7 +2174,8 @@
       "grade_counts": null,
       "rank": {
         "global": 821,
-        "country": 528
+        "country": 528,
+        "rank_change": 0
       }
     },
     "support_level": 0,
@@ -2143,6 +2227,7 @@
     "graveyard_beatmapset_count": 0,
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
+    "weekly_playcount": null,
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
     "replays_watched_counts": null,
@@ -2153,6 +2238,7 @@
         "progress": 0
       },
       "pp": 16606,
+      "pp_change": 0,
       "pp_rank": 0,
       "ranked_score": 0,
       "hit_accuracy": 0,
@@ -2166,7 +2252,170 @@
       "grade_counts": null,
       "rank": {
         "global": 139,
-        "country": 32
+        "country": 32,
+        "rank_change": 0
+      }
+    },
+    "support_level": 0,
+    "unranked_beatmapset_count": 0,
+    "user_achievements": null,
+    "rankHistory": null
+  },
+  {
+    "avatar_url": "../assets/images/avatars/boy-5.png",
+    "country_code": null,
+    "default_group": null,
+    "id": 0,
+    "is_active": false,
+    "is_bot": false,
+    "is_online": false,
+    "is_supporter": false,
+    "last_visit": "0001-01-01T00:00:00",
+    "pm_friends_only": false,
+    "profile_colour": null,
+    "username": "Username",
+    "password": "Password",
+    "role": "Fan",
+    "cover_url": null,
+    "discord": null,
+    "has_supported": false,
+    "interests": null,
+    "join_date": "0001-01-01T00:00:00",
+    "kudosu": null,
+    "lastfm": null,
+    "location": null,
+    "max_blocks": 0,
+    "max_friends": 0,
+    "occupation": null,
+    "playmode": null,
+    "playstyle": null,
+    "post_count": 0,
+    "profile_order": null,
+    "skype": null,
+    "title": null,
+    "twitter": null,
+    "website": null,
+    "country": null,
+    "cover": null,
+    "account_history": null,
+    "active_tournament_banner": null,
+    "badges": null,
+    "favourite_beatmapset_count": 0,
+    "follower_count": 0,
+    "graveyard_beatmapset_count": 0,
+    "loved_beatmapset_count": 0,
+    "monthly_playcounts": null,
+    "weekly_playcount": null,
+    "previous_usernames": null,
+    "ranked_and_approved_beatmapset_count": 0,
+    "replays_watched_counts": null,
+    "scores_first_count": 0,
+    "statistics": {
+      "level": {
+        "current": 6,
+        "progress": 0
+      },
+      "pp": 13965,
+      "pp_change": 0,
+      "pp_rank": 0,
+      "ranked_score": 0,
+      "hit_accuracy": 0,
+      "play_count": 0,
+      "play_time": 0,
+      "total_score": 0,
+      "total_hits": 0,
+      "maximum_combo": 0,
+      "replays_watched_by_others": 0,
+      "is_ranked": false,
+      "grade_counts": null,
+      "rank": {
+        "global": 534,
+        "country": 420,
+        "rank_change": 0
+      }
+    },
+    "support_level": 0,
+    "unranked_beatmapset_count": 0,
+    "user_achievements": null,
+    "rankHistory": null
+  },
+  {
+    "avatar_url": "../assets/images/avatars/girl-1.png",
+    "country_code": null,
+    "default_group": null,
+    "id": 0,
+    "is_active": false,
+    "is_bot": false,
+    "is_online": false,
+    "is_supporter": false,
+    "last_visit": "0001-01-01T00:00:00",
+    "pm_friends_only": false,
+    "profile_colour": null,
+    "username": "test2",
+    "password": "testtest",
+    "role": "Player",
+    "cover_url": null,
+    "discord": null,
+    "has_supported": false,
+    "interests": null,
+    "join_date": "0001-01-01T00:00:00",
+    "kudosu": null,
+    "lastfm": null,
+    "location": null,
+    "max_blocks": 0,
+    "max_friends": 0,
+    "occupation": null,
+    "playmode": null,
+    "playstyle": null,
+    "post_count": 0,
+    "profile_order": null,
+    "skype": null,
+    "title": null,
+    "twitter": null,
+    "website": null,
+    "country": null,
+    "cover": null,
+    "account_history": null,
+    "active_tournament_banner": null,
+    "badges": null,
+    "favourite_beatmapset_count": 0,
+    "follower_count": 0,
+    "graveyard_beatmapset_count": 0,
+    "loved_beatmapset_count": 0,
+    "monthly_playcounts": null,
+    "weekly_playcount": {
+      "total_count": 113,
+      "count_standard": 51,
+      "count_taiko": 39,
+      "count_ctb": 8,
+      "count_mania": 15
+    },
+    "previous_usernames": null,
+    "ranked_and_approved_beatmapset_count": 0,
+    "replays_watched_counts": null,
+    "scores_first_count": 0,
+    "statistics": {
+      "level": {
+        "current": 51,
+        "progress": 0
+      },
+      "pp": 3007,
+      "pp_change": -167,
+      "pp_rank": 0,
+      "ranked_score": 0,
+      "hit_accuracy": 0,
+      "play_count": 0,
+      "play_time": 0,
+      "total_score": 0,
+      "total_hits": 0,
+      "maximum_combo": 0,
+      "replays_watched_by_others": 0,
+      "is_ranked": false,
+      "grade_counts": null,
+      "rank": {
+        "global": 390,
+        "country": 300,
+        "rank_change": 8
       }
     },
     "support_level": 0,
