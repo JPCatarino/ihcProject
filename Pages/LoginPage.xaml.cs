@@ -1,5 +1,8 @@
-﻿using System;
+﻿using ihcProject.Classes;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,20 +71,49 @@ namespace ihcProject.Pages
 
         private void b_login_Click(object sender, RoutedEventArgs e)
         {
-            // TODO : CHECK CREDENTIALS
             // TODO : READ WHAT TYPE OF THE USER IS THE PERSON LOGIN IN
-            // TODO : NAVIGATE TO PROPER PAGE AFTER.
             /**
              * Kinda cheating here
              * Getting the current executing main window and revert it to original state
              * Then we hide the main window and open the new login window
              */
-            var mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
-            mainWindow.hideBackButton();
-            NavigationService.GoBack();
-            PlayerWindow n_window = new PlayerWindow();
-            n_window.Show();
-            mainWindow.Hide();
+            string dir = Directory.GetCurrentDirectory() + "\\Data\\users.json";
+            List<UserTemplate> allUsers;
+            using (var streamReader = new StreamReader(dir))
+            using (JsonReader reader = new JsonTextReader(streamReader))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                allUsers = serializer.Deserialize<List<UserTemplate>>(reader);
+            }
+            UserTemplate authUser = null;
+            allUsers.ForEach(delegate (UserTemplate user)
+            {
+                if (tb_username.Text == user.username) {
+                    if (pb_password.Password == user.password) {
+                        authUser = user;
+                    }
+                }
+            });
+            MainWindow mainWindow;
+            PlayerWindow n_window;
+            if (authUser != null)
+            {
+                mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
+                mainWindow.hideBackButton();
+                NavigationService.GoBack();
+                n_window = new PlayerWindow(authUser);
+                n_window.Show();
+                mainWindow.Hide();
+            }
+            else
+            {
+                mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
+                mainWindow.hideBackButton();
+                NavigationService.GoBack();
+                n_window = new PlayerWindow();
+                n_window.Show();
+                mainWindow.Hide();
+            }
         }
     }
 }
