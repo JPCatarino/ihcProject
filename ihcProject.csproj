@@ -434,7 +434,32 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="assets\images\icons\game_modes\mode-fruits%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-fruits-med%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-fruits-med.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-fruits-small%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-fruits-small.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-fruits.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-mania%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-mania-med%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-mania-med.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-mania-small%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-mania-small.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-mania.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-osu%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-osu-med%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-osu-med.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-osu-small%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-osu-small.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-osu.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-taiko%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-taiko-med%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-taiko-med.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-taiko-small%402x.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-taiko-small.png" />
+    <Resource Include="assets\images\icons\game_modes\mode-taiko.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.3.1.1\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.3.1.1\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

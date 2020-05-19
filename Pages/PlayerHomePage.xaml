@@ -22,7 +22,6 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,-0.4" TextWrapping="Wrap" Text="PLACEHOLDER TEXT TO TEST MENUS AND STUFF" VerticalAlignment="Top" Height="440" Width="123"/>
         <StackPanel Grid.Column="1">
             <Image x:Name="i_profile" Width="100" Height="114" Source="{Binding avatar_url}" HorizontalAlignment="Center"/>
             <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerDisplay}" FontSize="50" Text="{Binding username}"/>
@@ -34,10 +33,10 @@
         <StackPanel Grid.Row="1" Grid.Column="0">
             <TextBlock FontFamily="{DynamicResource AllerBold}" Text="New Games" HorizontalAlignment="Center"/>
             <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="You played "/><Run Text="{Binding Path=weekly_playcount.total_count}"/><Run Text=" Osu! games:"/></TextBlock>
-            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_standard}"/><Run Text=" on Standard Mode"/></TextBlock>
-            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_taiko}"/><Run Text=" on Taiko Mode"/></TextBlock>
-            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_ctb}"/><Run Text=" on Catch The Beat Mode"/></TextBlock>
-            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_mania}"/><Run Text=" on Mania Mode"/></TextBlock>
+            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_standard}"/><Run Text=" on Standard Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-osu-small.png" Height="30" /></InlineUIContainer></TextBlock>
+            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_taiko}"/><Run Text=" on Taiko Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-taiko-small.png" Height="30" /></InlineUIContainer></TextBlock>
+            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_ctb}"/><Run Text=" on Catch The Beat Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-fruits-small.png" Height="30" /></InlineUIContainer></TextBlock>
+            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_mania}"/><Run Text=" on Mania Mode"/><InlineUIContainer BaselineAlignment="TextBottom" ><Image Source="../assets/images/icons/game_modes/mode-mania-small.png" Height="30"/></InlineUIContainer></TextBlock>
         </StackPanel>
     </Grid>
 </Page>
