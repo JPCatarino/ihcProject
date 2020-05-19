@@ -129,7 +129,7 @@
                        Name="bd_api"/>
 
                 <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
-                    <Button Width="100" Height="40" Name="b_register" Content="REGISTER" Margin="150,0,60,0" HorizontalAlignment="Center" Click="b_register_Click"/>
+                    <Button IsDefault="True" Width="100" Height="40" Name="b_register" Content="REGISTER" Margin="150,0,60,0" HorizontalAlignment="Center" Click="b_register_Click"/>
                 </StackPanel>
 
             </StackPanel>
