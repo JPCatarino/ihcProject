@@ -21,6 +21,7 @@ namespace ihcProject.Classes
         public object profile_colour { get; set; }
         public string username { get; set; }
         public string password { get; set; }
+        public string role { get; set; }
         public string cover_url { get; set; }
         public object discord { get; set; }
         public bool has_supported { get; set; }

@@ -1,8 +1,10 @@
 ﻿using ihcProject.Classes;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -90,10 +92,26 @@ namespace ihcProject.Pages
 
         private void b_register_Click(object sender, RoutedEventArgs e)
         {
-            UserGenerator newUser = new UserGenerator(tb_username.Text, pb_password.Password);
+            UserGenerator newUser = new UserGenerator(tb_username.Text, pb_password.Password, Role);
             newUser.generate();
-            string json = JsonConvert.SerializeObject(newUser.getUser(), Formatting.Indented);
+            string dir = Directory.GetCurrentDirectory() + "\\Data\\users.json";
+            List<UserTemplate> allUsers;
+            Console.WriteLine(dir);
+            using (var streamReader = new StreamReader(dir))
+            using (JsonReader reader = new JsonTextReader(streamReader))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                allUsers = serializer.Deserialize<List<UserTemplate>>(reader);
+            }
+            allUsers.Add(newUser.getUser());
+            string json = JsonConvert.SerializeObject(allUsers, Formatting.Indented);
             Console.WriteLine(json);
+            // Write to resource and to file on PC, ON RELEASE DELETE SYSTEM.IO LINE
+            using (var streamWriter = new StreamWriter(dir))
+            {
+                streamWriter.Write(json);
+            }
+            System.IO.File.WriteAllText(System.AppDomain.CurrentDomain.BaseDirectory + "../../Data/users.json", json);
         }
 
         private void tb_api_GotFocus(object sender, RoutedEventArgs e)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ihcProject.Pages;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,22 +11,26 @@ namespace ihcProject.Classes
     class UserGenerator
     {
         UserTemplate userTemp;
-        public UserGenerator(String username, String password) {
+        public UserGenerator(String username, String password, String role) {
             userTemp = new UserTemplate();
             userTemp.username = username;
             userTemp.password = password;
+            userTemp.role = role;
         }
 
         public void generate() {
-            //userTemp.avatar_url = randomAvatar();
+            userTemp.avatar_url = randomAvatar();
             userTemp.statistics = generateStatistics();
         }
 
         // Grabs a random avatar from the assets and returns it
+        // TODO Fix path error
         private String randomAvatar() {
             var rand = new Random();
-            var files = Directory.GetFiles("../assets/images/avatars/", "*.png");
-            return files[rand.Next(files.Length)];
+            string[] gender = {"boy", "girl"};
+
+            // C# doesn't let you pick a random resource so I had to this mess.
+            return "../assets/images/avatars/" + gender[rand.Next(gender.Length)] + "-" + rand.Next(0 ,8) + ".png";
         }
 
         private Statistics generateStatistics() {
