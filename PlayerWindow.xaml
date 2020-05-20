@@ -22,7 +22,7 @@
                     <Button Name="dpi_profile" Foreground="Black" Click="dpi_profile_Click">
                         <TextBlock Width="Auto"><InlineUIContainer><iconPacks:PackIconJamIcons Kind="UserCircle"/></InlineUIContainer><Run Text=" Profile"/></TextBlock>
                     </Button>
-                    <Button Foreground="Black">
+                    <Button Name="dpi_logout" Foreground="Black" Click="dpi_logout_Click">
                         <TextBlock Width="Auto"><InlineUIContainer><iconPacks:PackIconJamIcons Kind="LogOut"/></InlineUIContainer><Run Text=" Log Out"/></TextBlock>
                     </Button>
                 </mah:DropDownButton.Items>

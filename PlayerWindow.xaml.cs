@@ -45,5 +45,10 @@ namespace ihcProject
         {
             hmb_player.goToProfilePage();
         }
+
+        private void dpi_logout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
