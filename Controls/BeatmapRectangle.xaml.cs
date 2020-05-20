@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,8 +67,20 @@ namespace ihcProject.Controls
         public static DependencyProperty gameModeIconProperty = DependencyProperty.Register("gameModeIcon", typeof(Uri), typeof(BeatmapRectangle));
         public static DependencyProperty beatmapPercentageProperty = DependencyProperty.Register("beatmapPercentage", typeof(int), typeof(BeatmapRectangle));
         public static DependencyProperty beatmapPPProperty = DependencyProperty.Register("beatmapPP", typeof(int), typeof(BeatmapRectangle));
+    }
 
+    public class NullToImageConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            if (value == null)
+                return DependencyProperty.UnsetValue;
+            return value;
+        }
 
-
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return Binding.DoNothing;
+        }
     }
 }

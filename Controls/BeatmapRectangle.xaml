@@ -7,17 +7,20 @@
              mc:Ignorable="d" 
              x:Name="btr"
              d:DesignHeight="50" d:DesignWidth="500">
+    <UserControl.Resources>
+        <local:NullToImageConverter x:Key="NullToImageConverter"/>
+    </UserControl.Resources>
 
     <Grid Width="Auto">
         <Border CornerRadius="15" BorderThickness="1" Height="50" Width="Auto" OpacityMask="#FFEB0000">
             <Border.Background>
-                <ImageBrush ImageSource="{Binding Path=beatmapImage, ElementName=btr}" Stretch="UniformToFill" Opacity="0.65"/>
+                <ImageBrush ImageSource="{Binding Path=beatmapImage, ElementName=btr, Converter={StaticResource NullToImageConverter}}" Stretch="UniformToFill" Opacity="0.65"/>
             </Border.Background>
             <Border>
                 <WrapPanel>
-                    <Image Name="i_rank" Margin="10 0 0 0" Source="{Binding Path=rankIcon, ElementName=btr}"></Image>
+                    <Image Name="i_rank" Margin="10 0 0 0" Source="{Binding Path=rankIcon, ElementName=btr, Converter={StaticResource NullToImageConverter}}"></Image>
                     <TextBlock Name="tb_beatmapname" Margin="10 15 10 10" FontSize="20" FontFamily="{DynamicResource Aller}"><Run Text="{Binding Path=beatmapName, ElementName=btr}"/></TextBlock>
-                    <Image Margin="10 0 0 0" Name="i_gamemode" Source="{Binding Path=gameModeIcon, ElementName=btr}" />
+                    <Image Margin="10 0 0 0" Name="i_gamemode" Source="{Binding Path=gameModeIcon, ElementName=btr, Converter={StaticResource NullToImageConverter}}" />
                     <TextBlock Name="tb_ppp" Margin="30 15 0 10" FontSize="20" FontFamily="{DynamicResource AllerBold}" HorizontalAlignment="Stretch" ><Run Text="{Binding Path=beatmapPercentage, ElementName=btr}"/><Run Text="%"/><Run Text="/"/><Run Text="{Binding Path=beatmapPP, ElementName=btr}"/><Run Text="pp"/></TextBlock>
                 </WrapPanel>
             </Border>
