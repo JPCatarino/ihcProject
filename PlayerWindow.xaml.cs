@@ -31,6 +31,7 @@ namespace ihcProject
         public PlayerWindow(UserTemplate cUserData)
         {
             this.cUserData = cUserData;
+            this.DataContext = cUserData;
             InitializeComponent();
         }
 
@@ -38,6 +39,11 @@ namespace ihcProject
         {
             var mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
             mainWindow.Show();
+        }
+
+        private void dpi_profile_Click(object sender, RoutedEventArgs e)
+        {
+            hmb_player.goToProfilePage();
         }
     }
 }

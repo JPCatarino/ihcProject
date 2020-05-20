@@ -26,6 +26,12 @@ namespace ihcProject.Controls
             InitializeComponent();
         }
 
+        public void goToProfilePage()
+        {
+            this.HamburgueMenuControl.SelectedIndex = 1;
+            this.navFrame.Navigate(new Uri("../Pages/ProfilePage.xaml", UriKind.Relative));
+        }
+
         private void HamburgerMenu_ItemClick(object sender, MahApps.Metro.Controls.ItemClickEventArgs e)
         {
             HamburgerMenuIconItem hmi = e.ClickedItem as HamburgerMenuIconItem;

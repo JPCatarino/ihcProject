@@ -14,13 +14,24 @@
 
     <mah:MetroWindow.RightWindowCommands>
         <mah:WindowCommands>
-            <mah:DropDownButton>
+            <mah:DropDownButton BorderThickness="0" Name="dpb_player">
+                <mah:DropDownButton.Content>
+                    <TextBlock><Run Text="Logged in as "/><Run Text="{Binding username}"/></TextBlock>
+                </mah:DropDownButton.Content>
                 <mah:DropDownButton.Items>
-                    <Label Content="Logged in as binding" IsEnabled="False"></Label>
-                    <Label Content="Profile"></Label>
-                    <Label Content="Settings"></Label>
-                    <Label Content="Log Out"></Label>
+                    <Button Name="dpi_profile" Foreground="Black" Click="dpi_profile_Click">
+                        <TextBlock Width="Auto"><InlineUIContainer><iconPacks:PackIconJamIcons Kind="UserCircle"/></InlineUIContainer><Run Text=" Profile"/></TextBlock>
+                    </Button>
+                    <Button Foreground="Black">
+                        <TextBlock Width="Auto"><InlineUIContainer><iconPacks:PackIconJamIcons Kind="LogOut"/></InlineUIContainer><Run Text=" Log Out"/></TextBlock>
+                    </Button>
                 </mah:DropDownButton.Items>
+                <mah:DropDownButton.Icon>
+                    <Image Source="{Binding avatar_url}" Width="Auto" Height="Auto" />
+                </mah:DropDownButton.Icon>
+                <mah:DropDownButton.Background>
+                    <SolidColorBrush Color="{DynamicResource BannerPink}"/>
+                </mah:DropDownButton.Background>
             </mah:DropDownButton>
         </mah:WindowCommands>
     </mah:MetroWindow.RightWindowCommands>
@@ -30,6 +41,6 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-         <uc:PlayerHamMenu Grid.Column="0" Grid.ColumnSpan="2" Panel.ZIndex="1"></uc:PlayerHamMenu>
+         <uc:PlayerHamMenu x:Name="hmb_player" Grid.Column="0" Grid.ColumnSpan="2" Panel.ZIndex="1"></uc:PlayerHamMenu>
     </Grid>
 </mah:MetroWindow>
