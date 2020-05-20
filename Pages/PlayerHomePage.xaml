@@ -28,23 +28,47 @@
             <Image x:Name="i_profile" Width="100" Height="114" Source="{Binding avatar_url}" HorizontalAlignment="Center"/>
             <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerDisplay}" FontSize="50" Text="{Binding username}"/>
             <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerDisplay}" FontSize="40"><Run Text="Level "/><Run Text="{Binding Path=statistics.level.current}"/></TextBlock>
-            <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerBold}"><Run Text="Rank "/><Run Text="{Binding Path=statistics.rank.global}"/><Run Text=" ("/><Run Text="{Binding Path=statistics.rank.rank_change}" Foreground="{Binding Path=statistics.rank.rank_change, Converter={StaticResource ValueColorConverter}}"/><Run Text=" from last week)"/></TextBlock>
-            <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerBold}"><Run Text="{Binding Path=statistics.pp}"/><Run Text=" pp"/><Run Text=" ("/><Run Text="{Binding Path=statistics.pp_change}" Foreground="{Binding Path=statistics.pp_change, Converter={StaticResource ValueColorConverter}}"/><Run Text=" from last week)"/></TextBlock>
-            <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerBold}" Text="Since the last time you were here..."/>
+            <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerBold}" FontSize="25"><Run Text="Rank "/><Run Text="{Binding Path=statistics.rank.global}"/><Run Text=" ("/><Run Text="{Binding Path=statistics.rank.rank_change}" Foreground="{Binding Path=statistics.rank.rank_change, Converter={StaticResource ValueColorConverter}}"/><Run Text=" from last week)"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" FontFamily="{DynamicResource AllerBold}" FontSize="25"><Run Text="{Binding Path=statistics.pp}"/><Run Text=" pp"/><Run Text=" ("/><Run Text="{Binding Path=statistics.pp_change}" Foreground="{Binding Path=statistics.pp_change, Converter={StaticResource ValueColorConverter}}"/><Run Text=" from last week)"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" Margin="0 20 0 0" FontFamily="{DynamicResource AllerBold}" FontSize="25" Text="Since the last time you were here..."/>
         </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="0">
-            <TextBlock FontFamily="{DynamicResource AllerBold}" Text="New Games" HorizontalAlignment="Center"/>
-            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="You played "/><Run Text="{Binding Path=weekly_playcount.total_count}"/><Run Text=" Osu! games:"/></TextBlock>
-            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_standard}"/><Run Text=" on Standard Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-osu-small.png" Height="30" /></InlineUIContainer></TextBlock>
-            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_taiko}"/><Run Text=" on Taiko Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-taiko-small.png" Height="30" /></InlineUIContainer></TextBlock>
-            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_ctb}"/><Run Text=" on Catch The Beat Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-fruits-small.png" Height="30" /></InlineUIContainer></TextBlock>
-            <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_mania}"/><Run Text=" on Mania Mode"/><InlineUIContainer BaselineAlignment="TextBottom" ><Image Source="../assets/images/icons/game_modes/mode-mania-small.png" Height="30"/></InlineUIContainer></TextBlock>
-        </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="1" DataContext="{StaticResource staticBeatmapRecData}">
-            <TextBlock FontFamily="{DynamicResource AllerBold}" Text="Last 3 new Beatmaps played" HorizontalAlignment="Center"/>
-            <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
-            <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
-            <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
-        </StackPanel>
+        <Border Grid.Row="1" Grid.Column="0" CornerRadius="15" Height="170" Width="330">
+            <Border.Background>
+                <SolidColorBrush Color="{DynamicResource BannerPink}" />
+            </Border.Background>
+            <StackPanel VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Width="330">
+                <TextBlock FontFamily="{DynamicResource AllerBold}" Margin="0 0 30 0" FontSize="20" Text="New Games" HorizontalAlignment="Center"/>
+                <TextBlock FontFamily="{DynamicResource Aller}" Margin="50 0 0 0" FontSize="15" HorizontalAlignment="Left" TextAlignment="Left"><Run Text="You played "/><Run Text="{Binding Path=weekly_playcount.total_count}"/><Run Text=" Osu! games:"/></TextBlock>
+                <TextBlock FontFamily="{DynamicResource Aller}" Margin="50 0 0 0" FontSize="15" HorizontalAlignment="Left" TextAlignment="Left"><Run Text="- "/><Run FontWeight="Bold" Text="{Binding Path=weekly_playcount.count_standard}"/><Run Text=" on Standard Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-osu-small.png" Height="30" /></InlineUIContainer></TextBlock>
+                <TextBlock FontFamily="{DynamicResource Aller}" Margin="50 0 0 0" FontSize="15" HorizontalAlignment="Left" TextAlignment="Left"><Run Text="- "/><Run FontWeight="Bold" Text="{Binding Path=weekly_playcount.count_taiko}"/><Run Text=" on Taiko Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-taiko-small.png" Height="30" /></InlineUIContainer></TextBlock>
+                <TextBlock FontFamily="{DynamicResource Aller}" Margin="50 0 0 0" FontSize="15" HorizontalAlignment="Left" TextAlignment="Left"><Run Text="- "/><Run FontWeight="Bold" Text="{Binding Path=weekly_playcount.count_ctb}"/><Run Text=" on Catch The Beat Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-fruits-small.png" Height="30" /></InlineUIContainer></TextBlock>
+                <TextBlock FontFamily="{DynamicResource Aller}" Margin="50 0 0 0" FontSize="15" HorizontalAlignment="Left" TextAlignment="Left"><Run Text="- "/><Run FontWeight="Bold" Text="{Binding Path=weekly_playcount.count_mania}"/><Run Text=" on Mania Mode"/><InlineUIContainer BaselineAlignment="TextBottom" ><Image Source="../assets/images/icons/game_modes/mode-mania-small.png" Height="30"/></InlineUIContainer></TextBlock>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="1" CornerRadius="15" Height="170">
+            <Border.Background>
+                <SolidColorBrush Color="{DynamicResource BannerPink}" />
+            </Border.Background>
+            <StackPanel VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" DataContext="{StaticResource staticBeatmapRecData}">
+                <TextBlock FontFamily="{DynamicResource AllerBold}" FontSize="20" Text="Last 3 new Beatmaps played" HorizontalAlignment="Center"/>
+                <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+                <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+                <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="2" CornerRadius="15" Height="170" Width="330">
+            <Border.Background>
+                <SolidColorBrush Color="{DynamicResource BannerPink}" />
+            </Border.Background>
+            <StackPanel VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" DataContext="{StaticResource staticBeatmapRecData}">
+                <TextBlock FontFamily="{DynamicResource AllerBold}" FontSize="20" Text="Performance of the Week" HorizontalAlignment="Center"/>
+                <TextBlock FontFamily="{DynamicResource AllerBold}" FontSize="15" Text="BEST" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+                <uc:BeatmapRectangle Width="330" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+                <TextBlock FontFamily="{DynamicResource AllerBold}" FontSize="15" Text="WORST" HorizontalAlignment="Center"/>
+                <uc:BeatmapRectangle Width="330" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+            </StackPanel>
+        </Border>
     </Grid>
 </Page>

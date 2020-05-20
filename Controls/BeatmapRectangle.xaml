@@ -23,7 +23,7 @@
                     <Image Margin="10 0 0 0" Name="i_gamemode" Source="{Binding Path=gameModeIcon, ElementName=btr, Converter={StaticResource NullToImageConverter}}" />
                     <TextBlock Name="tb_ppp" Margin="30 15 0 0" FontSize="20" FontFamily="{DynamicResource AllerBold}" HorizontalAlignment="Stretch" ><Run Text="{Binding Path=beatmapPercentage, ElementName=btr}"/><Run Text="%"/></TextBlock>
                     <TextBlock Margin="0 15 0 10" FontSize="20" FontFamily="{DynamicResource AllerBold}"><Run Text="/"/></TextBlock>
-                    <TextBlock Margin="0 15 0 10" FontSize="20" FontFamily="{DynamicResource AllerBold}"><Run Text="{Binding Path=beatmapPP, ElementName=btr}"/><Run Text="pp"/></TextBlock>
+                    <TextBlock Margin="0 15 0 10" FontSize="20" FontFamily="{DynamicResource AllerBold}" HorizontalAlignment="Right"><Run Text="{Binding Path=beatmapPP, ElementName=btr}"/><Run Text="pp"/></TextBlock>
                 </WrapPanel>
             </Border>
         </Border>
