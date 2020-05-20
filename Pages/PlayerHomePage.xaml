@@ -4,12 +4,14 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ihcProject.Pages"
+      xmlns:data="clr-namespace:ihcProject.Data"
       xmlns:uc="clr-namespace:ihcProject.Controls"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PlayerHomePage">
     <Page.Resources>
         <local:ValueColorConverter x:Key="ValueColorConverter"/>
+        <data:staticBeatmapRecData x:Key="staticBeatmapRecData"/>
     </Page.Resources>
     
     <Grid>
@@ -37,6 +39,12 @@
             <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_taiko}"/><Run Text=" on Taiko Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-taiko-small.png" Height="30" /></InlineUIContainer></TextBlock>
             <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_ctb}"/><Run Text=" on Catch The Beat Mode"/><InlineUIContainer BaselineAlignment="TextBottom"><Image Source="../assets/images/icons/game_modes/mode-fruits-small.png" Height="30" /></InlineUIContainer></TextBlock>
             <TextBlock FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center" TextAlignment="Left"><Run Text="- "/><Run Text="{Binding Path=weekly_playcount.count_mania}"/><Run Text=" on Mania Mode"/><InlineUIContainer BaselineAlignment="TextBottom" ><Image Source="../assets/images/icons/game_modes/mode-mania-small.png" Height="30"/></InlineUIContainer></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" DataContext="{StaticResource staticBeatmapRecData}">
+            <TextBlock FontFamily="{DynamicResource AllerBold}" Text="Last 3 new Beatmaps played" HorizontalAlignment="Center"/>
+            <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+            <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+            <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
         </StackPanel>
     </Grid>
 </Page>

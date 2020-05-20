@@ -1,6 +1,7 @@
 ﻿using ihcProject.Classes;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,7 @@ namespace ihcProject.Pages
     {
 
         UserTemplate cUserData;
+
         public PlayerHomePage()
         {
             var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().Last();
@@ -30,8 +32,6 @@ namespace ihcProject.Pages
             DataContext = cUserData;
             InitializeComponent();
         }
-
-
     }
 
     public class ValueColorConverter : IValueConverter
