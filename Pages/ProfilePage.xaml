@@ -6,14 +6,17 @@
       xmlns:local="clr-namespace:ihcProject.Pages"
       xmlns:uc="clr-namespace:ihcProject.Controls" 
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1200" d:DesignWidth="800"
       Title="ProfilePage">
 
+    <ScrollViewer> 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
-            <RowDefinition/>
+            <RowDefinition Height="1000"/>
         </Grid.RowDefinitions>
         <uc:PlayerHeader Width="Auto" VerticalAlignment="Top" Height="200"/>
+        <TextBlock Grid.Row="1" VerticalAlignment="Bottom"> Scrolling test</TextBlock>
     </Grid>
+    </ScrollViewer> 
 </Page>

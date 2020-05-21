@@ -15,8 +15,5 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <uc:PlayerHeader Width="Auto" VerticalAlignment="Top" Height="200"/>
-        <ScrollViewer Grid.Row="1">
-            
-        </ScrollViewer>
     </Grid>
 </Page>
