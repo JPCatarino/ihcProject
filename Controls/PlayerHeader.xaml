@@ -44,6 +44,11 @@
             <ColumnDefinition Width="400"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <Border Grid.Column="1" Grid.RowSpan="1" BorderBrush="Black" BorderThickness="1, 0, 0, 0" Background="{x:Null}"/>
+        <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0, 0, 0, 1" Background="{x:Null}"/>
+        <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0, 0, 0, 1" Background="{x:Null}"/>
+
+
         <WrapPanel Grid.Column="0" Width="Auto" Height="Auto">
             <Image Source="../assets/images/avatars/angel.png" Width="185" Height="190" Margin="5 5 0 0"></Image>
             <StackPanel Width="200" Margin="10 0 0 0">
@@ -99,7 +104,7 @@
                 </WrapPanel>
             </StackPanel>
         </WrapPanel>
-        <Grid Grid.Column="1" Width="Auto" Height="Auto">
+        <Grid Grid.Column="1" HorizontalAlignment="Center">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="280"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -108,6 +113,7 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
+
             <WrapPanel Grid.Row="0" Grid.Column="0" Width="Auto" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Margin="0 0 10 0">
                     <Image Source="../assets/images/icons/ranks/ranking-A.png" Width="40" Height="40"/>
@@ -141,7 +147,7 @@
                     <Run FontWeight="Bold" Text="150,264,360,212"/> ranked score
                 </TextBlock>
             </StackPanel>
-            <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="20,30,19,36" Width="81" Height="Auto">
+            <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="20,30,19,36" Width="81" Height="Auto">
                 <TextBlock FontSize="15" FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center">
                     <Run FontWeight="Bold"  Text="12448"/> pp
                 </TextBlock>
