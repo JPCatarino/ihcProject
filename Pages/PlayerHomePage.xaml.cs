@@ -27,7 +27,7 @@ namespace ihcProject.Pages
 
         public PlayerHomePage()
         {
-            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().Last();
+            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
             cUserData = PlayerWindow.cUserData;
             DataContext = cUserData;
             InitializeComponent();
