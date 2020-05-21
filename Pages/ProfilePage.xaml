@@ -9,7 +9,6 @@
       d:DesignHeight="1200" d:DesignWidth="800"
       Title="ProfilePage">
 
-    <ScrollViewer> 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
@@ -18,5 +17,4 @@
         <uc:PlayerHeader Width="Auto" VerticalAlignment="Top" Height="200"/>
         <TextBlock Grid.Row="1" VerticalAlignment="Bottom"> Scrolling test</TextBlock>
     </Grid>
-    </ScrollViewer> 
 </Page>

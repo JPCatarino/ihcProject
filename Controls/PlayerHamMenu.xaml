@@ -53,7 +53,9 @@
             </mah:HamburgerMenu.ItemsSource>
 
             <mah:HamburgerMenu.Content>
-                <Frame ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" Source="../Pages/PlayerHomePage.xaml" NavigationUIVisibility="Hidden" Name="navFrame" Grid.Column="2"></Frame>
+                <ScrollViewer ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <Frame Source="../Pages/PlayerHomePage.xaml" NavigationUIVisibility="Hidden" Name="navFrame" Grid.Column="2"></Frame>
+                </ScrollViewer>
             </mah:HamburgerMenu.Content>
         </mah:HamburgerMenu>
     </Grid>
