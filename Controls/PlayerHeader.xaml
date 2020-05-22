@@ -39,7 +39,10 @@
         </Style>
     </UserControl.Resources>
 
-    <Grid Background="#FFF789C9">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource BannerPink}"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="400"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
