@@ -10,10 +10,11 @@
       d:DesignHeight="1200" d:DesignWidth="1232"
       Title="ProfilePage">
 
-    <Grid>
+    <Grid Background="WhiteSmoke">
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
-            <RowDefinition Height="1000"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <uc:PlayerHeader Grid.Row="0" Width="Auto" VerticalAlignment="Top" Height="200"/>
 
@@ -28,6 +29,17 @@
                 <SolidColorBrush Color="{DynamicResource BannerPink}"/>
             </Border.Background>
         </Border>
-        <TextBlock Grid.Row="1" VerticalAlignment="Bottom"> Scrolling test</TextBlock>
+
+        <TextBlock Grid.Row="2" FontSize="30" FontFamily="{DynamicResource AllerDisplay}" Margin="10 60 0 0">
+            <Run Text="Stat Showcase"/>
+            <InlineUIContainer BaselineAlignment="Center">
+                <iconPacks:PackIconTypicons Width="25" Height="25" Kind="Cog"/>
+            </InlineUIContainer>
+        </TextBlock>
+        <Border Grid.Row="2" Height="401" Width="Auto" VerticalAlignment="Top" Margin="0 100 0 30">
+            <Border.Background>
+                <SolidColorBrush Color="{DynamicResource BannerPink}"/>
+            </Border.Background>
+        </Border>
     </Grid>
 </Page>

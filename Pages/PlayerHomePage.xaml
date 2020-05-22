@@ -14,7 +14,7 @@
         <data:staticBeatmapRecData x:Key="staticBeatmapRecData"/>
     </Page.Resources>
     
-    <Grid>
+    <Grid Background="WhiteSmoke">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
