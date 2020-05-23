@@ -20,6 +20,7 @@ namespace ihcProject.Pages
     /// </summary>
     public partial class ProfilePage : Page
     {
+        //List<ComboBox> selectedComboBox;
         public ProfilePage()
         {
             InitializeComponent();
@@ -37,10 +38,27 @@ namespace ihcProject.Pages
             r_cb4.Visibility = Visibility.Collapsed;
             b_perf_cancel.Visibility = Visibility.Visible;
             b_perf_save.Visibility = Visibility.Visible;
+            b_perf_clean.Visibility = Visibility.Visible;
         }
 
         private void b_perf_save_Click(object sender, RoutedEventArgs e)
         {
+            disablePerfConf();
+            //selectedComboBox.Clear();
+
+        }
+
+        private void b_perf_cancel_Click(object sender, RoutedEventArgs e)
+        {
+            //selectedComboBox.ForEach(delegate(ComboBox cb){
+            //    cb.SelectedItem = -1;
+            //});
+            disablePerfConf();
+            //selectedComboBox.Clear();
+
+        }
+
+        private void disablePerfConf() {
             cb1.IsEnabled = false;
             cb2.IsEnabled = false;
             cb3.IsEnabled = false;
@@ -51,6 +69,12 @@ namespace ihcProject.Pages
             r_cb4.Visibility = Visibility.Visible;
             b_perf_cancel.Visibility = Visibility.Collapsed;
             b_perf_save.Visibility = Visibility.Collapsed;
+            b_perf_clean.Visibility = Visibility.Collapsed;
+        }
+
+        private void cb_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("got focus");
         }
     }
 }
