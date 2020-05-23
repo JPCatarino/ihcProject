@@ -37,7 +37,6 @@ namespace ihcProject.Pages
             TextBox tb_u = sender as TextBox;
 
             if (br_un.Background != new SolidColorBrush(Colors.White)) {
-                tb_u.Text = String.Empty;
                 br_un.Background = new SolidColorBrush(Colors.White);
             }
             if (!userHasBeenClicked) {
@@ -52,7 +51,6 @@ namespace ihcProject.Pages
 
             if (br_pass.Background != new SolidColorBrush(Colors.White))
             {
-                pb_p.Password = String.Empty;
                 br_pass.Background = new SolidColorBrush(Colors.White);
             }
             if (!passHasBeenClicked)
