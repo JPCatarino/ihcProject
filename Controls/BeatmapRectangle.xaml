@@ -12,7 +12,7 @@
     </UserControl.Resources>
 
     <Grid Width="Auto">
-        <Border CornerRadius="15" BorderThickness="1" Height="50" Width="Auto" OpacityMask="#FFEB0000">
+        <Border CornerRadius="15" BorderThickness="1" Height="Auto" Width="Auto" OpacityMask="#FFEB0000">
             <Border.Background>
                 <ImageBrush ImageSource="{Binding Path=beatmapImage, ElementName=btr, Converter={StaticResource NullToImageConverter}}" Stretch="UniformToFill" Opacity="0.65"/>
             </Border.Background>

@@ -24,5 +24,33 @@ namespace ihcProject.Pages
         {
             InitializeComponent();
         }
+
+        private void b_perf_Click(object sender, RoutedEventArgs e)
+        {
+            cb1.IsEnabled = true;
+            cb2.IsEnabled = true;
+            cb3.IsEnabled = true;
+            cb4.IsEnabled = true;
+            r_cb1.Visibility = Visibility.Collapsed;
+            r_cb2.Visibility = Visibility.Collapsed;
+            r_cb3.Visibility = Visibility.Collapsed;
+            r_cb4.Visibility = Visibility.Collapsed;
+            b_perf_cancel.Visibility = Visibility.Visible;
+            b_perf_save.Visibility = Visibility.Visible;
+        }
+
+        private void b_perf_save_Click(object sender, RoutedEventArgs e)
+        {
+            cb1.IsEnabled = false;
+            cb2.IsEnabled = false;
+            cb3.IsEnabled = false;
+            cb4.IsEnabled = false;
+            r_cb1.Visibility = Visibility.Visible;
+            r_cb2.Visibility = Visibility.Visible;
+            r_cb3.Visibility = Visibility.Visible;
+            r_cb4.Visibility = Visibility.Visible;
+            b_perf_cancel.Visibility = Visibility.Collapsed;
+            b_perf_save.Visibility = Visibility.Collapsed;
+        }
     }
 }

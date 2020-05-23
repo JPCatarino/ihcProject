@@ -152,6 +152,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\BeatmapSplitButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\PlayerHamMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -179,6 +183,9 @@
     <Compile Include="Classes\UserTemplate.cs" />
     <Compile Include="Controls\BeatmapRectangle.xaml.cs">
       <DependentUpon>BeatmapRectangle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BeatmapSplitButton.xaml.cs">
+      <DependentUpon>BeatmapSplitButton.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\PlayerHamMenu.xaml.cs">
       <DependentUpon>PlayerHamMenu.xaml</DependentUpon>

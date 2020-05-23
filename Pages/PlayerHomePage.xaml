@@ -52,9 +52,9 @@
             </Border.Background>
             <StackPanel VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" DataContext="{StaticResource staticBeatmapRecData}">
                 <TextBlock FontFamily="{DynamicResource AllerBold}" FontSize="20" Text="Last 3 new Beatmaps played" HorizontalAlignment="Center"/>
-                <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
-                <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
-                <uc:BeatmapRectangle beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+                <uc:BeatmapRectangle Height="50" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+                <uc:BeatmapRectangle Height="50" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+                <uc:BeatmapRectangle Height="50" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
             </StackPanel>
         </Border>
 
@@ -65,9 +65,9 @@
             <StackPanel VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" DataContext="{StaticResource staticBeatmapRecData}">
                 <TextBlock FontFamily="{DynamicResource AllerBold}" FontSize="20" Text="Performance of the Week" HorizontalAlignment="Center"/>
                 <TextBlock FontFamily="{DynamicResource AllerBold}" FontSize="15" Text="BEST" HorizontalAlignment="Center" Margin="0 10 0 0"/>
-                <uc:BeatmapRectangle Width="330" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+                <uc:BeatmapRectangle Height="50" Width="330" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
                 <TextBlock FontFamily="{DynamicResource AllerBold}" FontSize="15" Text="WORST" HorizontalAlignment="Center"/>
-                <uc:BeatmapRectangle Width="330" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
+                <uc:BeatmapRectangle Height="50" Width="330" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></uc:BeatmapRectangle>
             </StackPanel>
         </Border>
     </Grid>

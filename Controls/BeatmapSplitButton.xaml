@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="ihcProject.Controls.BeatmapSplitButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:local="clr-namespace:ihcProject.Controls"
+             xmlns:data="clr-namespace:ihcProject.Data"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="500">
+    <UserControl.Resources>
+        <data:staticBeatmapRecData x:Key="staticBeatmapRecData"/>
+    </UserControl.Resources>
+
+    <Grid DataContext="{StaticResource staticBeatmapRecData}">
+        <ComboBox BorderThickness="0">
+            <ComboBox.Background>
+                <SolidColorBrush Color="{DynamicResource BannerPink}"/>
+            </ComboBox.Background>
+            <ComboBoxItem>
+                <local:BeatmapRectangle Height="90" Width="490" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></local:BeatmapRectangle>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <local:BeatmapRectangle Height="90" Width="490" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></local:BeatmapRectangle>
+            </ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</UserControl>
