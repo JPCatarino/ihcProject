@@ -86,16 +86,25 @@
         <TextBlock Grid.Row="2" FontSize="30" FontFamily="{DynamicResource AllerDisplay}" Margin="10 60 0 0">
             <Run Text="Stat Showcase"/>
             <InlineUIContainer BaselineAlignment="Center">
-                 <Button BorderThickness="0">
+                 <Button Name="b_stat" BorderThickness="0" Click="b_stat_Click">
                     <iconPacks:PackIconTypicons Width="25" Height="25" Kind="Cog"/>
                 </Button>
+            </InlineUIContainer>
+            <InlineUIContainer BaselineAlignment="Center">
+                <Button Click="b_stat_save_Click" x:Name="b_stat_save" Content="Save" Width="48" Visibility="Hidden"></Button>
+            </InlineUIContainer>
+            <InlineUIContainer BaselineAlignment="Center">
+                <Button Click="b_stat_cancel_Click" x:Name="b_stat_cancel" Width="48" Content="Cancel" Visibility="Hidden"></Button>
+            </InlineUIContainer>
+            <InlineUIContainer BaselineAlignment="Center">
+                <Button Click="b_stat_clean_Click" x:Name="b_stat_clean" Content="Clean" Width="48" Visibility="Hidden"></Button>
             </InlineUIContainer>
         </TextBlock>
         <Border Grid.Row="2" Height="401" Width="Auto" VerticalAlignment="Top" Margin="0 100 0 30">
             <Border.Background>
                 <SolidColorBrush Color="{DynamicResource BannerPink}"/>
             </Border.Background>
-            <uc:ProfileStatShowcase/>
+            <uc:ProfileStatShowcase x:Name="pss_main" Loaded="pss_main_Loaded"/>
         </Border>
     </Grid>
 </Page>

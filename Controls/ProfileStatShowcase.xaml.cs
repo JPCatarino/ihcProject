@@ -42,14 +42,17 @@ namespace ihcProject.Controls
                     text.VerticalAlignment = VerticalAlignment.Center;
                     text.HorizontalAlignment = HorizontalAlignment.Center;
                     b_graph.Child = text;
+                    tb_stat.Text = "";
                     break;
                 case "Performance Points Gain (Year)":
                     PerformancePointsYearLineChart pointsYearLineChart = new PerformancePointsYearLineChart();
                     b_graph.Child = pointsYearLineChart;
+                    tb_stat.Text = "Performance Points Gain (Year)";
                     break;
                 case "Game Mode Frequency (Week)":
                     GameModeHeatMap gameModeHeatMap = new GameModeHeatMap();
                     b_graph.Child = gameModeHeatMap;
+                    tb_stat.Text = "Game Mode Frequency (Week)";
                     break;
             }
         }
@@ -60,11 +63,23 @@ namespace ihcProject.Controls
 
         public void hideCombo()
         {
+            tb_stat.Visibility = Visibility.Visible;
             cb_main.Visibility = Visibility.Hidden;
         }
 
         public void showCombo() {
+            tb_stat.Visibility = Visibility.Collapsed;
             cb_main.Visibility = Visibility.Visible;
+        }
+
+        public void setIndex(int i)
+        {
+            cb_main.SelectedIndex = i;
+        }
+
+        public int getIndex()
+        {
+            return cb_main.SelectedIndex;
         }
     }
 }

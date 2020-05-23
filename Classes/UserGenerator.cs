@@ -42,6 +42,7 @@ namespace ihcProject.Classes
             temp.cb2_item = 0;
             temp.cb3_item = 0;
             temp.cb4_item = 0;
+            temp.pss_item = 0;
             return temp;
 
         }

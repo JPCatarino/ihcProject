@@ -37,7 +37,8 @@
     
     <Grid>
         <Border Margin="0 60 0 0" x:Name="b_graph"></Border>
-        <ComboBox Name="cb_main" Height="60" Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" SelectionChanged="ComboBox_SelectionChanged" SelectedIndex="0">
+        <TextBlock x:Name="tb_stat" Height="60" Width="Auto" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="{DynamicResource Aller}" Margin="10 20 0 0" FontSize="25" Foreground="WhiteSmoke" />
+        <ComboBox Visibility="Hidden" Name="cb_main" Height="60" Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" SelectionChanged="ComboBox_SelectionChanged" SelectedIndex="0">
             <ComboBoxItem FontFamily="{DynamicResource Aller}">
                 None
             </ComboBoxItem>

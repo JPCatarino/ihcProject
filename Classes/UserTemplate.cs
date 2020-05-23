@@ -152,7 +152,7 @@ namespace ihcProject.Classes
         public int cb2_item { get; set; }
         public int cb3_item { get; set; }
         public int cb4_item { get; set; }
-
+        public int pss_item { get; set; }
     }
 
 }

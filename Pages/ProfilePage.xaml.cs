@@ -88,6 +88,39 @@ namespace ihcProject.Pages
             b_perf_clean.Visibility = Visibility.Collapsed;
         }
 
+        private void b_stat_Click(object sender, RoutedEventArgs e)
+        {
+            pss_main.showCombo();
+            b_stat_cancel.Visibility = Visibility.Visible;
+            b_stat_save.Visibility = Visibility.Visible;
+            b_stat_clean.Visibility = Visibility.Visible;
+        }
+
+        private void b_stat_save_Click(object sender, RoutedEventArgs e)
+        {
+            disableStatConf();
+            cUserData.profile_choices.pss_item = pss_main.getIndex();
+        }
+
+        private void b_stat_cancel_Click(object sender, RoutedEventArgs e)
+        {
+            disableStatConf();
+            pss_main.setIndex(cUserData.profile_choices.pss_item);
+        }
+
+        private void b_stat_clean_Click(object sender, RoutedEventArgs e)
+        {
+            pss_main.setIndex(0);
+        }
+
+        private void disableStatConf()
+        {
+            pss_main.hideCombo();
+            b_stat_cancel.Visibility = Visibility.Collapsed;
+            b_stat_save.Visibility = Visibility.Collapsed;
+            b_stat_clean.Visibility = Visibility.Collapsed;
+        }
+
         private void cb1_Loaded(object sender, RoutedEventArgs e)
         {
             BeatmapSplitButton aux = (BeatmapSplitButton)sender;
@@ -110,6 +143,12 @@ namespace ihcProject.Pages
         {
             BeatmapSplitButton aux = (BeatmapSplitButton)sender;
             aux.setIndex(cUserData.profile_choices.cb4_item);
+        }
+
+        private void pss_main_Loaded(object sender, RoutedEventArgs e)
+        {
+            ProfileStatShowcase aux = (ProfileStatShowcase)sender;
+            aux.setIndex(cUserData.profile_choices.pss_item);
         }
     }
 }
