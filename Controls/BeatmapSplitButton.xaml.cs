@@ -24,5 +24,13 @@ namespace ihcProject.Controls
         {
             InitializeComponent();
         }
+
+        public void setIndex(int i) {
+            cb_main.SelectedIndex = i;
+        }
+
+        public int getIndex() {
+            return cb_main.SelectedIndex;
+        }
     }
 }

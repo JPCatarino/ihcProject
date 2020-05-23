@@ -40,7 +40,7 @@
                 <Button Click="b_perf_cancel_Click" x:Name="b_perf_cancel" Width="48" Content="Cancel" Visibility="Hidden"></Button>
             </InlineUIContainer>
             <InlineUIContainer BaselineAlignment="Center">
-                <Button x:Name="b_perf_clean" Content="Clean" Width="48" Visibility="Hidden"></Button>
+                <Button Click="b_perf_clean_Click" x:Name="b_perf_clean" Content="Clean" Width="48" Visibility="Hidden"></Button>
             </InlineUIContainer>
         </TextBlock>
         <Border Grid.Row="1" Height="200" Width="Auto" VerticalAlignment="Top" Margin="0 100 0 0">
@@ -73,12 +73,12 @@
                     </Rectangle.Fill>
                 </Rectangle>
                 <StackPanel Grid.Column="0">
-                    <uc:BeatmapSplitButton GotFocus="cb_GotFocus" x:Name="cb1" IsEnabled="False" />
-                    <uc:BeatmapSplitButton GotFocus="cb_GotFocus" x:Name="cb2" IsEnabled="False"/>
+                    <uc:BeatmapSplitButton Loaded="cb1_Loaded" x:Name="cb1" IsEnabled="False" />
+                    <uc:BeatmapSplitButton Loaded="cb2_Loaded" x:Name="cb2" IsEnabled="False"/>
                 </StackPanel>
                 <StackPanel Grid.Column="1">
-                    <uc:BeatmapSplitButton GotFocus="cb_GotFocus" x:Name="cb3" IsEnabled="False"/>
-                    <uc:BeatmapSplitButton GotFocus="cb_GotFocus" x:Name="cb4" IsEnabled="False"/>
+                    <uc:BeatmapSplitButton Loaded="cb3_Loaded" x:Name="cb3" IsEnabled="False"/>
+                    <uc:BeatmapSplitButton Loaded="cb4_Loaded" x:Name="cb4" IsEnabled="False"/>
                 </StackPanel>
             </Grid>
         </Border>

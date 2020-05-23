@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ihcProject.Classes;
+using ihcProject.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,13 @@ namespace ihcProject.Pages
     /// </summary>
     public partial class ProfilePage : Page
     {
-        //List<ComboBox> selectedComboBox;
+        UserTemplate cUserData;
+
         public ProfilePage()
         {
+            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
+            cUserData = PlayerWindow.cUserData;
+            DataContext = cUserData;
             InitializeComponent();
         }
 
@@ -44,18 +50,28 @@ namespace ihcProject.Pages
         private void b_perf_save_Click(object sender, RoutedEventArgs e)
         {
             disablePerfConf();
-            //selectedComboBox.Clear();
-
+            cUserData.profile_choices.cb1_item = cb1.getIndex();
+            cUserData.profile_choices.cb2_item = cb2.getIndex();
+            cUserData.profile_choices.cb3_item = cb3.getIndex();
+            cUserData.profile_choices.cb4_item = cb4.getIndex();
         }
 
         private void b_perf_cancel_Click(object sender, RoutedEventArgs e)
         {
-            //selectedComboBox.ForEach(delegate(ComboBox cb){
-            //    cb.SelectedItem = -1;
-            //});
+            cb1.setIndex(cUserData.profile_choices.cb1_item);
+            cb2.setIndex(cUserData.profile_choices.cb2_item);
+            cb3.setIndex(cUserData.profile_choices.cb3_item);
+            cb4.setIndex(cUserData.profile_choices.cb4_item);
             disablePerfConf();
-            //selectedComboBox.Clear();
 
+        }
+
+        private void b_perf_clean_Click(object sender, RoutedEventArgs e)
+        {
+            cb1.setIndex(0);
+            cb2.setIndex(0);
+            cb3.setIndex(0);
+            cb4.setIndex(0);
         }
 
         private void disablePerfConf() {
@@ -72,9 +88,28 @@ namespace ihcProject.Pages
             b_perf_clean.Visibility = Visibility.Collapsed;
         }
 
-        private void cb_GotFocus(object sender, RoutedEventArgs e)
+        private void cb1_Loaded(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("got focus");
+            BeatmapSplitButton aux = (BeatmapSplitButton)sender;
+            aux.setIndex(cUserData.profile_choices.cb1_item);
+        }
+
+        private void cb2_Loaded(object sender, RoutedEventArgs e)
+        {
+            BeatmapSplitButton aux = (BeatmapSplitButton)sender;
+            aux.setIndex(cUserData.profile_choices.cb2_item);
+        }
+
+        private void cb3_Loaded(object sender, RoutedEventArgs e)
+        {
+            BeatmapSplitButton aux = (BeatmapSplitButton)sender;
+            aux.setIndex(cUserData.profile_choices.cb3_item);
+        }
+
+        private void cb4_Loaded(object sender, RoutedEventArgs e)
+        {
+            BeatmapSplitButton aux = (BeatmapSplitButton)sender;
+            aux.setIndex(cUserData.profile_choices.cb4_item);
         }
     }
 }

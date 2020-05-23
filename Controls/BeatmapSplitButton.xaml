@@ -14,7 +14,7 @@
     </UserControl.Resources>
 
     <Grid DataContext="{StaticResource staticBeatmapRecData}">
-        <ComboBox BorderThickness="0">
+        <ComboBox BorderThickness="0" SelectedIndex="0" Name="cb_main">
             <ComboBox.Background>
                 <SolidColorBrush Color="{DynamicResource BannerPink}"/>
             </ComboBox.Background>
