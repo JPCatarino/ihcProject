@@ -19,6 +19,33 @@
                 <SolidColorBrush Color="{DynamicResource BannerPink}"/>
             </ComboBox.Background>
             <ComboBoxItem>
+                <Border CornerRadius="15" Height="90" Width="490" BorderThickness="1,0,1,1">
+                    <Border.BorderBrush>
+                        <DrawingBrush Viewport="0,0,8,8" ViewportUnits="Absolute" TileMode="Tile">
+                            <DrawingBrush.Drawing>
+                                <DrawingGroup>
+                                    <GeometryDrawing Brush="Black">
+                                        <GeometryDrawing.Geometry>
+                                            <GeometryGroup>
+                                                <RectangleGeometry Rect="0,0,50,50" />
+                                                <RectangleGeometry Rect="50,50,50,50" />
+                                            </GeometryGroup>
+                                        </GeometryDrawing.Geometry>
+                                    </GeometryDrawing>
+                                </DrawingGroup>
+                            </DrawingBrush.Drawing>
+                        </DrawingBrush>
+                    </Border.BorderBrush>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="{DynamicResource Aller}">No Performance Selected</TextBlock>
+                </Border>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <local:BeatmapRectangle Height="90" Width="490" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></local:BeatmapRectangle>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <local:BeatmapRectangle Height="90" Width="490" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></local:BeatmapRectangle>
+            </ComboBoxItem>
+            <ComboBoxItem>
                 <local:BeatmapRectangle Height="90" Width="490" beatmapImage="{Binding Path=StaticBeatmapImage}" rankIcon="{Binding Path=StaticRankIcon}" beatmapName="{Binding Path=StaticBeatmapName}" gameModeIcon="{Binding Path=StaticGameModeIcon}" beatmapPercentage="{Binding Path=StaticBeatmapPercentage}" beatmapPP="{Binding Path=StaticBeatmapPP}"></local:BeatmapRectangle>
             </ComboBoxItem>
             <ComboBoxItem>
