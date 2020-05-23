@@ -164,6 +164,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\ProfileStatShowcase.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ComparePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -192,6 +196,9 @@
     </Compile>
     <Compile Include="Controls\PlayerHeader.xaml.cs">
       <DependentUpon>PlayerHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProfileStatShowcase.xaml.cs">
+      <DependentUpon>ProfileStatShowcase.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data\staticBeatmapRecData.cs" />
     <Compile Include="Pages\ComparePage.xaml.cs">
