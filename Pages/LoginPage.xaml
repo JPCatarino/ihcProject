@@ -65,7 +65,7 @@
                                                HorizontalAlignment="Center"
                                                Foreground="White"/>
                 </StackPanel>
-                <Border Width="250"
+                <Border Name="br_un" Width="250"
                        Height="2"
                        Background="White"
                        Opacity="0.5"/>
@@ -94,7 +94,7 @@
                                                HorizontalAlignment="Center"
                                                Foreground="White"/>
                 </StackPanel>
-                <Border Width="250"
+                <Border Name="br_pass" Width="250"
                        Height="2"
                        Background="White"
                        Opacity="0.5"/>

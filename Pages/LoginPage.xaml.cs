@@ -1,4 +1,6 @@
 ﻿using ihcProject.Classes;
+using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -32,8 +34,13 @@ namespace ihcProject.Pages
 
         private void tb_username_GotFocus(object sender, RoutedEventArgs e)
         {
+            TextBox tb_u = sender as TextBox;
+
+            if (br_un.Background != new SolidColorBrush(Colors.White)) {
+                tb_u.Text = String.Empty;
+                br_un.Background = new SolidColorBrush(Colors.White);
+            }
             if (!userHasBeenClicked) {
-                TextBox tb_u = sender as TextBox;
                 tb_u.Text = String.Empty;
                 userHasBeenClicked = true;
             }
@@ -41,9 +48,15 @@ namespace ihcProject.Pages
 
         private void pb_password_GotFocus(object sender, RoutedEventArgs e)
         {
+            PasswordBox pb_p = sender as PasswordBox;
+
+            if (br_pass.Background != new SolidColorBrush(Colors.White))
+            {
+                pb_p.Password = String.Empty;
+                br_pass.Background = new SolidColorBrush(Colors.White);
+            }
             if (!passHasBeenClicked)
             {
-                PasswordBox pb_p = sender as PasswordBox;
                 pb_p.Password = String.Empty;
                 passHasBeenClicked = true;
             }
@@ -69,7 +82,7 @@ namespace ihcProject.Pages
             }
         }
 
-        private void b_login_Click(object sender, RoutedEventArgs e)
+        private async void b_login_Click(object sender, RoutedEventArgs e)
         {
             // TODO : READ WHAT TYPE OF THE USER IS THE PERSON LOGIN IN
             /**
@@ -108,12 +121,10 @@ namespace ihcProject.Pages
             }
             else
             {
-                mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
-                mainWindow.hideBackButton();
-                NavigationService.GoBack();
-                n_window = new PlayerWindow();
-                n_window.Show();
-                mainWindow.Hide();
+                var metroWindow = (Application.Current.MainWindow as MetroWindow);
+                await metroWindow.ShowMessageAsync("Login Failed", "Wrong Username and/or Password" , MessageDialogStyle.Affirmative);
+                br_un.Background = new SolidColorBrush(Colors.Red);
+                br_pass.Background = new SolidColorBrush(Colors.Red);
             }
         }
     }
