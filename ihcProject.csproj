@@ -156,6 +156,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\GameModeHeatMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\PlayerHamMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -190,6 +194,9 @@
     </Compile>
     <Compile Include="Controls\BeatmapSplitButton.xaml.cs">
       <DependentUpon>BeatmapSplitButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameModeHeatMap.xaml.cs">
+      <DependentUpon>GameModeHeatMap.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\PlayerHamMenu.xaml.cs">
       <DependentUpon>PlayerHamMenu.xaml</DependentUpon>
