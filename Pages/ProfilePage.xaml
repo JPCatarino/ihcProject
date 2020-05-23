@@ -52,22 +52,22 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Rectangle Name="r_cb1" Grid.Column="0" Height="30" Margin="553,35,47,135" Panel.ZIndex="1">
+                <Rectangle Name="r_cb1" Grid.Column="0" Height="30" Width="24" Margin="553,35,47,135" Panel.ZIndex="1">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="#FABAE8"/>
                     </Rectangle.Fill>
                 </Rectangle>
-                <Rectangle Name="r_cb2" Grid.Column="0" Height="30" Margin="553,131,47,39" Panel.ZIndex="1">
+                <Rectangle Name="r_cb2" Grid.Column="0" Height="30" Width="24" Margin="553,131,47,39" Panel.ZIndex="1">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="#FABAE8"/>
                     </Rectangle.Fill>
                 </Rectangle>
-                <Rectangle Name="r_cb3" Grid.Column="1" Height="30" Panel.ZIndex="1" Margin="553,37,46,133">
+                <Rectangle Name="r_cb3" Grid.Column="1" Height="30" Width="23" Panel.ZIndex="1" Margin="553,37,46,133">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="#FABAE8"/>
                     </Rectangle.Fill>
                 </Rectangle>
-                <Rectangle Name="r_cb4" Grid.Column="1" Height="30" Panel.ZIndex="1" Margin="553,131,46,39">
+                <Rectangle Name="r_cb4" Grid.Column="1" Height="30" Width="23" Panel.ZIndex="1" Margin="553,131,46,39">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="#FABAE8"/>
                     </Rectangle.Fill>
