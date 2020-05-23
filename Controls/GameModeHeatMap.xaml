@@ -30,15 +30,15 @@
                     </lvc:HeatSeries.GradientStopCollection>
                 </lvc:HeatSeries>
             </lvc:CartesianChart.Series>
-            <lvc:CartesianChart.AxisX >
-                <lvc:Axis Labels="{Binding GameModes}" LabelsRotation="-15">
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis Labels="{Binding GameModes}" LabelsRotation="-15" Foreground="WhiteSmoke">
                     <lvc:Axis.Separator>
                         <lvc:Separator Step="1"></lvc:Separator>
                     </lvc:Axis.Separator>
                 </lvc:Axis>
             </lvc:CartesianChart.AxisX>
             <lvc:CartesianChart.AxisY>
-                <lvc:Axis Labels="{Binding Days}"></lvc:Axis>
+                <lvc:Axis Labels="{Binding Days}" Foreground="WhiteSmoke"></lvc:Axis>
             </lvc:CartesianChart.AxisY>
         </lvc:CartesianChart>
     </Grid>

@@ -97,13 +97,5 @@ namespace ihcProject.Controls
         public string[] Days { get; set; }
         public string[] GameModes { get; set; }
 
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
-        {
-            var r = new Random();
-            foreach (var chartValue in Values)
-            {
-                chartValue.Weight = r.Next(0, 101);
-            }
-        }
     }
 }

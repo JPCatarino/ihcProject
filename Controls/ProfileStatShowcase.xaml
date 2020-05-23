@@ -6,7 +6,47 @@
              xmlns:local="clr-namespace:ihcProject.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="Border" x:Key="dashed_border">
+            <Style.Setters>
+                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="BorderThickness" Value="1,0,1,1"/>
+                <Setter Property="Height" Value="Auto"/>
+                <Setter Property="Width" Value="Auto"/>
+                <Setter Property="BorderBrush">
+                    <Setter.Value>
+                        <DrawingBrush Viewport="0,0,8,8" ViewportUnits="Absolute" TileMode="Tile">
+                            <DrawingBrush.Drawing>
+                                <DrawingGroup>
+                                    <GeometryDrawing Brush="Black">
+                                        <GeometryDrawing.Geometry>
+                                            <GeometryGroup>
+                                                <RectangleGeometry Rect="0,0,50,50" />
+                                                <RectangleGeometry Rect="50,50,50,50" />
+                                            </GeometryGroup>
+                                        </GeometryDrawing.Geometry>
+                                    </GeometryDrawing>
+                                </DrawingGroup>
+                            </DrawingBrush.Drawing>
+                        </DrawingBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style.Setters>
+        </Style>
+    </UserControl.Resources>
+    
     <Grid>
-            
+        <Border Margin="0 60 0 0" x:Name="b_graph"></Border>
+        <ComboBox Name="cb_main" Height="60" Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" SelectionChanged="ComboBox_SelectionChanged" SelectedIndex="0">
+            <ComboBoxItem FontFamily="{DynamicResource Aller}">
+                None
+            </ComboBoxItem>
+            <ComboBoxItem FontFamily="{DynamicResource Aller}">
+                Performance Points Gain (Year)
+            </ComboBoxItem>
+            <ComboBoxItem FontFamily="{DynamicResource Aller}">
+                Game Mode Frequency (Week)
+            </ComboBoxItem>
+        </ComboBox>
     </Grid>
 </UserControl>

@@ -95,6 +95,7 @@
             <Border.Background>
                 <SolidColorBrush Color="{DynamicResource BannerPink}"/>
             </Border.Background>
+            <uc:ProfileStatShowcase/>
         </Border>
     </Grid>
 </Page>
