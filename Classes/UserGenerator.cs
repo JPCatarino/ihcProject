@@ -38,10 +38,10 @@ namespace ihcProject.Classes
 
         private Profile_Choices initProfile() {
             Profile_Choices temp = new Profile_Choices();
-            temp.cb1_item = -1;
-            temp.cb2_item = -1;
-            temp.cb3_item = -1;
-            temp.cb4_item = -1;
+            temp.cb1_item = 0;
+            temp.cb2_item = 0;
+            temp.cb3_item = 0;
+            temp.cb4_item = 0;
             return temp;
 
         }
