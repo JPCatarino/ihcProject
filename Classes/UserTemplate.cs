@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -62,6 +63,8 @@ namespace ihcProject.Classes
         public int unranked_beatmapset_count { get; set; }
         public User_Achievements[] user_achievements { get; set; }
         public object rankHistory { get; set; }
+        public Profile_Choices profile_choices { get; set; }
+
     }
 
     public class Kudosu
@@ -142,6 +145,14 @@ namespace ihcProject.Classes
     {
         public DateTime achieved_at { get; set; }
         public int achievement_id { get; set; }
+    }
+
+    public class Profile_Choices { 
+        public int cb1_item { get; set; }
+        public int cb2_item { get; set; }
+        public int cb3_item { get; set; }
+        public int cb4_item { get; set; }
+
     }
 
 }

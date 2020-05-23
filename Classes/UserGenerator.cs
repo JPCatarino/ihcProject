@@ -23,6 +23,7 @@ namespace ihcProject.Classes
             userTemp.avatar_url = randomAvatar();
             userTemp.statistics = generateStatistics();
             userTemp.weekly_playcount = generatePlaycounts();
+            userTemp.profile_choices = initProfile();
         }
 
         // Grabs a random avatar from the assets and returns it
@@ -33,6 +34,16 @@ namespace ihcProject.Classes
 
             // C# doesn't let you pick a random resource so I had to this mess.
             return "../assets/images/avatars/" + gender[rand.Next(gender.Length)] + "-" + rand.Next(0 ,8) + ".png";
+        }
+
+        private Profile_Choices initProfile() {
+            Profile_Choices temp = new Profile_Choices();
+            temp.cb1_item = -1;
+            temp.cb2_item = -1;
+            temp.cb3_item = -1;
+            temp.cb4_item = -1;
+            return temp;
+
         }
 
         private Statistics generateStatistics() {
