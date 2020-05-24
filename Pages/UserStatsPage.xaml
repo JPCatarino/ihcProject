@@ -116,8 +116,8 @@
         <Wpf:PieChart Grid.Row="7" LegendLocation="Left">
             <Wpf:PieChart.Series>
                 <Wpf:PieSeries Title="300" Values="124322" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
-                <Wpf:PieSeries Title="50" Values="4939" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
-                <Wpf:PieSeries Title="100" Values="31301" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+                <Wpf:PieSeries Title="50" Values="1939" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+                <Wpf:PieSeries Title="100" Values="10301" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
             </Wpf:PieChart.Series>
         </Wpf:PieChart>
 
