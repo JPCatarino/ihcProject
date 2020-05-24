@@ -93,10 +93,11 @@ namespace ihcProject.Classes
         public int pp_change { get; set; }
         public int pp_rank { get; set; }
         public int ranked_score { get; set; }
+        public int total_score { get; set; }
         public int hit_accuracy { get; set; }
         public int play_count { get; set; }
+        public int play_count_daily { get; set; }
         public int play_time { get; set; }
-        public int total_score { get; set; }
         public int total_hits { get; set; }
         public int maximum_combo { get; set; }
         public int replays_watched_by_others { get; set; }

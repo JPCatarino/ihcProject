@@ -66,6 +66,12 @@ namespace ihcProject.Classes
             ret.rank.country = rand.Next((int)ret.rank.global);
             ret.rank.rank_change = rand.Next(-20, 20);
 
+
+            //Generate scores
+            ret.ranked_score = rand.Next(100000000, 900000000);
+            ret.total_score = rand.Next(ret.ranked_score, 1900000000);
+            ret.play_count = rand.Next(1000, 50000);
+            ret.play_count_daily = rand.Next(1, 40);
             return ret;
         }
 

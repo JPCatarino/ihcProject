@@ -5,6 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ihcProject.Pages"
       xmlns:uc="clr-namespace:ihcProject.Controls"
+      xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
       mc:Ignorable="d" 
       d:DesignHeight="990" d:DesignWidth="800"
       Title="UserStats"
@@ -27,7 +28,7 @@
         </Grid.ColumnDefinitions>
         <uc:PlayerHeader Width="Auto" VerticalAlignment="Top" Height="200" Grid.ColumnSpan="2"/>
 
-        <TextBlock Foreground="#303960" Padding="15" Text="Overview" FontSize="20" Grid.ColumnSpan="2" Grid.Row="1" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
+        <TextBlock Foreground="#303960" Padding="15" Text="Overview" FontSize="30" Grid.ColumnSpan="2" Grid.Row="1" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
         <TextBlock Foreground="#303960" Padding="15" Text="Stats"  FontSize="20" Grid.Column="0" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
         <TextBlock Foreground="#303960" Padding="15" Text="Averages" TextAlignment="Right" FontSize="20" Grid.Column="1" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
 
@@ -48,13 +49,13 @@
             <TextBlock Grid.Row="1" Padding="10" Text="Ranked score:" FontSize="14" FontWeight="Bold" HorizontalAlignment="Right"/>
             <TextBlock Grid.Row="2" Padding="10" Text="Updated:" FontSize="14" FontWeight="Bold" HorizontalAlignment="Right"/>
             <TextBlock Grid.Row="3" Padding="10" Text="Total plays:" FontSize="14" FontWeight="Bold" HorizontalAlignment="Right"/>
-            <TextBlock Grid.Row="4" Padding="10" Text="Most poitns (daily):" FontSize="14" FontWeight="Bold" HorizontalAlignment="Right"/>
+            <TextBlock Grid.Row="4" Padding="10" Text="Average play count (daily):" FontSize="14" FontWeight="Bold" HorizontalAlignment="Right"/>
 
-            <TextBlock Grid.Row="0" Grid.Column="1" Padding="10" Text="data" FontSize="12" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" Text="data" FontSize="12" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" Text="data" FontSize="12" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" Text="data" FontSize="12" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" Text="data" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.total_score}" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.ranked_score}" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" Text="{Binding last_visit}" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.play_count}" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.play_count_daily}" FontSize="12" HorizontalAlignment="Center"/>
         </Grid>
 
         <!--Averages tab-->
@@ -95,5 +96,40 @@
             <TextBlock Grid.Row="4" Grid.Column="2" Padding="10" Text="data" FontSize="12"  HorizontalAlignment="Center"/>
         </Grid>
 
+        <TextBlock Foreground="#303960" Padding="15" Text="Recent High Scores" FontSize="20" Grid.ColumnSpan="2" Grid.Row="4" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
+        <DataGrid Grid.Row="5" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <!-- Binding="{Binding variable}" attach as header attr-->
+                <DataGridTextColumn Header="Date" Width="*"/>
+                <DataGridTextColumn Header="Rank" Width="*"/>
+                <DataGridTextColumn Header="Performance points" Width="*"/>
+                <DataGridTextColumn Header="Score" Width="*"/>
+                <DataGridTextColumn Header="Map title" Width="*"/>
+                <DataGridTextColumn Header="Modifiers" Width="*"/>
+            </DataGrid.Columns>
+            
+        </DataGrid>
+
+        <TextBlock Foreground="#303960" Padding="15" Text="Hit accuracy" FontSize="20" Grid.Row="6" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
+        <TextBlock Foreground="#303960" Padding="15" Text="Ranking ratio" FontSize="20" Grid.Row="6" Grid.Column="1" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
+
+        <Wpf:PieChart Grid.Row="7" LegendLocation="Left">
+            <Wpf:PieChart.Series>
+                <Wpf:PieSeries Title="300" Values="124322" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+                <Wpf:PieSeries Title="50" Values="4939" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+                <Wpf:PieSeries Title="100" Values="31301" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+            </Wpf:PieChart.Series>
+        </Wpf:PieChart>
+
+        <Wpf:PieChart Grid.Row="7" Grid.Column="2" LegendLocation="Right">
+            <Wpf:PieChart.Series>
+                <Wpf:PieSeries Title="A" Values="2421" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+                <Wpf:PieSeries Title="Silver_SS" Values="4" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+                <Wpf:PieSeries Title="Silver_S" Values="91" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+                <Wpf:PieSeries Title="SS" Values="904" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+                <Wpf:PieSeries Title="S" Values="1967" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+            </Wpf:PieChart.Series>
+        </Wpf:PieChart>
+        
     </Grid>
 </Page>
