@@ -3,12 +3,63 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:ihcProject.Pages"
+      xmlns:local="clr-namespace:ihcProject.Pages" xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ComparePage">
 
     <Grid>
-        
+        <Grid.Resources>
+        </Grid.Resources>
+        <!--maybe user player avatars and an iamge saying Versus instead of using text
+        <Image></Image>
+        <Image></Image>
+        <Image></Image>
+        -->
+        <!-- User Data -->
+        <TextBox Name="UserName" Margin="0,0,300,300" Width="150" Height="100"></TextBox>
+        <TextBox Name="UserRank" Margin="0,0,300,200" Width="150" Height="100"></TextBox>
+        <TextBox Name="UserAccuracy" Margin="0,0,300,150" Width="150" Height="100"></TextBox>
+        <TextBox Name="UserPlayCnt" Margin="0,0,300,100" Width="150" Height="100"></TextBox>
+        <TextBox Name="UserLvl" Margin="0,0,300,50" Width="150" Height="100"></TextBox>
+        <TextBox Name="UserPP" Margin="0,0,300,0" Width="150" Height="100"></TextBox>
+        <TextBox Name="UserTScore" Margin="0,25,300,0" Width="150" Height="50"></TextBox>
+        <!-- Vs Data -->
+        <TextBox Margin="0,0,100,300" Width="150" Height="100">Vs</TextBox>
+        <TextBox Margin="0,0,100,200" Width="150" Height="100">Rank</TextBox>
+        <TextBox Margin="0,0,100,150" Width="150" Height="100">Accuracy</TextBox>
+        <TextBox Margin="0,0,100,100" Width="150" Height="100">Play Count</TextBox>
+        <TextBox Margin="0,0,100,50" Width="150" Height="100">Level</TextBox>
+        <TextBox Margin="0,0,100,0" Width="150" Height="100">Performance Points</TextBox>
+        <TextBox Margin="0,25,100,0" Width="150" Height="50">Total Score</TextBox>
+        <!-- Compare Data -->
+        <TextBox Name="CompareName" Margin="150,0,0,300" Width="150" Height="100"></TextBox>
+        <TextBox Name="CompareRank" Margin="150,0,0,200" Width="150" Height="100"></TextBox>
+        <TextBox Name="CompareAccuracy" Margin="150,0,0,150" Width="150" Height="100"></TextBox>
+        <TextBox Name="ComparePlayCnt" Margin="150,0,0,100" Width="150" Height="100"></TextBox>
+        <TextBox Name="CompareLvl" Margin="150,0,0,50" Width="150" Height="100"></TextBox>
+        <TextBox Name="ComparePP" Margin="150,0,0,0" Width="150" Height="100"></TextBox>
+        <TextBox Name="CompareTScore" Margin="150,25,0,0" Width="150" Height="50"></TextBox>
+
+        <lvc:CartesianChart Name="Chart" Grid.Row="1" Margin="0,200,0,0" Grid.Column="0" Grid.ColumnSpan="2" RenderTransformOrigin="0.495,0.632">
+            <lvc:CartesianChart.Series>
+                <lvc:LineSeries Name="charta" LineSmoothness="1" StrokeThickness="10" 
+                                DataLabels="True" FontSize="20" Foreground="#6B303030"
+                                Stroke="HotPink" Fill="Transparent" PointGeometrySize="0"/>
+                <lvc:LineSeries Name="chartb" LineSmoothness="1" StrokeThickness="10" 
+                                DataLabels="True" FontSize="20" Foreground="#6B303030"
+                                Stroke="HotPink" Fill="Transparent" PointGeometrySize="0"/>
+            </lvc:CartesianChart.Series>
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis IsEnabled="False" ShowLabels="False"/>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Foreground="White" FontSize="14">
+                    <lvc:Axis.Separator>
+                        <lvc:Separator StrokeThickness="1" Stroke="Transparent" StrokeDashArray="8" Step="100" />
+                    </lvc:Axis.Separator>
+                </lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
     </Grid>
 </Page>
