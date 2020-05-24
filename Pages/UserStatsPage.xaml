@@ -7,20 +7,26 @@
       xmlns:uc="clr-namespace:ihcProject.Controls"
       xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
       mc:Ignorable="d" 
-      d:DesignHeight="990" d:DesignWidth="800"
+      d:DesignHeight="2000" d:DesignWidth="800"
       Title="UserStats"
       Background="#fff">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="80"/>
             <RowDefinition Height="60"/>
             <RowDefinition Height="200"/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="80"/>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="80"/>
             <RowDefinition Height="60"/>
             <RowDefinition Height="200"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -28,9 +34,9 @@
         </Grid.ColumnDefinitions>
         <uc:PlayerHeader Width="Auto" VerticalAlignment="Top" Height="200" Grid.ColumnSpan="2"/>
 
-        <TextBlock Foreground="#303960" Padding="15" Text="Overview" FontSize="30" Grid.ColumnSpan="2" Grid.Row="1" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
-        <TextBlock Foreground="#303960" Padding="15" Text="Stats"  FontSize="20" Grid.Column="0" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
-        <TextBlock Foreground="#303960" Padding="15" Text="Averages" TextAlignment="Right" FontSize="20" Grid.Column="1" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
+        <TextBlock Foreground="#303960" Padding="20" Text="Overview" FontSize="30" Grid.ColumnSpan="2" Grid.Row="1" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
+        <TextBlock Foreground="#303960" Padding="15" HorizontalAlignment="Center" Text="Stats"  FontSize="20" Grid.Column="0" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
+        <TextBlock Foreground="#303960" Padding="15" HorizontalAlignment="Center" Text="Averages" TextAlignment="Right" FontSize="20" Grid.Column="1" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
 
         <!--Stats tab-->
         <Grid Grid.Row="3" Background="#2fc4b2">
@@ -96,7 +102,9 @@
             <TextBlock Grid.Row="4" Grid.Column="2" Padding="10" Text="data" FontSize="12"  HorizontalAlignment="Center"/>
         </Grid>
 
-        <TextBlock Foreground="#303960" Padding="15" Text="Recent High Scores" FontSize="20" Grid.ColumnSpan="2" Grid.Row="4" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
+        <TextBlock Foreground="#303960" Padding="20" Text="Recent High Scores" FontSize="30" Grid.ColumnSpan="2" Grid.Row="4" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
+
+        <!--Recent hi-scores-->
         <DataGrid Grid.Row="5" Grid.ColumnSpan="2">
             <DataGrid.Columns>
                 <!-- Binding="{Binding variable}" attach as header attr-->
@@ -110,26 +118,67 @@
             
         </DataGrid>
 
-        <TextBlock Foreground="#303960" Padding="15" Text="Hit accuracy" FontSize="20" Grid.Row="6" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
-        <TextBlock Foreground="#303960" Padding="15" Text="Ranking ratio" FontSize="20" Grid.Row="6" Grid.Column="1" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
+        <!--Pie Charts-->
+        <TextBlock Foreground="#303960" Padding="20" Text="Charts" FontSize="30" Grid.Row="6" Grid.ColumnSpan="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
 
-        <Wpf:PieChart Grid.Row="7" LegendLocation="Left">
+        <TextBlock Foreground="#303960" Padding="15" Text="Hit accuracy" FontSize="20" Grid.Row="7" HorizontalAlignment="Center"/>
+        <TextBlock Foreground="#303960" Padding="15" Text="Ranking ratio" FontSize="20" Grid.Row="7" Grid.Column="1"  HorizontalAlignment="Center"/>
+
+        <Wpf:PieChart Grid.Row="8" LegendLocation="Left">
             <Wpf:PieChart.Series>
-                <Wpf:PieSeries Title="300" Values="124322" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
-                <Wpf:PieSeries Title="50" Values="1939" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
-                <Wpf:PieSeries Title="100" Values="10301" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+                <Wpf:PieSeries Title="300" Values="124322" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
+                <Wpf:PieSeries Title="50" Values="1939" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
+                <Wpf:PieSeries Title="100" Values="10301" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
             </Wpf:PieChart.Series>
         </Wpf:PieChart>
 
-        <Wpf:PieChart Grid.Row="7" Grid.Column="2" LegendLocation="Right">
+        <Wpf:PieChart Grid.Row="8" Grid.Column="2" LegendLocation="Right">
             <Wpf:PieChart.Series>
-                <Wpf:PieSeries Title="A" Values="2421" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
-                <Wpf:PieSeries Title="Silver_SS" Values="4" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
-                <Wpf:PieSeries Title="Silver_S" Values="91" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
-                <Wpf:PieSeries Title="SS" Values="904" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
-                <Wpf:PieSeries Title="S" Values="1967" DataLabels="True" LabelPoint="{Binding PointLabel}"/>
+                <Wpf:PieSeries Title="A" Values="2421" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
+                <Wpf:PieSeries Title="Silver_SS" Values="4" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
+                <Wpf:PieSeries Title="Silver_S" Values="91" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
+                <Wpf:PieSeries Title="SS" Values="904" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
+                <Wpf:PieSeries Title="S" Values="1967" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
             </Wpf:PieChart.Series>
         </Wpf:PieChart>
+
+
+        <!--Cartesian Charts-->
+       
+        <!--PP-->
+        <TextBlock Foreground="#303960" Padding="15" Text="Performance Points" FontSize="20" Grid.Row="9" HorizontalAlignment="Center"/>
+        <Wpf:CartesianChart Grid.Row="10" Series="{Binding seriesCollection}">
+            <Wpf:CartesianChart.AxisY>
+                <Wpf:Axis Title="PP"/>
+            </Wpf:CartesianChart.AxisY>
+            <Wpf:CartesianChart.AxisX>
+                <Wpf:Axis Title="Month" Labels="{Binding labelsX}"/>
+            </Wpf:CartesianChart.AxisX>
+        </Wpf:CartesianChart>
         
+        <!--Rank (fix Y axis)-->
+        <TextBlock Foreground="#303960" Padding="15" Text="Ranking" FontSize="20" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center"/>
+        <Wpf:CartesianChart Grid.Row="10" Grid.Column="1" Series="{Binding seriesCollection2}">
+            <Wpf:CartesianChart.AxisY>
+                <Wpf:Axis Title="Ranking" MinValue="1500" MaxValue="100"/>
+            </Wpf:CartesianChart.AxisY>
+            <Wpf:CartesianChart.AxisX>
+                <Wpf:Axis Title="Month" Labels="{Binding labelsX}"/>
+            </Wpf:CartesianChart.AxisX>
+        </Wpf:CartesianChart>
+
+        <!--Score-->
+        <TextBlock Foreground="#303960" Padding="15" Text="Play count (Monthly)" FontSize="20" Grid.Row="11" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+
+        <Wpf:CartesianChart Grid.Row="12" Grid.ColumnSpan="2" Series="{Binding seriesCollection3}">
+            <Wpf:CartesianChart.AxisY>
+                <Wpf:Axis Title="Plays"/>
+            </Wpf:CartesianChart.AxisY>
+            <Wpf:CartesianChart.AxisX>
+                <Wpf:Axis Title="Month" Labels="{Binding labelsX}"/>
+            </Wpf:CartesianChart.AxisX>
+        </Wpf:CartesianChart>
+        
+  
     </Grid>
 </Page>
