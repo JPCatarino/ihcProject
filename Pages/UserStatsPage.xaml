@@ -6,14 +6,94 @@
       xmlns:local="clr-namespace:ihcProject.Pages"
       xmlns:uc="clr-namespace:ihcProject.Controls"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="UserStats">
+      d:DesignHeight="990" d:DesignWidth="800"
+      Title="UserStats"
+      Background="#fff">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
-            <RowDefinition/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="200"/>
         </Grid.RowDefinitions>
-        <uc:PlayerHeader Width="Auto" VerticalAlignment="Top" Height="200"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <uc:PlayerHeader Width="Auto" VerticalAlignment="Top" Height="200" Grid.ColumnSpan="2"/>
+
+        <TextBlock Foreground="#303960" Padding="15" Text="Overview" FontSize="20" Grid.ColumnSpan="2" Grid.Row="1" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
+        <TextBlock Foreground="#303960" Padding="15" Text="Stats"  FontSize="20" Grid.Column="0" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
+        <TextBlock Foreground="#303960" Padding="15" Text="Averages" TextAlignment="Right" FontSize="20" Grid.Column="1" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
+
+        <!--Stats tab-->
+        <Grid Grid.Row="3" Background="#2fc4b2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Padding="10" Text="Total score:" FontSize="14" FontWeight="Bold" HorizontalAlignment="Right"/>
+            <TextBlock Grid.Row="1" Padding="10" Text="Ranked score:" FontSize="14" FontWeight="Bold" HorizontalAlignment="Right"/>
+            <TextBlock Grid.Row="2" Padding="10" Text="Updated:" FontSize="14" FontWeight="Bold" HorizontalAlignment="Right"/>
+            <TextBlock Grid.Row="3" Padding="10" Text="Total plays:" FontSize="14" FontWeight="Bold" HorizontalAlignment="Right"/>
+            <TextBlock Grid.Row="4" Padding="10" Text="Most poitns (daily):" FontSize="14" FontWeight="Bold" HorizontalAlignment="Right"/>
+
+            <TextBlock Grid.Row="0" Grid.Column="1" Padding="10" Text="data" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" Text="data" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" Text="data" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" Text="data" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" Text="data" FontSize="12" HorizontalAlignment="Center"/>
+        </Grid>
+
+        <!--Averages tab-->
+        <Grid Grid.Row="3" Grid.Column="1" Background="#12947f">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--Headers-->
+            <TextBlock Grid.Row="0" Grid.Column="1" Padding="10" Text="Performance gain" FontSize="14"  HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock Grid.Row="0" Grid.Column="2" Padding="10" Text="Rank gain" FontSize="14"  HorizontalAlignment="Center" FontWeight="Bold"/>
+
+            <!--Side panels-->
+             <TextBlock Grid.Row="1" Padding="10" Text="Per hour" FontSize="14"  HorizontalAlignment="Right" FontWeight="Bold"/>
+            <TextBlock Grid.Row="2" Padding="10" Text="Daily" FontSize="14"  HorizontalAlignment="Right" FontWeight="Bold"/>
+            <TextBlock Grid.Row="3" Padding="10" Text="Monthly" FontSize="14"  HorizontalAlignment="Right" FontWeight="Bold"/>
+            <TextBlock Grid.Row="4" Padding="10" Text="Yearly" FontSize="14"  HorizontalAlignment="Right" FontWeight="Bold"/>
+
+            <!--Data-->
+            <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" Text="data" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" Text="data" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" Text="data" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" Text="data" FontSize="12"  HorizontalAlignment="Center"/>
+            
+            <!--Data-->
+            <TextBlock Grid.Row="1" Grid.Column="2" Padding="10" Text="data" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="2" Padding="10" Text="data" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="2" Padding="10" Text="data" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="2" Padding="10" Text="data" FontSize="12"  HorizontalAlignment="Center"/>
+        </Grid>
+
     </Grid>
 </Page>

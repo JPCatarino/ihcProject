@@ -20,6 +20,8 @@ namespace ihcProject.Pages
     /// </summary>
     public partial class UserStats : Page
     {
+        Color background = (Color)ColorConverter.ConvertFromString("#FFff99cc");
+
         public UserStats()
         {
             InitializeComponent();
