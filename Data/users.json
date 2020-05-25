@@ -77,7 +77,15 @@
         "global": 160,
         "country": 64,
         "rank_change": 15
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -170,7 +178,15 @@
         "global": 582,
         "country": 53,
         "rank_change": 11
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -263,7 +279,15 @@
         "global": 837,
         "country": 650,
         "rank_change": -11
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -356,7 +380,15 @@
         "global": 793,
         "country": 376,
         "rank_change": 4
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -449,7 +481,15 @@
         "global": 158,
         "country": 117,
         "rank_change": -15
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -542,7 +582,15 @@
         "global": 359,
         "country": 126,
         "rank_change": -18
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -638,7 +686,15 @@
         "global": 809,
         "country": 635,
         "rank_change": 9
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -744,7 +800,15 @@
         "global": 433,
         "country": 297,
         "rank_change": 16
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -850,7 +914,15 @@
         "global": 964,
         "country": 21,
         "rank_change": -4
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -876,7 +948,7 @@
     }
   },
   {
-    "avatar_url": "../assets/images/avatars/girl-1.png",
+    "avatar_url": "../assets/images/avatars/girl-7.png",
     "country_code": null,
     "default_group": null,
     "id": 0,
@@ -887,8 +959,8 @@
     "last_visit": "0001-01-01T00:00:00",
     "pm_friends_only": false,
     "profile_colour": null,
-    "username": "testtt",
-    "password": "t",
+    "username": "d",
+    "password": "d",
     "role": "Player",
     "cover_url": null,
     "discord": null,
@@ -911,7 +983,7 @@
     "website": null,
     "country": {
       "code": null,
-      "name": "Turkey"
+      "name": "Ghana"
     },
     "cover": null,
     "account_history": null,
@@ -923,11 +995,11 @@
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
     "weekly_playcount": {
-      "total_count": 236,
-      "count_standard": 91,
-      "count_taiko": 46,
-      "count_ctb": 78,
-      "count_mania": 21
+      "total_count": 190,
+      "count_standard": 33,
+      "count_taiko": 82,
+      "count_ctb": 6,
+      "count_mania": 69
     },
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
@@ -935,17 +1007,17 @@
     "scores_first_count": 0,
     "statistics": {
       "level": {
-        "current": 91,
+        "current": 97,
         "progress": 0
       },
-      "pp": 4194,
-      "pp_change": 113,
+      "pp": 19265,
+      "pp_change": 152,
       "pp_rank": 0,
-      "ranked_score": 463248676,
-      "total_score": 1544974550,
+      "ranked_score": 114651430,
+      "total_score": 1136120764,
       "hit_accuracy": 0,
-      "play_count": 17358,
-      "play_count_daily": 31,
+      "play_count": 39195,
+      "play_count_daily": 12,
       "play_time": 0,
       "total_hits": 0,
       "maximum_combo": 0,
@@ -953,10 +1025,18 @@
       "is_ranked": false,
       "grade_counts": null,
       "rank": {
-        "global": 469,
-        "country": 213,
-        "rank_change": 2
-      }
+        "global": 406,
+        "country": 269,
+        "rank_change": -3
+      },
+      "daily_performance_gain": 248,
+      "weekly_performance_gain": 337,
+      "monthly_performance_gain": 18232,
+      "yearly_performance_gain": 47392,
+      "daily_rank_gain": 7,
+      "weekly_rank_gain": 74,
+      "monthly_rank_gain": -16,
+      "yearly_rank_gain": -9514
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -970,15 +1050,15 @@
       "pss_item": 0
     },
     "profile_specs": {
-      "star": 9.27889009671234,
-      "speed": 9.27889009671234,
-      "ad": 9.27889009671234,
-      "avgBeatmapTime": "09:12",
-      "avgBPM": 296,
-      "cs": 9.27889009671234,
-      "ar": 9.27889009671234,
-      "od": 9.27889009671234,
-      "hp": 9.27889009671234
+      "star": 4.0042251441647423,
+      "speed": 4.0042251441647423,
+      "ad": 4.0042251441647423,
+      "avgBeatmapTime": "03:40",
+      "avgBPM": 116,
+      "cs": 4.0042251441647423,
+      "ar": 4.0042251441647423,
+      "od": 4.0042251441647423,
+      "hp": 4.0042251441647423
     }
   }
 ]

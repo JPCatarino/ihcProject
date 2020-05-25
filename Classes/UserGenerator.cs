@@ -111,12 +111,24 @@ namespace ihcProject.Classes
             ret.rank.country = rand.Next((int)ret.rank.global);
             ret.rank.rank_change = rand.Next(-20, 20);
 
-
             //Generate scores
             ret.ranked_score = rand.Next(100000000, 900000000);
             ret.total_score = rand.Next(ret.ranked_score, 1900000000);
             ret.play_count = rand.Next(1000, 50000);
             ret.play_count_daily = rand.Next(1, 40);
+
+            //Generate PP/Rank gain
+            ret.daily_rank_gain = rand.Next(-10, 20);
+            ret.weekly_rank_gain = rand.Next(-50, 80);
+            ret.monthly_rank_gain = rand.Next(-100, 200);
+            ret.yearly_rank_gain = rand.Next(-10000, 2000);
+
+            ret.daily_performance_gain = rand.Next(0, 300);
+            ret.weekly_performance_gain = rand.Next(ret.daily_performance_gain, 2100);
+            ret.monthly_performance_gain = rand.Next(ret.monthly_performance_gain, 30000);
+            ret.yearly_performance_gain = rand.Next(ret.yearly_performance_gain, 108000);
+
+
             return ret;
         }
 
