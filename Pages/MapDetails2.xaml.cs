@@ -13,17 +13,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace ihcProject
+namespace ihcProject.Pages
 {
-    public partial class MapDetails : Window
+    public partial class MapDetails2 : Window
     {
         public UserTemplate cUserData { get; set; }
-        public MapDetails()
+        public MapDetails2()
         {
             var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().FirstOrDefault();
             cUserData = PlayerWindow.cUserData;
             DataContext = cUserData;
-
             InitializeComponent();
         }
     }
