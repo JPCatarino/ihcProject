@@ -100,5 +100,23 @@ namespace ihcProject.Pages
             this.cartesianChart();
             InitializeComponent();
         }
+
+        private void beatmapBtt_1_Click(object sender, RoutedEventArgs e)
+        {
+            MapDetails deiatilsWindow = new MapDetails();
+            deiatilsWindow.ShowDialog();
+        }
+
+        private void beatmapBtt_2_Click(object sender, RoutedEventArgs e)
+        {
+            MapDetails deiatilsWindow = new MapDetails();
+            deiatilsWindow.ShowDialog();
+        }
+
+        private void beatmapBtt_3_Click(object sender, RoutedEventArgs e)
+        {
+            MapDetails deiatilsWindow = new MapDetails();
+            deiatilsWindow.ShowDialog();
+        }
     }
 }
