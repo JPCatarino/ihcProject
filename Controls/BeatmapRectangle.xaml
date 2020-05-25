@@ -19,7 +19,7 @@
             <Border>
                 <WrapPanel>
                     <Image Name="i_rank" Margin="10 0 0 0" Source="{Binding Path=rankIcon, ElementName=btr, Converter={StaticResource NullToImageConverter}}"></Image>
-                    <TextBlock Name="tb_beatmapname" Margin="10 15 10 10" FontSize="20" FontFamily="{DynamicResource Aller}"><Run Text="{Binding Path=beatmapName, ElementName=btr}"/></TextBlock>
+                    <TextBlock Name="tb_beatmapname" Margin="10 15 10 10" FontSize="20" Width="150" FontFamily="{DynamicResource Aller}" TextWrapping="Wrap"><Run Text="{Binding Path=beatmapName, ElementName=btr}"/></TextBlock>
                     <Image Margin="10 0 0 0" Name="i_gamemode" Source="{Binding Path=gameModeIcon, ElementName=btr, Converter={StaticResource NullToImageConverter}}" />
                     <TextBlock Name="tb_ppp" Margin="30 15 0 0" FontSize="20" FontFamily="{DynamicResource AllerBold}" HorizontalAlignment="Stretch" ><Run Text="{Binding Path=beatmapPercentage, ElementName=btr}"/><Run Text="%"/></TextBlock>
                     <TextBlock Margin="0 15 0 10" FontSize="20" FontFamily="{DynamicResource AllerBold}"><Run Text="/"/></TextBlock>

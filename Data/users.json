@@ -652,15 +652,15 @@
       "pss_item": 0
     },
     "profile_specs": {
-      "star": 0,
-      "speed": 5,
-      "ad": 3,
+      "star": 0.0,
+      "speed": 5.0,
+      "ad": 3.0,
       "avgBeatmapTime": "2:0",
       "avgBPM": 276,
-      "cs": 8,
-      "ar": 2,
-      "od": 5,
-      "hp": 4
+      "cs": 8.0,
+      "ar": 2.0,
+      "od": 5.0,
+      "hp": 4.0
     }
   },
   {
@@ -758,15 +758,15 @@
       "pss_item": 0
     },
     "profile_specs": {
-      "star": 4,
-      "speed": 6,
-      "ad": 5,
+      "star": 4.0,
+      "speed": 6.0,
+      "ad": 5.0,
       "avgBeatmapTime": "4,00:40,00",
       "avgBPM": 330,
-      "cs": 3,
-      "ar": 2,
-      "od": 4,
-      "hp": 0
+      "cs": 3.0,
+      "ar": 2.0,
+      "od": 4.0,
+      "hp": 0.0
     }
   },
   {
@@ -864,15 +864,121 @@
       "pss_item": 0
     },
     "profile_specs": {
-      "star": 7,
-      "speed": 7,
-      "ad": 3,
+      "star": 7.0,
+      "speed": 7.0,
+      "ad": 3.0,
       "avgBeatmapTime": "09:11",
       "avgBPM": 202,
-      "cs": 0,
-      "ar": 9,
-      "od": 4,
-      "hp": 2
+      "cs": 0.0,
+      "ar": 9.0,
+      "od": 4.0,
+      "hp": 2.0
+    }
+  },
+  {
+    "avatar_url": "../assets/images/avatars/girl-1.png",
+    "country_code": null,
+    "default_group": null,
+    "id": 0,
+    "is_active": false,
+    "is_bot": false,
+    "is_online": false,
+    "is_supporter": false,
+    "last_visit": "0001-01-01T00:00:00",
+    "pm_friends_only": false,
+    "profile_colour": null,
+    "username": "testtt",
+    "password": "t",
+    "role": "Player",
+    "cover_url": null,
+    "discord": null,
+    "has_supported": false,
+    "interests": null,
+    "join_date": "0001-01-01T00:00:00",
+    "kudosu": null,
+    "lastfm": null,
+    "location": null,
+    "max_blocks": 0,
+    "max_friends": 0,
+    "occupation": null,
+    "playmode": null,
+    "playstyle": null,
+    "post_count": 0,
+    "profile_order": null,
+    "skype": null,
+    "title": null,
+    "twitter": null,
+    "website": null,
+    "country": {
+      "code": null,
+      "name": "Turkey"
+    },
+    "cover": null,
+    "account_history": null,
+    "active_tournament_banner": null,
+    "badges": null,
+    "favourite_beatmapset_count": 0,
+    "follower_count": 0,
+    "graveyard_beatmapset_count": 0,
+    "loved_beatmapset_count": 0,
+    "monthly_playcounts": null,
+    "weekly_playcount": {
+      "total_count": 236,
+      "count_standard": 91,
+      "count_taiko": 46,
+      "count_ctb": 78,
+      "count_mania": 21
+    },
+    "previous_usernames": null,
+    "ranked_and_approved_beatmapset_count": 0,
+    "replays_watched_counts": null,
+    "scores_first_count": 0,
+    "statistics": {
+      "level": {
+        "current": 91,
+        "progress": 0
+      },
+      "pp": 4194,
+      "pp_change": 113,
+      "pp_rank": 0,
+      "ranked_score": 463248676,
+      "total_score": 1544974550,
+      "hit_accuracy": 0,
+      "play_count": 17358,
+      "play_count_daily": 31,
+      "play_time": 0,
+      "total_hits": 0,
+      "maximum_combo": 0,
+      "replays_watched_by_others": 0,
+      "is_ranked": false,
+      "grade_counts": null,
+      "rank": {
+        "global": 469,
+        "country": 213,
+        "rank_change": 2
+      }
+    },
+    "support_level": 0,
+    "unranked_beatmapset_count": 0,
+    "user_achievements": null,
+    "rankHistory": null,
+    "profile_choices": {
+      "cb1_item": 0,
+      "cb2_item": 0,
+      "cb3_item": 0,
+      "cb4_item": 0,
+      "pss_item": 0
+    },
+    "profile_specs": {
+      "star": 9.27889009671234,
+      "speed": 9.27889009671234,
+      "ad": 9.27889009671234,
+      "avgBeatmapTime": "09:12",
+      "avgBPM": 296,
+      "cs": 9.27889009671234,
+      "ar": 9.27889009671234,
+      "od": 9.27889009671234,
+      "hp": 9.27889009671234
     }
   }
 ]
