@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Web;
+using ihcProject.Pages;
 
 namespace ihcProject.Controls
 {
@@ -30,6 +32,10 @@ namespace ihcProject.Controls
         {
             this.HamburgueMenuControl.SelectedIndex = 1;
             this.navFrame.Navigate(new Uri("../Pages/ProfilePage.xaml", UriKind.Relative));
+        }
+
+        public void goToRivalProfilePage(string rvname) {
+            this.navFrame.Navigate(new ProfilePage(rvname));
         }
 
         private void HamburgerMenu_ItemClick(object sender, MahApps.Metro.Controls.ItemClickEventArgs e)

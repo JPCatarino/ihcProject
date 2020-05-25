@@ -22,7 +22,13 @@ namespace ihcProject.Pages
     /// </summary>
     public partial class ProfilePage : Page
     {
-        UserTemplate cUserData;
+        UserTemplate cUserData
+        { get; set; }
+        UserTemplate rivalUserData
+        { get; set; }
+
+
+        public static DependencyProperty rivalUserProperty = DependencyProperty.Register("rivalUser", typeof(String), typeof(ProfilePage));
 
         public ProfilePage()
         {
@@ -30,6 +36,20 @@ namespace ihcProject.Pages
             cUserData = PlayerWindow.cUserData;
             DataContext = cUserData;
             InitializeComponent();
+        }
+
+        public ProfilePage(string rvname)
+        {
+            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
+            UserGenerator rivalGen = new UserGenerator(rvname, "...", "Player");
+            cUserData = PlayerWindow.cUserData;
+            rivalGen.generateRival();
+            rivalUserData = rivalGen.getUser();
+            DataContext = rivalUserData;
+            Console.WriteLine(rvname);
+            InitializeComponent();
+            b_perf.Visibility = Visibility.Hidden;
+            b_stat.Visibility = Visibility.Hidden;
         }
 
         private void b_perf_Click(object sender, RoutedEventArgs e)
@@ -124,31 +144,50 @@ namespace ihcProject.Pages
         private void cb1_Loaded(object sender, RoutedEventArgs e)
         {
             BeatmapSplitButton aux = (BeatmapSplitButton)sender;
-            aux.setIndex(cUserData.profile_choices.cb1_item);
+            if (rivalUserData != null) {
+                aux.setIndex(rivalUserData.profile_choices.cb1_item);
+            }
+            else aux.setIndex(cUserData.profile_choices.cb1_item);
         }
 
         private void cb2_Loaded(object sender, RoutedEventArgs e)
         {
             BeatmapSplitButton aux = (BeatmapSplitButton)sender;
-            aux.setIndex(cUserData.profile_choices.cb2_item);
+            if (rivalUserData != null)
+            {
+                aux.setIndex(rivalUserData.profile_choices.cb2_item);
+            }
+            else aux.setIndex(cUserData.profile_choices.cb2_item);
         }
 
         private void cb3_Loaded(object sender, RoutedEventArgs e)
         {
             BeatmapSplitButton aux = (BeatmapSplitButton)sender;
-            aux.setIndex(cUserData.profile_choices.cb3_item);
+            if (rivalUserData != null)
+            {
+                aux.setIndex(rivalUserData.profile_choices.cb3_item);
+            }
+            else aux.setIndex(cUserData.profile_choices.cb3_item);
         }
 
         private void cb4_Loaded(object sender, RoutedEventArgs e)
         {
             BeatmapSplitButton aux = (BeatmapSplitButton)sender;
-            aux.setIndex(cUserData.profile_choices.cb4_item);
+            if (rivalUserData != null)
+            {
+                aux.setIndex(rivalUserData.profile_choices.cb4_item);
+            }
+            else aux.setIndex(cUserData.profile_choices.cb4_item);
         }
 
         private void pss_main_Loaded(object sender, RoutedEventArgs e)
         {
             ProfileStatShowcase aux = (ProfileStatShowcase)sender;
-            aux.setIndex(cUserData.profile_choices.pss_item);
+            if (rivalUserData != null)
+            {
+                aux.setIndex(rivalUserData.profile_choices.pss_item);
+            }
+            else aux.setIndex(cUserData.profile_choices.pss_item);
         }
     }
 }

@@ -63,11 +63,11 @@ namespace ihcProject.Classes
         {
             Profile_Choices temp = new Profile_Choices();
             Random random = new Random();
-            temp.cb1_item = random.Next(0,3);
-            temp.cb2_item = random.Next(0, 3); 
-            temp.cb3_item = random.Next(0, 3);
-            temp.cb4_item = random.Next(0, 3);
-            temp.pss_item = random.Next(0, 1);
+            temp.cb1_item = random.Next(0 ,4);
+            temp.cb2_item = random.Next(0, 4); 
+            temp.cb3_item = random.Next(0, 4);
+            temp.cb4_item = random.Next(0, 4);
+            temp.pss_item = random.Next(1, 3);
             return temp;
 
         }
