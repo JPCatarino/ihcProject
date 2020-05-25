@@ -204,26 +204,26 @@
             <TextBlock Text="Mods" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5"/>
 
 
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"/>
-                <Button x:Name="beatmapBtt_1" Content="Beatmap1" Grid.Row="1" Grid.Column="4" Click="beatmapBtt_1_Click"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="5"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.dates[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.ranks[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.pps[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.scores[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"/>
+            <Button x:Name="beatmapBtt_1" Content="{Binding Path=Recent_High_Scores.maps[0]}" Grid.Row="1" Grid.Column="4" Click="beatmapBtt_1_Click"/>
+                <TextBlock Text="DT, HR" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="5"/>
 
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3"/>
-                <Button x:Name="beatmapBtt_2" Content="Beatmap2" Grid.Row="2" Grid.Column="4" Click="beatmapBtt_2_Click"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="5"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.dates[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.ranks[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.pps[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.scores[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3"/>
+            <Button x:Name="beatmapBtt_2" Content="{Binding Path=Recent_High_Scores.maps[1]}" Grid.Row="2" Grid.Column="4" Click="beatmapBtt_2_Click"/>
+                <TextBlock Text="FL, DT" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="5"/>
 
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3"/>
-                <Button x:Name="beatmapBtt_3" Content="Beatmap3" Grid.Row="3" Grid.Column="4" Click="beatmapBtt_3_Click"/>
-                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="5"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.dates[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.ranks[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.pps[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2"/>
+            <TextBlock Text="{Binding Path=Recent_High_Scores.scores[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3"/>
+            <Button x:Name="beatmapBtt_3" Content="{Binding Path=Recent_High_Scores.maps[2]}" Grid.Row="3" Grid.Column="4" Click="beatmapBtt_3_Click"/>
+                <TextBlock Text="HD, DT, HR" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="5"/>
 
         </Grid>
        

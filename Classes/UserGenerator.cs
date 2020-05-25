@@ -27,6 +27,7 @@ namespace ihcProject.Classes
             userTemp.profile_choices = initProfileChoices();
             userTemp.profile_specs = initProfileSpecs();
             userTemp.country = generateCountry();
+            userTemp.recent_high_scores = generateHighScores();
         }
 
         public void generateRival()
@@ -151,6 +152,49 @@ namespace ihcProject.Classes
             Random Countries = new Random();
             country.name= CountryList[Countries.Next(0, 196)];
             return country;
+        }
+
+        private Recent_High_Scores generateHighScores() {
+            Recent_High_Scores hs = new Recent_High_Scores();
+            Random rand = new Random();
+            string[] possible_mods = new string[6] { "HD", "DT", "NC", "HR", "PF", "FL" };
+            var titles = new List<string> { "Rubber Band", "anticrystal", "Akari no Arika", "WANNABE", "Mare Maris", "Dramatic Star", "Dream Catcher", "eastward", "CHAIN", "veil", "A Garagem da Vizinha" };
+
+            hs.ranks = new int[3];
+            hs.pps = new int[3];
+            hs.scores = new int[3];
+            hs.maps = new string[3];
+            hs.mods = new string[3];
+            hs.dates = new DateTime[3];
+
+
+            foreach (int rank in hs.ranks)
+            {
+                hs.ranks[rank] = rand.Next(1, 40);
+            }
+
+            foreach (int pp in hs.pps)
+            {
+                hs.pps[pp] = rand.Next(900, 1100);
+            }
+
+            foreach (int score in hs.scores)
+            {
+                hs.scores[score] = rand.Next(9000000, 12000000);
+            }
+
+            for(int i = 0; i < hs.maps.Length; i++)
+            {
+                int index = rand.Next(titles.Count);
+                hs.maps[i] = titles[index];
+                titles.RemoveAt(index);
+            }
+
+            hs.dates[0] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28));
+            hs.dates[1] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28));
+            hs.dates[2] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28));
+
+            return hs;
         }
 
         public UserTemplate getUser() {

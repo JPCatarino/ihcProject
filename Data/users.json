@@ -87,6 +87,7 @@
       "monthly_rank_gain": 0,
       "yearly_rank_gain": 0
     },
+    "recent_high_scores": null,
     "support_level": 0,
     "unranked_beatmapset_count": 0,
     "user_achievements": null,
@@ -188,6 +189,7 @@
       "monthly_rank_gain": 0,
       "yearly_rank_gain": 0
     },
+    "recent_high_scores": null,
     "support_level": 0,
     "unranked_beatmapset_count": 0,
     "user_achievements": null,
@@ -289,6 +291,7 @@
       "monthly_rank_gain": 0,
       "yearly_rank_gain": 0
     },
+    "recent_high_scores": null,
     "support_level": 0,
     "unranked_beatmapset_count": 0,
     "user_achievements": null,
@@ -390,6 +393,7 @@
       "monthly_rank_gain": 0,
       "yearly_rank_gain": 0
     },
+    "recent_high_scores": null,
     "support_level": 0,
     "unranked_beatmapset_count": 0,
     "user_achievements": null,
@@ -491,6 +495,7 @@
       "monthly_rank_gain": 0,
       "yearly_rank_gain": 0
     },
+    "recent_high_scores": null,
     "support_level": 0,
     "unranked_beatmapset_count": 0,
     "user_achievements": null,
@@ -592,6 +597,7 @@
       "monthly_rank_gain": 0,
       "yearly_rank_gain": 0
     },
+    "recent_high_scores": null,
     "support_level": 0,
     "unranked_beatmapset_count": 0,
     "user_achievements": null,
@@ -696,6 +702,7 @@
       "monthly_rank_gain": 0,
       "yearly_rank_gain": 0
     },
+    "recent_high_scores": null,
     "support_level": 0,
     "unranked_beatmapset_count": 0,
     "user_achievements": null,
@@ -810,6 +817,7 @@
       "monthly_rank_gain": 0,
       "yearly_rank_gain": 0
     },
+    "recent_high_scores": null,
     "support_level": 0,
     "unranked_beatmapset_count": 0,
     "user_achievements": null,
@@ -924,6 +932,7 @@
       "monthly_rank_gain": 0,
       "yearly_rank_gain": 0
     },
+    "recent_high_scores": null,
     "support_level": 0,
     "unranked_beatmapset_count": 0,
     "user_achievements": null,
@@ -1038,6 +1047,7 @@
       "monthly_rank_gain": -16,
       "yearly_rank_gain": -9514
     },
+    "recent_high_scores": null,
     "support_level": 0,
     "unranked_beatmapset_count": 0,
     "user_achievements": null,
@@ -1059,6 +1069,152 @@
       "ar": 4.0042251441647423,
       "od": 4.0042251441647423,
       "hp": 4.0042251441647423
+    }
+  },
+  {
+    "avatar_url": "../assets/images/avatars/girl-3.png",
+    "country_code": null,
+    "default_group": null,
+    "id": 0,
+    "is_active": false,
+    "is_bot": false,
+    "is_online": false,
+    "is_supporter": false,
+    "last_visit": "0001-01-01T00:00:00",
+    "pm_friends_only": false,
+    "profile_colour": null,
+    "username": "e",
+    "password": "e",
+    "role": "Player",
+    "cover_url": null,
+    "discord": null,
+    "has_supported": false,
+    "interests": null,
+    "join_date": "0001-01-01T00:00:00",
+    "kudosu": null,
+    "lastfm": null,
+    "location": null,
+    "max_blocks": 0,
+    "max_friends": 0,
+    "occupation": null,
+    "playmode": null,
+    "playstyle": null,
+    "post_count": 0,
+    "profile_order": null,
+    "skype": null,
+    "title": null,
+    "twitter": null,
+    "website": null,
+    "country": {
+      "code": null,
+      "name": "South Sudan"
+    },
+    "cover": null,
+    "account_history": null,
+    "active_tournament_banner": null,
+    "badges": null,
+    "favourite_beatmapset_count": 0,
+    "follower_count": 0,
+    "graveyard_beatmapset_count": 0,
+    "loved_beatmapset_count": 0,
+    "monthly_playcounts": null,
+    "weekly_playcount": {
+      "total_count": 243,
+      "count_standard": 83,
+      "count_taiko": 88,
+      "count_ctb": 26,
+      "count_mania": 46
+    },
+    "previous_usernames": null,
+    "ranked_and_approved_beatmapset_count": 0,
+    "replays_watched_counts": null,
+    "scores_first_count": 0,
+    "statistics": {
+      "level": {
+        "current": 83,
+        "progress": 0
+      },
+      "pp": 8920,
+      "pp_change": -93,
+      "pp_rank": 0,
+      "ranked_score": 393481546,
+      "total_score": 1012587559,
+      "hit_accuracy": 0,
+      "play_count": 14962,
+      "play_count_daily": 15,
+      "play_time": 0,
+      "total_hits": 0,
+      "maximum_combo": 0,
+      "replays_watched_by_others": 0,
+      "is_ranked": false,
+      "grade_counts": null,
+      "rank": {
+        "global": 880,
+        "country": 205,
+        "rank_change": 11
+      },
+      "daily_performance_gain": 147,
+      "weekly_performance_gain": 1617,
+      "monthly_performance_gain": 16988,
+      "yearly_performance_gain": 60165,
+      "daily_rank_gain": 8,
+      "weekly_rank_gain": -13,
+      "monthly_rank_gain": 191,
+      "yearly_rank_gain": -265
+    },
+    "recent_high_scores": {
+      "maps": [
+        "WANNABE",
+        "eastward",
+        "Akari no Arika"
+      ],
+      "ranks": [
+        11,
+        0,
+        0
+      ],
+      "mods": [
+        null,
+        null,
+        null
+      ],
+      "dates": [
+        "2019-09-14T00:00:00",
+        "2015-07-16T00:00:00",
+        "2019-04-05T00:00:00"
+      ],
+      "pps": [
+        1056,
+        0,
+        0
+      ],
+      "scores": [
+        9854871,
+        0,
+        0
+      ]
+    },
+    "support_level": 0,
+    "unranked_beatmapset_count": 0,
+    "user_achievements": null,
+    "rankHistory": null,
+    "profile_choices": {
+      "cb1_item": 0,
+      "cb2_item": 0,
+      "cb3_item": 0,
+      "cb4_item": 0,
+      "pss_item": 0
+    },
+    "profile_specs": {
+      "star": 8.51236750721576,
+      "speed": 8.51236750721576,
+      "ad": 8.51236750721576,
+      "avgBeatmapTime": "08:27",
+      "avgBPM": 166,
+      "cs": 8.51236750721576,
+      "ar": 8.51236750721576,
+      "od": 8.51236750721576,
+      "hp": 8.51236750721576
     }
   }
 ]

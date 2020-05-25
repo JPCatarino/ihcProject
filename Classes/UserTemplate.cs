@@ -60,6 +60,7 @@ namespace ihcProject.Classes
         public object[] replays_watched_counts { get; set; }
         public int scores_first_count { get; set; }
         public Statistics statistics { get; set; }
+        public Recent_High_Scores recent_high_scores { get; set; }
         public int support_level { get; set; }
         public int unranked_beatmapset_count { get; set; }
         public User_Achievements[] user_achievements { get; set; }
@@ -176,5 +177,12 @@ namespace ihcProject.Classes
         public double od { get; set; }
         public double hp { get; set; }
     }
-
+    public class Recent_High_Scores {
+        public string[] maps { get; set; }
+        public int[] ranks { get; set; }
+        public string[] mods { get; set; }
+        public DateTime[] dates { get; set; }
+        public int[] pps { get; set; }
+        public int[] scores { get; set; }
+    }
 }
