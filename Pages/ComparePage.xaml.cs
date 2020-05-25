@@ -33,9 +33,11 @@ namespace ihcProject.Pages
             this.RivalUser = RivalUser;
             ChartValues<double> Avalues = new ChartValues<double> {10,11,12,13,14,15,16 };
             ChartValues<double> Bvalues = new ChartValues<double> {1,2,3,4,5,6,7 };
+            shitmages s = new shitmages(cUserData.avatar_url,RivalUser.avatar_url);
             InitializeComponent();
             //User Data definition
-            String imgsrc = cUserData.avatar_url;
+            //String imgsrc = cUserData.avatar_url;
+            UserPic.Source = loadimage(cUserData.avatar_url);
             UserName.Text= cUserData.username.ToString();
             UserRank.Text = cUserData.statistics.rank.global.ToString();
             UserPP.Text= cUserData.statistics.pp.ToString();
@@ -44,7 +46,9 @@ namespace ihcProject.Pages
             UserTScore.Text = cUserData.statistics.total_score.ToString();
             UserAccuracy.Text= cUserData.statistics.hit_accuracy.ToString();
             //Compare Data Definition
-            String CompareimgSrc = RivalUser.avatar_url;
+            //String CompareimgSrc = RivalUser.avatar_url;
+            //VSimg.Source = new BitmapImage(new Uri("pack://application:,,,/assets/images/extra/vs.png"));
+            ComparePic.Source = loadimage(RivalUser.avatar_url);
             CompareName.Text = RivalUser.username.ToString();
             CompareRank.Text = RivalUser.statistics.rank.global.ToString();
             ComparePP.Text = RivalUser.statistics.pp.ToString();
@@ -56,9 +60,27 @@ namespace ihcProject.Pages
             //Add Chart Values
             charta.Values = Avalues;
             chartb.Values = Bvalues;
+            DataContext = s;
+
         }
         public ChartValues<double> Avalues { get; set; }
         public ChartValues<double> Bvalues { get; set; }
+
+        public class shitmages
+        {
+            string userimg;
+            string rivalimg;
+            string vsicon;
+
+            public shitmages(string a, string b) { userimg = a; rivalimg = b; }
+
+        }
+
+        public BitmapImage loadimage(string path) 
+        {
+            return new BitmapImage(new Uri("pack://application:,,," + path.Substring(2)));
+        }
+
 
         public void SeeComparison(UserTemplate user1, UserTemplate user2) {
 
