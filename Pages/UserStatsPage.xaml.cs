@@ -22,6 +22,7 @@ namespace ihcProject.Pages
     {
         public UserTemplate cUserData
         { get; set; }
+
         public SeriesCollection seriesCollection { get; set; }
         public SeriesCollection seriesCollection2 { get; set; }
         public SeriesCollection seriesCollection3 { get; set; }

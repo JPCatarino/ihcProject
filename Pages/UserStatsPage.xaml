@@ -34,7 +34,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <uc:PlayerHeader DataContext="{Binding cUserData}" Width="Auto" VerticalAlignment="Top" Height="200" Grid.ColumnSpan="2"/>
+        <uc:PlayerHeader Width="Auto" VerticalAlignment="Top" Height="200" Grid.ColumnSpan="2"/>
 
         <TextBlock Foreground="#303960" Padding="20" Text="Overview" FontSize="30" Grid.ColumnSpan="2" Grid.Row="1" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
         <TextBlock Foreground="#303960" Padding="15" HorizontalAlignment="Center" Text="Stats"  FontSize="20" Grid.Column="0" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
