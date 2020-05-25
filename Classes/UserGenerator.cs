@@ -77,14 +77,14 @@ namespace ihcProject.Classes
             profile_specs temp = new profile_specs();
             Random random = new Random();
             temp.star = getRandomNumber(1, 10);
-            temp.speed = getRandomNumber(1, 10);
-            temp.ad = getRandomNumber(1, 10);
+            temp.speed = getRandomNumber(1, 13);
+            temp.ad = getRandomNumber(1, 12);
             temp.avgBeatmapTime = random.Next(0, 10).ToString("D2") + ":" + random.Next(0, 59).ToString("D2");
             temp.avgBPM = random.Next(100, 350);
-            temp.cs = getRandomNumber(1, 10);
-            temp.ar = getRandomNumber(1, 10);
+            temp.cs = getRandomNumber(1, 15);
+            temp.ar = getRandomNumber(1, 12);
             temp.od = getRandomNumber(1, 10);
-            temp.hp = getRandomNumber(1, 10);
+            temp.hp = getRandomNumber(1, 7);
             return temp;
         }
 
@@ -129,6 +129,8 @@ namespace ihcProject.Classes
             ret.monthly_performance_gain = rand.Next(ret.monthly_performance_gain, 30000);
             ret.yearly_performance_gain = rand.Next(ret.yearly_performance_gain, 108000);
 
+            //Accuracy
+            ret.hit_accuracy = getRandomNumber(80, 100);
 
             return ret;
         }

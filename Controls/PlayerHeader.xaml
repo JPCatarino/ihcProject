@@ -152,10 +152,10 @@
             </StackPanel>
             <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="20,30,19,36" Width="81" Height="Auto">
                 <TextBlock ToolTip="Total Performance Points" FontSize="15" FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center">
-                    <Run FontWeight="Bold"  Text="12448"/> pp
+                    <Run FontWeight="Bold"  Text="{Binding Path=statistics.pp}"/> pp
                 </TextBlock>
                 <TextBlock ToolTip="Average Accuracy" FontSize="15" FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center">
-                    <Run FontWeight="Bold"  Text="99.31"/>% acc
+                    <Run FontWeight="Bold"  Text="{Binding Path=statistics.hit_accuracy, StringFormat=N2}"/>% acc
                 </TextBlock>
                 <TextBlock FontSize="15" FontFamily="{DynamicResource Aller}" HorizontalAlignment="Center"/>
             </StackPanel>
@@ -169,7 +169,7 @@
                                 <GradientStop Color="#f68ed9" Offset="1"/>
                             </RadialGradientBrush>
                         </Border.Background>
-                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Name="tb_level" FontFamily="{DynamicResource Aller}" FontSize="16" Text="100"/>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Name="tb_level" FontFamily="{DynamicResource Aller}" FontSize="16" Text="{Binding statistics.level.current}"/>
                     </Border>
                 </InlineUIContainer>
             </TextBlock>

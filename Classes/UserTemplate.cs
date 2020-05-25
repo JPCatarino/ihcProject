@@ -96,7 +96,7 @@ namespace ihcProject.Classes
         public int pp_rank { get; set; }
         public int ranked_score { get; set; }
         public int total_score { get; set; }
-        public int hit_accuracy { get; set; }
+        public double hit_accuracy { get; set; }
         public int play_count { get; set; }
         public int play_count_daily { get; set; }
         public int play_time { get; set; }

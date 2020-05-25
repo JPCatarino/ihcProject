@@ -1,4 +1,6 @@
 ﻿using ihcProject.Classes;
+using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
@@ -90,8 +92,13 @@ namespace ihcProject.Pages
             }
         }
 
-        private void b_register_Click(object sender, RoutedEventArgs e)
+        private async void b_register_Click(object sender, RoutedEventArgs e)
         {
+            if (Role == "Fan") {
+                var metroWindow = (Application.Current.MainWindow as MetroWindow);
+                await metroWindow.ShowMessageAsync("Register Failed", "The Fan functionality is not yet available. We'll message when it is", MessageDialogStyle.Affirmative);
+                return;
+            }
             // Create a new user and generate data.
             UserGenerator newUser = new UserGenerator(tb_username.Text, pb_password.Password, Role);
             newUser.generate();
