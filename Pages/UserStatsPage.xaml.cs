@@ -20,7 +20,9 @@ namespace ihcProject.Pages
 {
     public partial class UserStats : Page
     {
-        UserTemplate cUserData;
+        public UserTemplate cUserData
+        { get; set; }
+
         public Func<ChartPoint, string> PointLabel { get; set; }
 
         public void pieChart()
@@ -92,7 +94,7 @@ namespace ihcProject.Pages
         
         public UserStats()
         {
-            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
+            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().FirstOrDefault();
             cUserData = PlayerWindow.cUserData;
             DataContext = cUserData;
 

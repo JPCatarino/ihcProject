@@ -24,7 +24,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <uc:PlayerHeader x:Name="ph_head"  Grid.Row="0" Width="Auto" VerticalAlignment="Top" Height="200"/>
+        <uc:PlayerHeader x:Name="ph_head" Grid.Row="0" Width="Auto" VerticalAlignment="Top" Height="200"/>
 
         <TextBlock Grid.Row="1" FontSize="30" FontFamily="{DynamicResource AllerDisplay}" Margin="10 60 0 0">
             <Run Text="Performance Showcase"/>

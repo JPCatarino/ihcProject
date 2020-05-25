@@ -53,23 +53,23 @@
 
 
         <WrapPanel Grid.Column="0" Width="Auto" Height="Auto">
-            <Image Source="../assets/images/avatars/angel.png" Width="185" Height="190" Margin="5 5 0 0"></Image>
+            <Image Source="{Binding avatar_url}" Width="185" Height="190" Margin="5 5 0 0"></Image>
             <StackPanel Width="200" Margin="10 0 0 0">
-                <TextBlock Name="tb_username" FontSize="20" FontFamily="{DynamicResource AllerDisplay}" Margin="0 15 0 0"><Run Text="Test Test"/> <Run ToolTip="Global Rank" Text="#53"/></TextBlock>
-                <TextBlock Name="tb_country" FontSize="15" FontFamily="{DynamicResource AllerDisplay}" Margin="0 0 0 10"><Run Text="Portugal"/> <Run ToolTip="Country Rank" Text="#1"/></TextBlock>
+                <TextBlock Name="tb_username" FontSize="20" FontFamily="{DynamicResource AllerDisplay}" Margin="0 15 0 0"><Run Text="{Binding Path=username}"/> <Run ToolTip="Global Rank" Text="#"/><Run ToolTip="Global Rank" Text="{Binding Path=statistics.rank.global}" /></TextBlock>
+                <TextBlock Name="tb_country" FontSize="15" FontFamily="{DynamicResource AllerDisplay}" Margin="0 0 0 10"><Run Text="{Binding Path=country.name}"/> <Run ToolTip="Country Rank" Text="#"/><Run ToolTip="Country Rank" Text="{Binding Path=statistics.rank.country}"/></TextBlock>
                 <TextBlock Name="tb_ssad" FontSize="10" FontFamily="{DynamicResource Aller}" Margin="0 0 0 10">
                     <InlineUIContainer ToolTip="Star / Speed / Aim Difficulty" BaselineAlignment="TextBottom"><iconPacks:PackIconBoxIcons Kind="SolidStar"/></InlineUIContainer>
-                    <Run Text="7.08"/> / 
-                    <Run Text="3.38"/> /
-                    <Run Text="3.55"/>
+                    <Run Text="{Binding Path=profile_specs.star}"/> / 
+                    <Run Text="{Binding Path=profile_specs.speed}"/> /
+                    <Run Text="{Binding Path=profile_specs.ad}"/>
                 </TextBlock>
                 <TextBlock Name="tb_time" FontSize="10" FontFamily="{DynamicResource Aller}" Margin="0 0 0 10">
                     <InlineUIContainer ToolTip="Average Beatmap Time" BaselineAlignment="TextBottom"><iconPacks:PackIconBoxIcons Kind="RegularTimer"/></InlineUIContainer>
-                    <Run Text="5:52" />
+                    <Run Text="{Binding Path=profile_specs.avgBeatmapTime}" />
                 </TextBlock>
                 <TextBlock Name="tb_bpm" FontSize="10" FontFamily="{DynamicResource Aller}"  Margin="0 0 0 20">
                     <InlineUIContainer ToolTip="Average Beats per Minute" BaselineAlignment="TextBottom"><iconPacks:PackIconFontAwesome Kind="HeartbeatSolid"/></InlineUIContainer>
-                    <Run Text="200" /> bpm
+                    <Run Text="{Binding Path=profile_specs.avgBPM}" /> bpm
                 </TextBlock>
                 <WrapPanel>
                     <TextBlock Name="tb_circle_size" FontSize="10" FontFamily="{DynamicResource Aller}" Style="{StaticResource inline_margin}">
@@ -78,7 +78,7 @@
                                 <TextBlock Text="CS" Style="{StaticResource rect_icon_text}"/>
                             </Border>
                         </InlineUIContainer>
-                        <Run Text="5.15"/>
+                        <Run Text="{Binding Path=profile_specs.cs}"/>
                     </TextBlock>
                     <TextBlock Name="tb_approach_rate" FontSize="10" FontFamily="{DynamicResource Aller}" Style="{StaticResource inline_margin}">
                         <InlineUIContainer ToolTip="Approach Rate" BaselineAlignment="Center">                   
@@ -86,7 +86,7 @@
                                 <TextBlock Text="AR" Style="{StaticResource rect_icon_text}"/>
                             </Border>
                         </InlineUIContainer>
-                        <Run Text="2.54"/>
+                        <Run Text="{Binding Path=profile_specs.ar}"/>
                     </TextBlock>
                     <TextBlock Name="tb_overall_difficulty" FontSize="10" FontFamily="{DynamicResource Aller}" Style="{StaticResource inline_margin}">
                         <InlineUIContainer ToolTip="Overall Difficulty" BaselineAlignment="Center">                   
@@ -94,7 +94,7 @@
                                 <TextBlock Text="OD" Style="{StaticResource rect_icon_text}"/>
                             </Border>
                         </InlineUIContainer>
-                        <Run Text="9.98"/>
+                        <Run Text="{Binding Path=profile_specs.od}"/>
                     </TextBlock>
                     <TextBlock Name="tb_drain_rate" FontSize="10" FontFamily="{DynamicResource Aller}" Style="{StaticResource inline_margin}">
                         <InlineUIContainer ToolTip="Drain Rate" BaselineAlignment="Center">                   
@@ -102,7 +102,7 @@
                                 <TextBlock Text="HP" Style="{StaticResource rect_icon_text}"/>
                             </Border>
                         </InlineUIContainer>
-                        <Run Text="7.43"/>
+                        <Run Text="{Binding Path=profile_specs.hp}"/>
                     </TextBlock>
                 </WrapPanel>
             </StackPanel>
