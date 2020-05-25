@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControlzEx.Standard;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -83,4 +84,36 @@ namespace ihcProject.Controls
             return Binding.DoNothing;
         }
     }
+
+    public class ValueTooltipConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            Console.WriteLine(value);
+            if (value is string)
+            {
+                string m = value.ToString().Split(new string[] { "mode-", "." }, StringSplitOptions.None)[1];
+                if (m == "osu") {
+                    return "Standard";
+                }
+                return m.First().ToString().ToUpper() + String.Join("", m.Skip(1));
+            }
+            if (value is Uri) {
+                Uri aux = (Uri)value;
+                string m = aux.ToString().Split(new string[] { "mode-", "." }, StringSplitOptions.None)[1];
+                if (m == "osu")
+                {
+                    return "Standard";
+                }
+                return m.First().ToString().ToUpper() + String.Join("", m.Skip(1));
+            }
+            return Binding.DoNothing;
+        }
+
+        public object ConvertBack(object valye, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            throw new NotSupportedException();
+        }
+    }
+
 }
