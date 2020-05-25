@@ -170,19 +170,19 @@ namespace ihcProject.Classes
             hs.dates = new DateTime[3];
 
 
-            foreach (int rank in hs.ranks)
+            for (int i = 0; i < hs.ranks.Length; i++)
             {
-                hs.ranks[rank] = rand.Next(1, 40);
+                hs.ranks[i] = rand.Next(1, 40);
             }
 
-            foreach (int pp in hs.pps)
+            for (int i = 0; i < hs.pps.Length; i++)
             {
-                hs.pps[pp] = rand.Next(900, 1100);
+                hs.pps[i] = rand.Next(900, 1100);
             }
 
-            foreach (int score in hs.scores)
+            for(int i = 0; i <  hs.scores.Length; i++)
             {
-                hs.scores[score] = rand.Next(9000000, 12000000);
+                hs.scores[i] = rand.Next(9000000, 12000000);
             }
 
             for(int i = 0; i < hs.maps.Length; i++)

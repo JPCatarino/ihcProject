@@ -64,7 +64,7 @@
       "pp_rank": 0,
       "ranked_score": 0,
       "total_score": 0,
-      "hit_accuracy": 0,
+      "hit_accuracy": 0.0,
       "play_count": 0,
       "play_count_daily": 0,
       "play_time": 0,
@@ -166,7 +166,7 @@
       "pp_rank": 0,
       "ranked_score": 0,
       "total_score": 0,
-      "hit_accuracy": 0,
+      "hit_accuracy": 0.0,
       "play_count": 0,
       "play_count_daily": 0,
       "play_time": 0,
@@ -268,7 +268,7 @@
       "pp_rank": 0,
       "ranked_score": 317993122,
       "total_score": 1774212358,
-      "hit_accuracy": 0,
+      "hit_accuracy": 0.0,
       "play_count": 20552,
       "play_count_daily": 12,
       "play_time": 0,
@@ -370,7 +370,7 @@
       "pp_rank": 0,
       "ranked_score": 712771777,
       "total_score": 1181204645,
-      "hit_accuracy": 0,
+      "hit_accuracy": 0.0,
       "play_count": 14915,
       "play_count_daily": 5,
       "play_time": 0,
@@ -472,7 +472,7 @@
       "pp_rank": 0,
       "ranked_score": 309716048,
       "total_score": 1852519205,
-      "hit_accuracy": 0,
+      "hit_accuracy": 0.0,
       "play_count": 7871,
       "play_count_daily": 6,
       "play_time": 0,
@@ -574,7 +574,7 @@
       "pp_rank": 0,
       "ranked_score": 243073177,
       "total_score": 1468801890,
-      "hit_accuracy": 0,
+      "hit_accuracy": 0.0,
       "play_count": 42526,
       "play_count_daily": 18,
       "play_time": 0,
@@ -679,7 +679,7 @@
       "pp_rank": 0,
       "ranked_score": 637881017,
       "total_score": 910090660,
-      "hit_accuracy": 0,
+      "hit_accuracy": 0.0,
       "play_count": 31081,
       "play_count_daily": 21,
       "play_time": 0,
@@ -794,7 +794,7 @@
       "pp_rank": 0,
       "ranked_score": 381555070,
       "total_score": 756255651,
-      "hit_accuracy": 0,
+      "hit_accuracy": 0.0,
       "play_count": 20881,
       "play_count_daily": 1,
       "play_time": 0,
@@ -909,7 +909,7 @@
       "pp_rank": 0,
       "ranked_score": 176017973,
       "total_score": 1729623581,
-      "hit_accuracy": 0,
+      "hit_accuracy": 0.0,
       "play_count": 25359,
       "play_count_daily": 10,
       "play_time": 0,
@@ -1024,7 +1024,7 @@
       "pp_rank": 0,
       "ranked_score": 114651430,
       "total_score": 1136120764,
-      "hit_accuracy": 0,
+      "hit_accuracy": 0.0,
       "play_count": 39195,
       "play_count_daily": 12,
       "play_time": 0,
@@ -1072,7 +1072,7 @@
     }
   },
   {
-    "avatar_url": "../assets/images/avatars/girl-3.png",
+    "avatar_url": "../assets/images/avatars/boy-1.png",
     "country_code": null,
     "default_group": null,
     "id": 0,
@@ -1107,7 +1107,7 @@
     "website": null,
     "country": {
       "code": null,
-      "name": "South Sudan"
+      "name": "Iraq"
     },
     "cover": null,
     "account_history": null,
@@ -1119,11 +1119,11 @@
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
     "weekly_playcount": {
-      "total_count": 243,
-      "count_standard": 83,
-      "count_taiko": 88,
-      "count_ctb": 26,
-      "count_mania": 46
+      "total_count": 213,
+      "count_standard": 40,
+      "count_taiko": 60,
+      "count_ctb": 94,
+      "count_mania": 19
     },
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
@@ -1131,17 +1131,17 @@
     "scores_first_count": 0,
     "statistics": {
       "level": {
-        "current": 83,
+        "current": 40,
         "progress": 0
       },
-      "pp": 8920,
-      "pp_change": -93,
+      "pp": 3729,
+      "pp_change": 177,
       "pp_rank": 0,
-      "ranked_score": 393481546,
-      "total_score": 1012587559,
-      "hit_accuracy": 0,
-      "play_count": 14962,
-      "play_count_daily": 15,
+      "ranked_score": 631432560,
+      "total_score": 1214050550,
+      "hit_accuracy": 88.067869249762907,
+      "play_count": 36898,
+      "play_count_daily": 13,
       "play_time": 0,
       "total_hits": 0,
       "maximum_combo": 0,
@@ -1149,29 +1149,29 @@
       "is_ranked": false,
       "grade_counts": null,
       "rank": {
-        "global": 880,
-        "country": 205,
+        "global": 604,
+        "country": 526,
         "rank_change": 11
       },
-      "daily_performance_gain": 147,
-      "weekly_performance_gain": 1617,
-      "monthly_performance_gain": 16988,
-      "yearly_performance_gain": 60165,
-      "daily_rank_gain": 8,
-      "weekly_rank_gain": -13,
-      "monthly_rank_gain": 191,
-      "yearly_rank_gain": -265
+      "daily_performance_gain": 47,
+      "weekly_performance_gain": 634,
+      "monthly_performance_gain": 20031,
+      "yearly_performance_gain": 79716,
+      "daily_rank_gain": 5,
+      "weekly_rank_gain": -28,
+      "monthly_rank_gain": 94,
+      "yearly_rank_gain": -5465
     },
     "recent_high_scores": {
       "maps": [
         "WANNABE",
-        "eastward",
-        "Akari no Arika"
+        "Dream Catcher",
+        "anticrystal"
       ],
       "ranks": [
-        11,
-        0,
-        0
+        16,
+        8,
+        37
       ],
       "mods": [
         null,
@@ -1179,19 +1179,19 @@
         null
       ],
       "dates": [
-        "2019-09-14T00:00:00",
-        "2015-07-16T00:00:00",
-        "2019-04-05T00:00:00"
+        "2012-05-05T00:00:00",
+        "2005-08-20T00:00:00",
+        "2015-01-27T00:00:00"
       ],
       "pps": [
-        1056,
-        0,
-        0
+        1020,
+        1074,
+        1055
       ],
       "scores": [
-        9854871,
-        0,
-        0
+        10992872,
+        10377817,
+        11197857
       ]
     },
     "support_level": 0,
@@ -1206,15 +1206,15 @@
       "pss_item": 0
     },
     "profile_specs": {
-      "star": 8.51236750721576,
-      "speed": 8.51236750721576,
-      "ad": 8.51236750721576,
-      "avgBeatmapTime": "08:27",
-      "avgBPM": 166,
-      "cs": 8.51236750721576,
-      "ar": 8.51236750721576,
-      "od": 8.51236750721576,
-      "hp": 8.51236750721576
+      "star": 4.6305411623933086,
+      "speed": 5.8407215498577436,
+      "ad": 5.4373280873695986,
+      "avgBeatmapTime": "04:11",
+      "avgBPM": 335,
+      "cs": 6.6475084748340345,
+      "ar": 5.4373280873695986,
+      "od": 4.6305411623933086,
+      "hp": 3.4203607749288718
     }
   }
 ]
