@@ -180,7 +180,6 @@
         </Wpf:CartesianChart>
 
         <TextBlock Foreground="#303960" Padding="20, 100, 20, 20" Text="High score beatmap details" FontSize="30" Grid.Row="13" Grid.ColumnSpan="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
-        
             <Grid Grid.Row="14" Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -209,25 +208,24 @@
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"/>
-                <Button x:Name="beatmapBtt_1" Content="Beatmap1" Grid.Row="1" Grid.Column="4"/>
+                <Button x:Name="beatmapBtt_1" Content="Beatmap1" Grid.Row="1" Grid.Column="4" Click="beatmapBtt_1_Click"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="5"/>
 
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3"/>
-                <Button x:Name="beatmapBtt_2" Content="Beatmap2" Grid.Row="2" Grid.Column="4"/>
+                <Button x:Name="beatmapBtt_2" Content="Beatmap2" Grid.Row="2" Grid.Column="4" Click="beatmapBtt_2_Click"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="5"/>
 
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3"/>
-                <Button x:Name="beatmapBtt_3" Content="Beatmap3" Grid.Row="3" Grid.Column="4"/>
+                <Button x:Name="beatmapBtt_3" Content="Beatmap3" Grid.Row="3" Grid.Column="4" Click="beatmapBtt_3_Click"/>
                 <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="5"/>
 
         </Grid>
-        
-    
+       
     </Grid>
 </Page>
