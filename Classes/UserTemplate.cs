@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -64,7 +65,7 @@ namespace ihcProject.Classes
         public User_Achievements[] user_achievements { get; set; }
         public object rankHistory { get; set; }
         public Profile_Choices profile_choices { get; set; }
-
+        public profile_specs profile_specs { get; set; }
     }
 
     public class Kudosu
@@ -154,6 +155,17 @@ namespace ihcProject.Classes
         public int cb3_item { get; set; }
         public int cb4_item { get; set; }
         public int pss_item { get; set; }
+    }
+
+    public class profile_specs { 
+        public int star { get; set; }
+        public int speed { get; set; }
+        public int ad { get; set; }
+        public string avgBeatmapTime { get; set;}
+        public int cs { get; set; }
+        public int ar { get; set; }
+        public int od { get; set; }
+        public int hp { get; set; }
     }
 
 }
