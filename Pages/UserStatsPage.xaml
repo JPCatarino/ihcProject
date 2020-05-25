@@ -7,7 +7,7 @@
       xmlns:uc="clr-namespace:ihcProject.Controls"
       xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
       mc:Ignorable="d" 
-      d:DesignHeight="2000" d:DesignWidth="800"
+      d:DesignHeight="3000" d:DesignWidth="800"
       Title="UserStats"
       Background="#fff">
 
@@ -26,6 +26,8 @@
             <RowDefinition Height="200"/>
             <RowDefinition Height="90"/>
             <RowDefinition Height="300"/>
+            <RowDefinition Height="180"/>
+            <RowDefinition Height="200"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -122,7 +124,7 @@
         <TextBlock Foreground="#303960" Padding="20, 100, 20, 20" Text="Charts" FontSize="30" Grid.Row="6" Grid.ColumnSpan="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
 
         <TextBlock Foreground="#303960" Padding="15" Text="Hit accuracy" FontSize="20" Grid.Row="7" HorizontalAlignment="Center"/>
-        <Wpf:PieChart Grid.Row="8" LegendLocation="Left">
+            <Wpf:PieChart Grid.Row="8" LegendLocation="Left">
             <Wpf:PieChart.Series>
                 <Wpf:PieSeries Title="300" Values="124322" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
                 <Wpf:PieSeries Title="50" Values="1939" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
@@ -131,7 +133,7 @@
         </Wpf:PieChart>
 
         <TextBlock Foreground="#303960" Padding="15" Text="Ranking ratio" FontSize="20" Grid.Row="7" Grid.Column="1"  HorizontalAlignment="Center"/>
-        <Wpf:PieChart Grid.Row="8" Grid.Column="2" LegendLocation="Right">
+            <Wpf:PieChart Grid.Row="8" Grid.Column="2" LegendLocation="Right">
             <Wpf:PieChart.Series>
                 <Wpf:PieSeries Title="A" Values="2421" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
                 <Wpf:PieSeries Title="Silver_SS" Values="4" DataLabels="True" LabelPoint="{Binding PointLabel}" Foreground="Black"/>
@@ -146,7 +148,7 @@
        
         <!--PP-->
         <TextBlock Foreground="#303960" Padding="15, 50, 15, 15" Text="Performance Points" FontSize="20" Grid.Row="9" HorizontalAlignment="Center"/>
-        <Wpf:CartesianChart Grid.Row="10" Series="{Binding seriesCollection}">
+            <Wpf:CartesianChart Grid.Row="10" Series="{Binding seriesCollection}">
             <Wpf:CartesianChart.AxisY>
                 <Wpf:Axis Title="PP"/>
             </Wpf:CartesianChart.AxisY>
@@ -157,7 +159,7 @@
         
         <!--Rank (fix Y axis)-->
         <TextBlock Foreground="#303960" Padding="15, 50, 15, 15" Text="Ranking" FontSize="20" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center"/>
-        <Wpf:CartesianChart Grid.Row="10" Grid.Column="1" Series="{Binding seriesCollection2}">
+            <Wpf:CartesianChart Grid.Row="10" Grid.Column="1" Series="{Binding seriesCollection2}">
             <Wpf:CartesianChart.AxisY>
                 <Wpf:Axis Title="Ranking" MinValue="1500" MaxValue="100"/>
             </Wpf:CartesianChart.AxisY>
@@ -168,8 +170,7 @@
 
         <!--Score-->
         <TextBlock Foreground="#303960" Padding="15, 50, 15, 15" Text="Play count (Monthly)" FontSize="20" Grid.Row="11" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-
-        <Wpf:CartesianChart Grid.Row="12" Grid.ColumnSpan="2" Series="{Binding seriesCollection3}">
+            <Wpf:CartesianChart Grid.Row="12" Grid.ColumnSpan="2" Series="{Binding seriesCollection3}">
             <Wpf:CartesianChart.AxisY>
                 <Wpf:Axis Title="Plays"/>
             </Wpf:CartesianChart.AxisY>
@@ -177,7 +178,56 @@
                 <Wpf:Axis Labels="{Binding labelsX}"/>
             </Wpf:CartesianChart.AxisX>
         </Wpf:CartesianChart>
+
+        <TextBlock Foreground="#303960" Padding="20, 100, 20, 20" Text="High score beatmap details" FontSize="30" Grid.Row="13" Grid.ColumnSpan="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
         
-  
+            <Grid Grid.Row="14" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Date" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="Rank" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1"/>
+            <TextBlock Text="PP" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2"/>
+            <TextBlock Text="Score" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3"/>
+            <TextBlock Text="Map details" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4"/>
+            <TextBlock Text="Mods" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5"/>
+
+
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"/>
+                <Button x:Name="beatmapBtt_1" Content="Beatmap1" Grid.Row="1" Grid.Column="4"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="5"/>
+
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3"/>
+                <Button x:Name="beatmapBtt_2" Content="Beatmap2" Grid.Row="2" Grid.Column="4"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="5"/>
+
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3"/>
+                <Button x:Name="beatmapBtt_3" Content="Beatmap3" Grid.Row="3" Grid.Column="4"/>
+                <TextBlock Text="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="5"/>
+
+        </Grid>
+        
+    
     </Grid>
 </Page>

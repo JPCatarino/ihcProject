@@ -1,0 +1,157 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ihcProject"
+        xmlns:Controls="clr-namespace:ihcProject.Controls" x:Class="ihcProject.Window1"
+        mc:Ignorable="d"
+        Title="Beatmap Details" Height="850" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height=".6*"/>
+            <RowDefinition Height=".4*"/>
+            <RowDefinition Height="2.5*"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.ColumnSpan="2" Source="/ihcProject;component/assets/images/beatmaps/1.jpg" Stretch="Fill"/>
+        <TextBlock Text="MapName (Data)" FontSize="30" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Padding="15"/>
+
+        <!--Info-->
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Artist:" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="10"/>
+            <TextBlock Text="Mapper:" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Padding="10" VerticalAlignment="Center" Grid.Column="2"/>
+            <TextBlock Text="Length:" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Padding="10" VerticalAlignment="Center" Grid.Column="4"/>
+            <TextBlock Text="BPM:" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Padding="10" VerticalAlignment="Center" Grid.Column="6"/>
+
+
+            <TextBlock Text="Data" FontSize="16" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="10"/>
+            <TextBlock Text="Data" FontSize="16" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="10"/>
+            <TextBlock Text="Data" FontSize="16" Grid.Column="5" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="10"/>
+            <TextBlock Text="Data" FontSize="16" Grid.Column="7" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="10"/>
+        </Grid>
+
+        <!--Stats-->
+        <Grid Grid.Row="5" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!--Difficulty-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Difficulty :" FontSize="25" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="15"/>
+                <Grid Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Image Grid.Column="0" />
+                </Grid>
+            </Grid>
+
+            <!--Circle size-->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Circle size :" FontSize="25" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="15"/>
+                <Grid Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </Grid>
+
+            <!--HP drain-->
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Hp drain :" FontSize="25" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="15"/>
+                <Grid Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
