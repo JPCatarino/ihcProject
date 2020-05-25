@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Web;
 using ihcProject.Pages;
+using ihcProject.Classes;
 
 namespace ihcProject.Controls
 {
@@ -34,9 +35,9 @@ namespace ihcProject.Controls
             this.navFrame.Navigate(new Uri("../Pages/ProfilePage.xaml", UriKind.Relative));
         }
 
-        public void goToComparePage()
+        public void goToComparePage(UserTemplate rv)
         {
-            this.navFrame.Navigate(new Uri("../Pages/ComparePage.xaml", UriKind.Relative));
+            this.navFrame.Navigate(new ComparePage(rv));
         }
 
         public void goToRivalProfilePage(string rvname) {
