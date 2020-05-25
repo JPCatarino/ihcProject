@@ -24,5 +24,12 @@ namespace ihcProject.Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
+            PlayerWindow.hmb_player.goToRivalProfilePage("Rival User");
+
+        }
     }
 }
