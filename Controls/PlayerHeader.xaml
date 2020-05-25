@@ -59,9 +59,9 @@
                 <TextBlock Name="tb_country" FontSize="15" FontFamily="{DynamicResource AllerDisplay}" Margin="0 0 0 10"><Run Text="{Binding Path=country.name}"/> <Run ToolTip="Country Rank" Text="#"/><Run ToolTip="Country Rank" Text="{Binding Path=statistics.rank.country}"/></TextBlock>
                 <TextBlock Name="tb_ssad" FontSize="10" FontFamily="{DynamicResource Aller}" Margin="0 0 0 10">
                     <InlineUIContainer ToolTip="Star / Speed / Aim Difficulty" BaselineAlignment="TextBottom"><iconPacks:PackIconBoxIcons Kind="SolidStar"/></InlineUIContainer>
-                    <Run Text="{Binding Path=profile_specs.star}"/> / 
-                    <Run Text="{Binding Path=profile_specs.speed}"/> /
-                    <Run Text="{Binding Path=profile_specs.ad}"/>
+                    <Run Text="{Binding Path=profile_specs.star, StringFormat=N2}"/> / 
+                    <Run Text="{Binding Path=profile_specs.speed, StringFormat=N2}"/> /
+                    <Run Text="{Binding Path=profile_specs.ad, StringFormat=N2}"/>
                 </TextBlock>
                 <TextBlock Name="tb_time" FontSize="10" FontFamily="{DynamicResource Aller}" Margin="0 0 0 10">
                     <InlineUIContainer ToolTip="Average Beatmap Time" BaselineAlignment="TextBottom"><iconPacks:PackIconBoxIcons Kind="RegularTimer"/></InlineUIContainer>
@@ -78,7 +78,7 @@
                                 <TextBlock Text="CS" Style="{StaticResource rect_icon_text}"/>
                             </Border>
                         </InlineUIContainer>
-                        <Run Text="{Binding Path=profile_specs.cs}"/>
+                        <Run Text="{Binding Path=profile_specs.cs, StringFormat=N2}"/>
                     </TextBlock>
                     <TextBlock Name="tb_approach_rate" FontSize="10" FontFamily="{DynamicResource Aller}" Style="{StaticResource inline_margin}">
                         <InlineUIContainer ToolTip="Approach Rate" BaselineAlignment="Center">                   
@@ -86,7 +86,7 @@
                                 <TextBlock Text="AR" Style="{StaticResource rect_icon_text}"/>
                             </Border>
                         </InlineUIContainer>
-                        <Run Text="{Binding Path=profile_specs.ar}"/>
+                        <Run Text="{Binding Path=profile_specs.ar, StringFormat=N2}"/>
                     </TextBlock>
                     <TextBlock Name="tb_overall_difficulty" FontSize="10" FontFamily="{DynamicResource Aller}" Style="{StaticResource inline_margin}">
                         <InlineUIContainer ToolTip="Overall Difficulty" BaselineAlignment="Center">                   
@@ -94,7 +94,7 @@
                                 <TextBlock Text="OD" Style="{StaticResource rect_icon_text}"/>
                             </Border>
                         </InlineUIContainer>
-                        <Run Text="{Binding Path=profile_specs.od}"/>
+                        <Run Text="{Binding Path=profile_specs.od, StringFormat=N2}"/>
                     </TextBlock>
                     <TextBlock Name="tb_drain_rate" FontSize="10" FontFamily="{DynamicResource Aller}" Style="{StaticResource inline_margin}">
                         <InlineUIContainer ToolTip="Drain Rate" BaselineAlignment="Center">                   
@@ -102,7 +102,7 @@
                                 <TextBlock Text="HP" Style="{StaticResource rect_icon_text}"/>
                             </Border>
                         </InlineUIContainer>
-                        <Run Text="{Binding Path=profile_specs.hp}"/>
+                        <Run Text="{Binding Path=profile_specs.hp, StringFormat=N2}"/>
                     </TextBlock>
                 </WrapPanel>
             </StackPanel>

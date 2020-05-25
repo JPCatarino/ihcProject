@@ -158,15 +158,15 @@ namespace ihcProject.Classes
     }
 
     public class profile_specs {
-        public int star { get; set; }
-        public int speed { get; set; }
-        public int ad { get; set; }
+        public double star { get; set; }
+        public double speed { get; set; }
+        public double ad { get; set; }
         public string avgBeatmapTime { get; set; }
         public int avgBPM {get; set; }
-        public int cs { get; set; }
-        public int ar { get; set; }
-        public int od { get; set; }
-        public int hp { get; set; }
+        public double cs { get; set; }
+        public double ar { get; set; }
+        public double od { get; set; }
+        public double hp { get; set; }
     }
 
 }

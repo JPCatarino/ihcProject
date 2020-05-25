@@ -75,16 +75,21 @@ namespace ihcProject.Classes
         private profile_specs initProfileSpecs() {
             profile_specs temp = new profile_specs();
             Random random = new Random();
-            temp.star = random.Next(1, 10);
-            temp.speed = random.Next(1, 10);
-            temp.ad = random.Next(1, 10);
+            temp.star = getRandomNumber(1, 10);
+            temp.speed = getRandomNumber(1, 10);
+            temp.ad = getRandomNumber(1, 10);
             temp.avgBeatmapTime = random.Next(0, 10).ToString("D2") + ":" + random.Next(0, 59).ToString("D2");
             temp.avgBPM = random.Next(100, 350);
-            temp.cs = random.Next(1, 10);
-            temp.ar = random.Next(1, 10);
-            temp.od = random.Next(1, 10);
-            temp.hp = random.Next(1, 10);
+            temp.cs = getRandomNumber(1, 10);
+            temp.ar = getRandomNumber(1, 10);
+            temp.od = getRandomNumber(1, 10);
+            temp.hp = getRandomNumber(1, 10);
             return temp;
+        }
+
+        private double getRandomNumber(double min, double max) {
+            Random random = new Random();
+            return random.NextDouble() * (max - min) + min;
         }
 
         private Statistics generateStatistics() {
