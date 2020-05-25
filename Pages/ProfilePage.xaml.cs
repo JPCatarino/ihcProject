@@ -50,7 +50,6 @@ namespace ihcProject.Pages
             InitializeComponent();
             b_perf.Visibility = Visibility.Hidden;
             b_stat.Visibility = Visibility.Hidden;
-            b_comp.Visibility = Visibility.Visible;
         }
 
         private void b_perf_Click(object sender, RoutedEventArgs e)
@@ -189,12 +188,6 @@ namespace ihcProject.Pages
                 aux.setIndex(rivalUserData.profile_choices.pss_item);
             }
             else aux.setIndex(cUserData.profile_choices.pss_item);
-        }
-
-        private void b_comp_Click(object sender, RoutedEventArgs e)
-        {
-            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
-            PlayerWindow.hmb_player.goToComparePage();
         }
     }
 }

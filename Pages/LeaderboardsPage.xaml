@@ -9,7 +9,6 @@
       Title="LeaderboardsPage">
 
     <Grid>
-        <Button Content="Work Aneta" HorizontalAlignment="Left" Margin="362,144,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-
+        
     </Grid>
 </Page>

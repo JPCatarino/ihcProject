@@ -89,8 +89,7 @@
       "cb3_item": 0,
       "cb4_item": 0,
       "pss_item": 0
-    },
-    "profile_specs": null
+    }
   },
   {
     "avatar_url": "../assets/images/avatars/boy-4.png",
@@ -182,8 +181,7 @@
       "cb3_item": 0,
       "cb4_item": 0,
       "pss_item": 0
-    },
-    "profile_specs": null
+    }
   },
   {
     "avatar_url": "../assets/images/avatars/boy-4.png",
@@ -275,8 +273,7 @@
       "cb3_item": 0,
       "cb4_item": 0,
       "pss_item": 0
-    },
-    "profile_specs": null
+    }
   },
   {
     "avatar_url": "../assets/images/avatars/girl-7.png",
@@ -368,8 +365,7 @@
       "cb3_item": 0,
       "cb4_item": 0,
       "pss_item": 0
-    },
-    "profile_specs": null
+    }
   },
   {
     "avatar_url": "../assets/images/avatars/boy-5.png",
@@ -461,8 +457,7 @@
       "cb3_item": 0,
       "cb4_item": 0,
       "pss_item": 0
-    },
-    "profile_specs": null
+    }
   },
   {
     "avatar_url": "../assets/images/avatars/girl-3.png",
@@ -554,325 +549,6 @@
       "cb3_item": 0,
       "cb4_item": 0,
       "pss_item": 0
-    },
-    "profile_specs": null
-  },
-  {
-    "avatar_url": "../assets/images/avatars/girl-6.png",
-    "country_code": null,
-    "default_group": null,
-    "id": 0,
-    "is_active": false,
-    "is_bot": false,
-    "is_online": false,
-    "is_supporter": false,
-    "last_visit": "0001-01-01T00:00:00",
-    "pm_friends_only": false,
-    "profile_colour": null,
-    "username": "testp",
-    "password": "t",
-    "role": "Player",
-    "cover_url": null,
-    "discord": null,
-    "has_supported": false,
-    "interests": null,
-    "join_date": "0001-01-01T00:00:00",
-    "kudosu": null,
-    "lastfm": null,
-    "location": null,
-    "max_blocks": 0,
-    "max_friends": 0,
-    "occupation": null,
-    "playmode": null,
-    "playstyle": null,
-    "post_count": 0,
-    "profile_order": null,
-    "skype": null,
-    "title": null,
-    "twitter": null,
-    "website": null,
-    "country": {
-      "code": null,
-      "name": "Armenia"
-    },
-    "cover": null,
-    "account_history": null,
-    "active_tournament_banner": null,
-    "badges": null,
-    "favourite_beatmapset_count": 0,
-    "follower_count": 0,
-    "graveyard_beatmapset_count": 0,
-    "loved_beatmapset_count": 0,
-    "monthly_playcounts": null,
-    "weekly_playcount": {
-      "total_count": 243,
-      "count_standard": 68,
-      "count_taiko": 80,
-      "count_ctb": 13,
-      "count_mania": 82
-    },
-    "previous_usernames": null,
-    "ranked_and_approved_beatmapset_count": 0,
-    "replays_watched_counts": null,
-    "scores_first_count": 0,
-    "statistics": {
-      "level": {
-        "current": 68,
-        "progress": 0
-      },
-      "pp": 15846,
-      "pp_change": -147,
-      "pp_rank": 0,
-      "ranked_score": 637881017,
-      "total_score": 910090660,
-      "hit_accuracy": 0,
-      "play_count": 31081,
-      "play_count_daily": 21,
-      "play_time": 0,
-      "total_hits": 0,
-      "maximum_combo": 0,
-      "replays_watched_by_others": 0,
-      "is_ranked": false,
-      "grade_counts": null,
-      "rank": {
-        "global": 809,
-        "country": 635,
-        "rank_change": 9
-      }
-    },
-    "support_level": 0,
-    "unranked_beatmapset_count": 0,
-    "user_achievements": null,
-    "rankHistory": null,
-    "profile_choices": {
-      "cb1_item": 0,
-      "cb2_item": 0,
-      "cb3_item": 0,
-      "cb4_item": 0,
-      "pss_item": 0
-    },
-    "profile_specs": {
-      "star": 0,
-      "speed": 5,
-      "ad": 3,
-      "avgBeatmapTime": "2:0",
-      "avgBPM": 276,
-      "cs": 8,
-      "ar": 2,
-      "od": 5,
-      "hp": 4
-    }
-  },
-  {
-    "avatar_url": "../assets/images/avatars/boy-5.png",
-    "country_code": null,
-    "default_group": null,
-    "id": 0,
-    "is_active": false,
-    "is_bot": false,
-    "is_online": false,
-    "is_supporter": false,
-    "last_visit": "0001-01-01T00:00:00",
-    "pm_friends_only": false,
-    "profile_colour": null,
-    "username": "testj",
-    "password": "j",
-    "role": "Player",
-    "cover_url": null,
-    "discord": null,
-    "has_supported": false,
-    "interests": null,
-    "join_date": "0001-01-01T00:00:00",
-    "kudosu": null,
-    "lastfm": null,
-    "location": null,
-    "max_blocks": 0,
-    "max_friends": 0,
-    "occupation": null,
-    "playmode": null,
-    "playstyle": null,
-    "post_count": 0,
-    "profile_order": null,
-    "skype": null,
-    "title": null,
-    "twitter": null,
-    "website": null,
-    "country": {
-      "code": null,
-      "name": "Jamaica"
-    },
-    "cover": null,
-    "account_history": null,
-    "active_tournament_banner": null,
-    "badges": null,
-    "favourite_beatmapset_count": 0,
-    "follower_count": 0,
-    "graveyard_beatmapset_count": 0,
-    "loved_beatmapset_count": 0,
-    "monthly_playcounts": null,
-    "weekly_playcount": {
-      "total_count": 201,
-      "count_standard": 42,
-      "count_taiko": 43,
-      "count_ctb": 52,
-      "count_mania": 64
-    },
-    "previous_usernames": null,
-    "ranked_and_approved_beatmapset_count": 0,
-    "replays_watched_counts": null,
-    "scores_first_count": 0,
-    "statistics": {
-      "level": {
-        "current": 42,
-        "progress": 0
-      },
-      "pp": 12472,
-      "pp_change": 8,
-      "pp_rank": 0,
-      "ranked_score": 381555070,
-      "total_score": 756255651,
-      "hit_accuracy": 0,
-      "play_count": 20881,
-      "play_count_daily": 1,
-      "play_time": 0,
-      "total_hits": 0,
-      "maximum_combo": 0,
-      "replays_watched_by_others": 0,
-      "is_ranked": false,
-      "grade_counts": null,
-      "rank": {
-        "global": 433,
-        "country": 297,
-        "rank_change": 16
-      }
-    },
-    "support_level": 0,
-    "unranked_beatmapset_count": 0,
-    "user_achievements": null,
-    "rankHistory": null,
-    "profile_choices": {
-      "cb1_item": 0,
-      "cb2_item": 0,
-      "cb3_item": 0,
-      "cb4_item": 0,
-      "pss_item": 0
-    },
-    "profile_specs": {
-      "star": 4,
-      "speed": 6,
-      "ad": 5,
-      "avgBeatmapTime": "4,00:40,00",
-      "avgBPM": 330,
-      "cs": 3,
-      "ar": 2,
-      "od": 4,
-      "hp": 0
-    }
-  },
-  {
-    "avatar_url": "../assets/images/avatars/girl-5.png",
-    "country_code": null,
-    "default_group": null,
-    "id": 0,
-    "is_active": false,
-    "is_bot": false,
-    "is_online": false,
-    "is_supporter": false,
-    "last_visit": "0001-01-01T00:00:00",
-    "pm_friends_only": false,
-    "profile_colour": null,
-    "username": "testt",
-    "password": "t",
-    "role": "Player",
-    "cover_url": null,
-    "discord": null,
-    "has_supported": false,
-    "interests": null,
-    "join_date": "0001-01-01T00:00:00",
-    "kudosu": null,
-    "lastfm": null,
-    "location": null,
-    "max_blocks": 0,
-    "max_friends": 0,
-    "occupation": null,
-    "playmode": null,
-    "playstyle": null,
-    "post_count": 0,
-    "profile_order": null,
-    "skype": null,
-    "title": null,
-    "twitter": null,
-    "website": null,
-    "country": {
-      "code": null,
-      "name": "Serbia"
-    },
-    "cover": null,
-    "account_history": null,
-    "active_tournament_banner": null,
-    "badges": null,
-    "favourite_beatmapset_count": 0,
-    "follower_count": 0,
-    "graveyard_beatmapset_count": 0,
-    "loved_beatmapset_count": 0,
-    "monthly_playcounts": null,
-    "weekly_playcount": {
-      "total_count": 281,
-      "count_standard": 78,
-      "count_taiko": 96,
-      "count_ctb": 36,
-      "count_mania": 71
-    },
-    "previous_usernames": null,
-    "ranked_and_approved_beatmapset_count": 0,
-    "replays_watched_counts": null,
-    "scores_first_count": 0,
-    "statistics": {
-      "level": {
-        "current": 78,
-        "progress": 0
-      },
-      "pp": 13851,
-      "pp_change": -55,
-      "pp_rank": 0,
-      "ranked_score": 176017973,
-      "total_score": 1729623581,
-      "hit_accuracy": 0,
-      "play_count": 25359,
-      "play_count_daily": 10,
-      "play_time": 0,
-      "total_hits": 0,
-      "maximum_combo": 0,
-      "replays_watched_by_others": 0,
-      "is_ranked": false,
-      "grade_counts": null,
-      "rank": {
-        "global": 964,
-        "country": 21,
-        "rank_change": -4
-      }
-    },
-    "support_level": 0,
-    "unranked_beatmapset_count": 0,
-    "user_achievements": null,
-    "rankHistory": null,
-    "profile_choices": {
-      "cb1_item": 0,
-      "cb2_item": 0,
-      "cb3_item": 0,
-      "cb4_item": 0,
-      "pss_item": 0
-    },
-    "profile_specs": {
-      "star": 7,
-      "speed": 7,
-      "ad": 3,
-      "avgBeatmapTime": "09:11",
-      "avgBPM": 202,
-      "cs": 0,
-      "ar": 9,
-      "od": 4,
-      "hp": 2
     }
   }
 ]

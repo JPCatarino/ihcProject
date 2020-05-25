@@ -34,11 +34,6 @@ namespace ihcProject.Controls
             this.navFrame.Navigate(new Uri("../Pages/ProfilePage.xaml", UriKind.Relative));
         }
 
-        public void goToComparePage()
-        {
-            this.navFrame.Navigate(new Uri("../Pages/ComparePage.xaml", UriKind.Relative));
-        }
-
         public void goToRivalProfilePage(string rvname) {
             this.navFrame.Navigate(new ProfilePage(rvname));
         }

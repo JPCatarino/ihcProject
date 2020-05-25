@@ -106,10 +106,5 @@
             </Border.Background>
             <uc:ProfileStatShowcase x:Name="pss_main" Loaded="pss_main_Loaded"/>
         </Border>
-        <Button Content="Compare Stats" Visibility="Hidden" Name="b_comp" HorizontalAlignment="Left" Margin="1081,10.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="130" Click="b_comp_Click" Height="45">
-            <Button.Background>
-                <SolidColorBrush Color="LightPink"/>
-            </Button.Background>
-        </Button>
     </Grid>
 </Page>
