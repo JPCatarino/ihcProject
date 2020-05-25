@@ -26,11 +26,11 @@ namespace ihcProject.Pages
     {   
         UserTemplate cUserData;
         UserTemplate RivalUser;
-        public ComparePage()
+        public ComparePage(UserTemplate RivalUser)
         {
             var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
-            cUserData = PlayerWindow.cUserData;
-            RivalUser = PlayerWindow.cUserData;
+            this.cUserData = PlayerWindow.cUserData;
+            this.RivalUser = RivalUser;
             ChartValues<double> Avalues = new ChartValues<double> {10,11,12,13,14,15,16 };
             ChartValues<double> Bvalues = new ChartValues<double> {1,2,3,4,5,6,7 };
             InitializeComponent();

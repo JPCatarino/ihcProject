@@ -20,8 +20,8 @@ namespace ihcProject.Pages
 {
     public partial class UserStats : Page
     {
-        UserTemplate cUserData;
-        public Func<double, string> yFormatter { get; set; }
+        public UserTemplate cUserData
+        { get; set; }
         public SeriesCollection seriesCollection { get; set; }
         public SeriesCollection seriesCollection2 { get; set; }
         public SeriesCollection seriesCollection3 { get; set; }
@@ -79,10 +79,9 @@ namespace ihcProject.Pages
             labelsRankY = new string[] {"1200", "1100", "1000", "900", "800", "700", "600", "500" };
         }
 
-        
         public UserStats()
         {
-            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
+            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().FirstOrDefault();
             cUserData = PlayerWindow.cUserData;
             DataContext = cUserData;
 

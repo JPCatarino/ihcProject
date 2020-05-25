@@ -63,11 +63,11 @@ namespace ihcProject.Classes
         {
             Profile_Choices temp = new Profile_Choices();
             Random random = new Random();
-            temp.cb1_item = random.Next(0,3);
-            temp.cb2_item = random.Next(0, 3); 
-            temp.cb3_item = random.Next(0, 3);
-            temp.cb4_item = random.Next(0, 3);
-            temp.pss_item = random.Next(0, 1);
+            temp.cb1_item = random.Next(0 ,4);
+            temp.cb2_item = random.Next(0, 4); 
+            temp.cb3_item = random.Next(0, 4);
+            temp.cb4_item = random.Next(0, 4);
+            temp.pss_item = random.Next(1, 3);
             return temp;
 
         }
@@ -75,15 +75,21 @@ namespace ihcProject.Classes
         private profile_specs initProfileSpecs() {
             profile_specs temp = new profile_specs();
             Random random = new Random();
-            temp.star = random.Next(0, 10);
-            temp.speed = random.Next(0, 10);
-            temp.ad = random.Next(0, 10);
-            temp.avgBeatmapTime = random.Next(0, 10).ToString() + ":" + random.Next(0, 59).ToString();
-            temp.cs = random.Next(0, 10);
-            temp.ar = random.Next(0, 10);
-            temp.od = random.Next(0, 10);
-            temp.hp = random.Next(0, 10);
+            temp.star = getRandomNumber(1, 10);
+            temp.speed = getRandomNumber(1, 10);
+            temp.ad = getRandomNumber(1, 10);
+            temp.avgBeatmapTime = random.Next(0, 10).ToString("D2") + ":" + random.Next(0, 59).ToString("D2");
+            temp.avgBPM = random.Next(100, 350);
+            temp.cs = getRandomNumber(1, 10);
+            temp.ar = getRandomNumber(1, 10);
+            temp.od = getRandomNumber(1, 10);
+            temp.hp = getRandomNumber(1, 10);
             return temp;
+        }
+
+        private double getRandomNumber(double min, double max) {
+            Random random = new Random();
+            return random.NextDouble() * (max - min) + min;
         }
 
         private Statistics generateStatistics() {

@@ -24,7 +24,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <uc:PlayerHeader Grid.Row="0" Width="Auto" VerticalAlignment="Top" Height="200"/>
+        <uc:PlayerHeader x:Name="ph_head" Grid.Row="0" Width="Auto" VerticalAlignment="Top" Height="200"/>
 
         <TextBlock Grid.Row="1" FontSize="30" FontFamily="{DynamicResource AllerDisplay}" Margin="10 60 0 0">
             <Run Text="Performance Showcase"/>
@@ -106,5 +106,10 @@
             </Border.Background>
             <uc:ProfileStatShowcase x:Name="pss_main" Loaded="pss_main_Loaded"/>
         </Border>
+        <Button Content="Compare Stats" Visibility="Hidden" Name="b_comp" HorizontalAlignment="Left" Margin="1081,10.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="130" Click="b_comp_Click" Height="45">
+            <Button.Background>
+                <SolidColorBrush Color="LightPink"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Page>
