@@ -19,7 +19,7 @@ namespace ihcProject.Classes
         public bool is_bot { get; set; }
         public bool is_online { get; set; }
         public bool is_supporter { get; set; }
-        public DateTime last_visit { get; set; }
+        public DateTime last_visit { get; set; }    //To randomize
         public bool pm_friends_only { get; set; }
         public object profile_colour { get; set; }
         public string username { get; set; }
@@ -105,6 +105,14 @@ namespace ihcProject.Classes
         public bool is_ranked { get; set; }
         public Grade_Counts grade_counts { get; set; }
         public Rank rank { get; set; }
+        public int daily_performance_gain { get; set; }
+        public int weekly_performance_gain { get; set; }
+        public int monthly_performance_gain { get; set; }
+        public int yearly_performance_gain { get; set; }
+        public int daily_rank_gain { get; set; }
+        public int weekly_rank_gain { get; set; }
+        public int monthly_rank_gain { get; set; }
+        public int yearly_rank_gain { get; set; }
     }
 
     public class Level

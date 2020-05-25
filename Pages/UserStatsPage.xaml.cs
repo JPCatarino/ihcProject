@@ -21,13 +21,12 @@ namespace ihcProject.Pages
     public partial class UserStats : Page
     {
         UserTemplate cUserData;
-        public Func<ChartPoint, string> PointLabel { get; set; }
-
-        public void pieChart()
-        {
-            PointLabel = chartPoint => string.Format("{0}({1:P})", chartPoint.Y, chartPoint.Participation);
-            DataContext = this;
-        }
+        public Func<double, string> yFormatter { get; set; }
+        public SeriesCollection seriesCollection { get; set; }
+        public SeriesCollection seriesCollection2 { get; set; }
+        public SeriesCollection seriesCollection3 { get; set; }
+        public string[] labelsX { get; set; }
+        public string[] labelsRankY { get; set; }
 
         private void pieChart_dataClick(object sender, ChartPoint chartPoint)
         {
@@ -41,15 +40,6 @@ namespace ihcProject.Pages
             var series = (PieSeries)chartPoint.SeriesView;
             series.PushOut = 8;
         }
-        
-        
-        public Func<double, string> yFormatter { get; set; }
-        public SeriesCollection seriesCollection { get; set; }
-        public SeriesCollection seriesCollection2 { get; set; }
-        public SeriesCollection seriesCollection3 { get; set; }
-        public SeriesCollection seriesCollection4 { get; set; }
-        public string[] labelsX { get; set; }
-        public string[] labelsRankY { get; set; }
 
         public void cartesianChart()
         {
@@ -96,7 +86,6 @@ namespace ihcProject.Pages
             cUserData = PlayerWindow.cUserData;
             DataContext = cUserData;
 
-            this.pieChart();
             this.cartesianChart();
             InitializeComponent();
         }

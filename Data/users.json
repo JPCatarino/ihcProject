@@ -77,7 +77,15 @@
         "global": 160,
         "country": 64,
         "rank_change": 15
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -89,7 +97,8 @@
       "cb3_item": 0,
       "cb4_item": 0,
       "pss_item": 0
-    }
+    },
+    "profile_specs": null
   },
   {
     "avatar_url": "../assets/images/avatars/boy-4.png",
@@ -169,7 +178,15 @@
         "global": 582,
         "country": 53,
         "rank_change": 11
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -181,7 +198,8 @@
       "cb3_item": 0,
       "cb4_item": 0,
       "pss_item": 0
-    }
+    },
+    "profile_specs": null
   },
   {
     "avatar_url": "../assets/images/avatars/boy-4.png",
@@ -261,7 +279,15 @@
         "global": 837,
         "country": 650,
         "rank_change": -11
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -273,7 +299,8 @@
       "cb3_item": 0,
       "cb4_item": 0,
       "pss_item": 0
-    }
+    },
+    "profile_specs": null
   },
   {
     "avatar_url": "../assets/images/avatars/girl-7.png",
@@ -353,7 +380,15 @@
         "global": 793,
         "country": 376,
         "rank_change": 4
-      }
+      },
+      "daily_performance_gain": 0,
+      "weekly_performance_gain": 0,
+      "monthly_performance_gain": 0,
+      "yearly_performance_gain": 0,
+      "daily_rank_gain": 0,
+      "weekly_rank_gain": 0,
+      "monthly_rank_gain": 0,
+      "yearly_rank_gain": 0
     },
     "support_level": 0,
     "unranked_beatmapset_count": 0,
@@ -365,6 +400,120 @@
       "cb3_item": 0,
       "cb4_item": 0,
       "pss_item": 0
+    },
+    "profile_specs": null
+  },
+  {
+    "avatar_url": "../assets/images/avatars/girl-0.png",
+    "country_code": null,
+    "default_group": null,
+    "id": 0,
+    "is_active": false,
+    "is_bot": false,
+    "is_online": false,
+    "is_supporter": false,
+    "last_visit": "0001-01-01T00:00:00",
+    "pm_friends_only": false,
+    "profile_colour": null,
+    "username": "d",
+    "password": "d",
+    "role": "Player",
+    "cover_url": null,
+    "discord": null,
+    "has_supported": false,
+    "interests": null,
+    "join_date": "0001-01-01T00:00:00",
+    "kudosu": null,
+    "lastfm": null,
+    "location": null,
+    "max_blocks": 0,
+    "max_friends": 0,
+    "occupation": null,
+    "playmode": null,
+    "playstyle": null,
+    "post_count": 0,
+    "profile_order": null,
+    "skype": null,
+    "title": null,
+    "twitter": null,
+    "website": null,
+    "country": {
+      "code": null,
+      "name": "Romania"
+    },
+    "cover": null,
+    "account_history": null,
+    "active_tournament_banner": null,
+    "badges": null,
+    "favourite_beatmapset_count": 0,
+    "follower_count": 0,
+    "graveyard_beatmapset_count": 0,
+    "loved_beatmapset_count": 0,
+    "monthly_playcounts": null,
+    "weekly_playcount": {
+      "total_count": 230,
+      "count_standard": 72,
+      "count_taiko": 98,
+      "count_ctb": 50,
+      "count_mania": 10
+    },
+    "previous_usernames": null,
+    "ranked_and_approved_beatmapset_count": 0,
+    "replays_watched_counts": null,
+    "scores_first_count": 0,
+    "statistics": {
+      "level": {
+        "current": 72,
+        "progress": 0
+      },
+      "pp": 2089,
+      "pp_change": 3,
+      "pp_rank": 0,
+      "ranked_score": 665062943,
+      "total_score": 1200413982,
+      "hit_accuracy": 0,
+      "play_count": 16760,
+      "play_count_daily": 8,
+      "play_time": 0,
+      "total_hits": 0,
+      "maximum_combo": 0,
+      "replays_watched_by_others": 0,
+      "is_ranked": false,
+      "grade_counts": null,
+      "rank": {
+        "global": 982,
+        "country": 931,
+        "rank_change": -9
+      },
+      "daily_performance_gain": 210,
+      "weekly_performance_gain": 1698,
+      "monthly_performance_gain": 26969,
+      "yearly_performance_gain": 33973,
+      "daily_rank_gain": -7,
+      "weekly_rank_gain": 14,
+      "monthly_rank_gain": 14,
+      "yearly_rank_gain": -5293
+    },
+    "support_level": 0,
+    "unranked_beatmapset_count": 0,
+    "user_achievements": null,
+    "rankHistory": null,
+    "profile_choices": {
+      "cb1_item": 0,
+      "cb2_item": 0,
+      "cb3_item": 0,
+      "cb4_item": 0,
+      "pss_item": 0
+    },
+    "profile_specs": {
+      "star": 7,
+      "speed": 1,
+      "ad": 5,
+      "avgBeatmapTime": "9:55",
+      "cs": 2,
+      "ar": 7,
+      "od": 4,
+      "hp": 3
     }
   }
 ]

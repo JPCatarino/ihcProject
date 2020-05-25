@@ -90,16 +90,16 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <Image Grid.Column="0" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="1" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="2" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="3" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="4" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="5" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="6" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="7" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="8" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="9" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="0" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="1" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="2" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="3" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="4" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="5" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="6" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="7" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="8" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="9" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
                 </Grid>
             </Grid>
 
@@ -131,16 +131,16 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Image Grid.Column="0" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="1" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="2" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="3" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="4" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="5" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="6" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="7" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="8" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="9" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="0" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="1" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="2" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="3" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="4" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="5" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="6" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="7" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="8" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="9" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
                 </Grid>
             </Grid>
 
@@ -172,16 +172,16 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Image Grid.Column="0" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="1" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="2" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="3" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_filled.png" Width="50" Height="50"/>
-                    <Image Grid.Column="4" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="5" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="6" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="7" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="8" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
-                    <Image Grid.Column="9" Source="/ihcProject;component/assets/images/icons/NewFolder1/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="0" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="1" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="2" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="3" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="4" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="5" Source="/ihcProject;component/assets/images/icons/others/star_filled.png" Width="50" Height="50"/>
+                    <Image Grid.Column="6" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="7" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="8" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
+                    <Image Grid.Column="9" Source="/ihcProject;component/assets/images/icons/others/star_empty.png" Width="50" Height="50"/>
                 </Grid>
             </Grid>
         </Grid>
