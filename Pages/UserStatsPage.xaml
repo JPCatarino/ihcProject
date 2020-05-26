@@ -14,6 +14,7 @@
 
     <Page.Resources>
         <data:CartesianGraphData x:Key="CartesianGraphData"/>
+        <local:ValueColorConverter x:Key="ValueColorConverter"/>
     </Page.Resources>
     
     <Grid>
@@ -97,16 +98,16 @@
             <TextBlock Foreground="#cc0e74" Grid.Row="4" Padding="10" Text="Yearly :" FontSize="14" FontWeight="Bold" Margin="40, 0, 0, 0"/>
 
             <!--Data-->
-            <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.daily_performance_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.weekly_performance_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.monthly_performance_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.yearly_performance_gain}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.daily_performance_gain, StringFormat={}{0:+#;-#;''}}" Foreground="{Binding Path=statistics.daily_performance_gain, Converter={StaticResource ValueColorConverter}}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.weekly_performance_gain, StringFormat={}{0:+#;-#;''}}" FontSize="12" Foreground="{Binding Path=statistics.weekly_performance_gain, Converter={StaticResource ValueColorConverter}}"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.monthly_performance_gain, StringFormat={}{0:+#;-#;''}}" FontSize="12" Foreground="{Binding Path=statistics.monthly_performance_gain, Converter={StaticResource ValueColorConverter}}"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.yearly_performance_gain, StringFormat={}{0:+#;-#;''}}" FontSize="12" Foreground="{Binding Path=statistics.yearly_performance_gain, Converter={StaticResource ValueColorConverter}}"  HorizontalAlignment="Center"/>
             
             <!--Data-->
-            <TextBlock Grid.Row="1" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.daily_rank_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="2" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.weekly_rank_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="3" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.monthly_rank_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="4" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.yearly_rank_gain}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.daily_rank_gain, StringFormat={}{0:+#;-#;''}}" Foreground="{Binding Path=statistics.daily_rank_gain, Converter={StaticResource ValueColorConverter}}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.weekly_rank_gain, StringFormat={}{0:+#;-#;''}}" Foreground="{Binding Path=statistics.weekly_rank_gain, Converter={StaticResource ValueColorConverter}}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.monthly_rank_gain, StringFormat={}{0:+#;-#;''}}" Foreground="{Binding Path=statistics.monthly_rank_gain, Converter={StaticResource ValueColorConverter}}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.yearly_rank_gain, StringFormat={}{0:+#;-#;''}}" Foreground="{Binding Path=statistics.yearly_rank_gain, Converter={StaticResource ValueColorConverter}}" FontSize="12"  HorizontalAlignment="Center"/>
         </Grid>
 
         <TextBlock Foreground="#303960" Padding="20, 100, 20, 20" Text="Recent High Scores" FontSize="30" Grid.ColumnSpan="2" Grid.Row="4" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
