@@ -6,11 +6,16 @@
       xmlns:local="clr-namespace:ihcProject.Pages"
       xmlns:uc="clr-namespace:ihcProject.Controls"
       xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      xmlns:data="clr-namespace:ihcProject.Data"
       mc:Ignorable="d" 
       d:DesignHeight="3000" d:DesignWidth="800"
       Title="UserStats"
       Background="#fff">
 
+    <Page.Resources>
+        <data:CartesianGraphData x:Key="CartesianGraphData"/>
+    </Page.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
@@ -197,7 +202,7 @@
        
         <!--PP-->
         <TextBlock DataContext="UserStats" Foreground="#303960" Padding="15, 50, 15, 15" Text="Performance Points" FontSize="20" Grid.Row="9" HorizontalAlignment="Center"/>
-        <Wpf:CartesianChart Grid.Row="10" DataContext="UserStats" Series="{Binding seriesCollection}">
+        <Wpf:CartesianChart Grid.Row="10"  DataContext="{StaticResource CartesianGraphData}" Series="{Binding seriesCollection1}" Margin="10, 10, 0, 0">
             <Wpf:CartesianChart.AxisY>
                 <Wpf:Axis Title="PP"/>
             </Wpf:CartesianChart.AxisY>
@@ -208,7 +213,7 @@
         
         <!--Rank-->
         <TextBlock Foreground="#303960" Padding="15, 50, 15, 15" Text="Ranking" FontSize="20" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center"/>
-            <Wpf:CartesianChart Grid.Row="10" Grid.Column="1" Series="{Binding seriesCollection2}">
+        <Wpf:CartesianChart Grid.Row="10" Grid.Column="1" DataContext="{StaticResource CartesianGraphData}" Series="{Binding seriesCollection2}" Margin="0, 0, 10, 10">
             <Wpf:CartesianChart.AxisY>
                 <Wpf:Axis Title="Ranking" MinValue="1500" MaxValue="100"/>
             </Wpf:CartesianChart.AxisY>
@@ -219,7 +224,7 @@
 
         <!--Score-->
         <TextBlock Foreground="#303960" Padding="15, 50, 15, 15" Text="Play count (Monthly)" FontSize="20" Grid.Row="11" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-            <Wpf:CartesianChart Grid.Row="12" Grid.ColumnSpan="2" Series="{Binding seriesCollection3}">
+        <Wpf:CartesianChart Grid.Row="12" DataContext="{StaticResource CartesianGraphData}" Grid.ColumnSpan="2" Series="{Binding seriesCollection3}">
             <Wpf:CartesianChart.AxisY>
                 <Wpf:Axis Title="Plays"/>
             </Wpf:CartesianChart.AxisY>
