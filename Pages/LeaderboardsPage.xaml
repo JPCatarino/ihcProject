@@ -4,12 +4,21 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ihcProject.Pages"
+      xmlns:uc="clr-namespace:ihcProject.Controls" 
+      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
       mc:Ignorable="d" 
       d:DesignHeight="1200" d:DesignWidth="1232"
       Title="LeaderboardsPage">
 
     <Grid>
         <Grid.Resources>
+            <Style TargetType="uc:BeatmapSplitButton">
+                <Style.Setters>
+                    <Setter Property="Height" Value="100"></Setter>
+                    <Setter Property="Width" Value="530"></Setter>
+                </Style.Setters>
+            </Style>
+
         </Grid.Resources>
 
         <Grid.Background>
@@ -20,15 +29,15 @@
             <RowDefinition Height="32*"/>
             <RowDefinition Height="Auto" MinHeight="1082"/>
         </Grid.RowDefinitions>
-        <Button Content="Compare" HorizontalAlignment="Center" Margin="100,5,0,0" VerticalAlignment="Top"  Click="Button_Click" Height="27" Grid.Row="2" Width="60"/>
+        <Button  Click="Button_Click"  Content="Compare" HorizontalAlignment="Center" Margin="80,5,0,0" VerticalAlignment="Top" Height="27" Grid.Row="2" Width="60"/>
 
-        <Grid HorizontalAlignment="Left" Height="100" Margin="281,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Grid.RowSpan="2"/>
-        <Button Name="BtnGlobal"     Click="BtnGlobal_Click" Content="Global"     HorizontalAlignment="Center" Height="45" Margin="448,1,664,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
-        <Button Name="BtnCountry"    Click="BtnCountry_Click" Content="Country"    HorizontalAlignment="Center" Height="45" Margin="574,1,538,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
-        <Button Name="BtnYou"        Click="BtnYou_Click" Content="You"        HorizontalAlignment="Center" Height="45" Margin="698,1,414,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <!--<Grid HorizontalAlignment="Left" Height="100" Margin="281,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Grid.RowSpan="2"/>-->
+        <Button Name="BtnGlobal"     Click="BtnGlobal_Click" Content="Global"     HorizontalAlignment="Center" Height="45" Margin="0,1,250,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Button Name="BtnCountry"    Click="BtnCountry_Click" Content="Country"    HorizontalAlignment="Center" Height="45" Margin="0,1,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Button Name="BtnYou"        Click="BtnYou_Click" Content="You"        HorizontalAlignment="Center" Height="45" Margin="250,1,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
 
         <DataGrid x:Name="UserRanking" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalAlignment="Center" Height="800" 
-                  VerticalAlignment="Top" Width="700" Margin="266,35,266,0" Grid.Row="2" ItemsSource="{Binding UserTemplate}" >
+                  VerticalAlignment="Top" Width="600" Margin="0,35,0,0" Grid.Row="2" ItemsSource="{Binding UserTemplate}" >
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Pink"/>
@@ -51,9 +60,9 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <TextBox Name="userNameSearch" HorizontalAlignment="Center" Height="26" Margin="778,5,326,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128"/>
-        <Button Name="Search"   Click="Search_Click" Content="Search" HorizontalAlignment="Center" Height="25" Margin="911,5,266,0" Grid.Row="2" VerticalAlignment="Top" Width="55"/>
-        <Label Content="Search user:" HorizontalAlignment="Center" Height="25" Margin="250,5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="73"/>
+        <TextBox Name="userNameSearch" HorizontalAlignment="Center" Height="26" Margin="390,5,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+        <Button Name="Search"   Click="Search_Click" Content="Search" HorizontalAlignment="Center" Height="25" Margin="544,5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="55"/>
+        <Label Content="Search user:" HorizontalAlignment="Center" Height="25" Margin="220,5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="73"/>
 
     </Grid>
 </Page>
