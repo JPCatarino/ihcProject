@@ -84,10 +84,17 @@ namespace ihcProject.Pages
             PlayerWindow.hmb_player.goToRivalProfilePage(user.username);
 
         }
+        private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            User user = (User)UserRanking.SelectedItem; //Datagrid bound with ProductItem 
+            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
+            PlayerWindow.hmb_player.goToRivalProfilePage(user.username);
+        }
+
         private void BtnGlobal_Click(object sender, RoutedEventArgs e)
         {
-            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
-            PlayerWindow.hmb_player.goToRivalProfilePage("Rival User");
+
+
 
         }
         private void BtnYou_Click(object sender, RoutedEventArgs e)
