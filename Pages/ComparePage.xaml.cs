@@ -126,7 +126,8 @@ namespace ihcProject.Pages
             //Play Count Compare
             if (s1.play_count > s2.play_count) { UserPlayCnt.Background = brush; }
             else { if (s2.play_count > s1.play_count) { ComparePlayCnt.Background = brush; } }
-
+            if (s1.total_score > s2.total_score) { UserTScore.Background = brush; }
+            else { if (s2.total_score > s1.total_score) { CompareTScore.Background = brush; } }
 
         }
 
