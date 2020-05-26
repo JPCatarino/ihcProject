@@ -47,7 +47,7 @@ namespace ihcProject.Classes
             string[] gender = {"boy", "girl"};
 
             // C# doesn't let you pick a random resource so I had to this mess.
-            return "../assets/images/avatars/" + gender[rand.Next(gender.Length)] + "-" + rand.Next(0 ,8) + ".png";
+            return "../assets/images/avatars/" + gender[rand.Next(gender.Length)] + "-" + rand.Next(1 ,8) + ".png";
         }
 
         private Profile_Choices initProfileChoices() {
