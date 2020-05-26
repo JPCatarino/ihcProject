@@ -953,5 +953,157 @@
       "od": 1.0265739061993426,
       "hp": 1.0177159374662284
     }
+  },
+  {
+    "avatar_url": "../assets/images/avatars/boy-7.png",
+    "country_code": null,
+    "default_group": null,
+    "id": 0,
+    "is_active": false,
+    "is_bot": false,
+    "is_online": false,
+    "is_supporter": false,
+    "last_visit": "0001-01-01T00:00:00",
+    "pm_friends_only": false,
+    "profile_colour": null,
+    "username": "e",
+    "password": "e",
+    "role": "Player",
+    "cover_url": null,
+    "discord": null,
+    "has_supported": false,
+    "interests": null,
+    "join_date": "0001-01-01T00:00:00",
+    "kudosu": null,
+    "lastfm": null,
+    "location": null,
+    "max_blocks": 0,
+    "max_friends": 0,
+    "occupation": null,
+    "playmode": null,
+    "playstyle": null,
+    "post_count": 0,
+    "profile_order": null,
+    "skype": null,
+    "title": null,
+    "twitter": null,
+    "website": null,
+    "country": {
+      "code": null,
+      "name": "Eritrea"
+    },
+    "cover": null,
+    "account_history": null,
+    "active_tournament_banner": null,
+    "badges": null,
+    "favourite_beatmapset_count": 0,
+    "follower_count": 0,
+    "graveyard_beatmapset_count": 0,
+    "loved_beatmapset_count": 0,
+    "monthly_playcounts": null,
+    "weekly_playcount": {
+      "total_count": 258,
+      "count_standard": 27,
+      "count_taiko": 78,
+      "count_ctb": 58,
+      "count_mania": 95
+    },
+    "previous_usernames": null,
+    "ranked_and_approved_beatmapset_count": 0,
+    "replays_watched_counts": null,
+    "scores_first_count": 0,
+    "statistics": {
+      "level": {
+        "current": 27,
+        "progress": 0
+      },
+      "pp": 18382,
+      "pp_change": 35,
+      "pp_rank": 0,
+      "ranked_score": 130855606,
+      "total_score": 290317489,
+      "hit_accuracy": 85.548097195824653,
+      "play_count": 48864,
+      "play_count_daily": 38,
+      "play_time": 0,
+      "total_hits": 0,
+      "maximum_combo": 0,
+      "replays_watched_by_others": 0,
+      "is_ranked": false,
+      "grade_counts": null,
+      "rank": {
+        "global": 783,
+        "country": 669,
+        "rank_change": 13
+      },
+      "daily_performance_gain": 247,
+      "weekly_performance_gain": 1208,
+      "monthly_performance_gain": 27922,
+      "yearly_performance_gain": 82762,
+      "daily_rank_gain": 14,
+      "weekly_rank_gain": 3,
+      "monthly_rank_gain": 169,
+      "yearly_rank_gain": -9659
+    },
+    "recent_high_scores": {
+      "maps": [
+        "Dramatic Star",
+        "A Garagem da Vizinha",
+        "eastward",
+        "Akari no Arika",
+        "anticrystal"
+      ],
+      "ranks": [
+        11,
+        38,
+        23,
+        31,
+        34
+      ],
+      "mods": null,
+      "dates": [
+        "2011-06-02T10:41:47",
+        "2018-10-14T08:45:30",
+        "2007-01-14T12:31:01",
+        "2014-04-13T22:18:32",
+        "2018-04-02T09:40:18"
+      ],
+      "pps": [
+        1069,
+        907,
+        918,
+        1095,
+        1094
+      ],
+      "scores": [
+        11465340,
+        10237551,
+        11698498,
+        9085295,
+        11472767
+      ]
+    },
+    "support_level": 0,
+    "unranked_beatmapset_count": 0,
+    "user_achievements": null,
+    "rankHistory": null,
+    "profile_choices": {
+      "cb1_item": 0,
+      "cb2_item": 0,
+      "cb3_item": 0,
+      "cb4_item": 0,
+      "pss_item": 0
+    },
+    "profile_specs": {
+      "star": 3.4966437381210942,
+      "speed": 4.3288583174947926,
+      "ad": 4.051453457703559,
+      "avgBeatmapTime": "02:56",
+      "avgBPM": 247,
+      "cs": 4.8836680370772578,
+      "ar": 4.051453457703559,
+      "od": 3.4966437381210942,
+      "hp": 2.6644291587473963
+    }
   }
 ]

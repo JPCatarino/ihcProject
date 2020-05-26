@@ -11,11 +11,12 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using MahApps.Metro.Controls;
 using System.Windows.Shapes;
 
 namespace ihcProject
 {
-    public partial class MapDetails : Window
+    public partial class MapDetails : MetroWindow
     {
         public UserTemplate cUserData { get; set; }
         public MapDetails()

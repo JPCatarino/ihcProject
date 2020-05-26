@@ -148,6 +148,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\UserGenerator.cs" />
+    <Compile Include="Data\CartesianGraphData.cs" />
     <Compile Include="Pages\MapDetails.xaml.cs">
       <DependentUpon>MapDetails.xaml</DependentUpon>
     </Compile>
