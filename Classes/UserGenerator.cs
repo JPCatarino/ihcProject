@@ -162,12 +162,11 @@ namespace ihcProject.Classes
             string[] possible_mods = new string[6] { "HD", "DT", "NC", "HR", "PF", "FL" };
             var titles = new List<string> { "Rubber Band", "anticrystal", "Akari no Arika", "WANNABE", "Mare Maris", "Dramatic Star", "Dream Catcher", "eastward", "CHAIN", "veil", "A Garagem da Vizinha" };
 
-            hs.ranks = new int[3];
-            hs.pps = new int[3];
-            hs.scores = new int[3];
-            hs.maps = new string[3];
-            hs.mods = new string[3];
-            hs.dates = new DateTime[3];
+            hs.ranks = new int[5];
+            hs.pps = new int[5];
+            hs.scores = new int[5];
+            hs.maps = new string[5];
+            hs.dates = new DateTime[5];
 
 
             for (int i = 0; i < hs.ranks.Length; i++)
@@ -192,9 +191,11 @@ namespace ihcProject.Classes
                 titles.RemoveAt(index);
             }
 
-            hs.dates[0] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28));
-            hs.dates[1] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28));
-            hs.dates[2] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28));
+            hs.dates[0] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28), rand.Next(1, 23), rand.Next(0, 59), rand.Next(0, 59));
+            hs.dates[1] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28), rand.Next(1, 23), rand.Next(0, 59), rand.Next(0, 59));
+            hs.dates[2] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28), rand.Next(1, 23), rand.Next(0, 59), rand.Next(0, 59));
+            hs.dates[3] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28), rand.Next(1, 23), rand.Next(0, 59), rand.Next(0, 59));
+            hs.dates[4] = new DateTime(rand.Next(2000, 2020), rand.Next(1, 12), rand.Next(1, 28), rand.Next(1, 23), rand.Next(0, 59), rand.Next(0, 59));
 
             return hs;
         }
