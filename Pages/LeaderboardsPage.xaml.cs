@@ -44,19 +44,22 @@ namespace ihcProject.Pages
             for (int i = 0; i < 100; i++)
             {
                 int len = rand.Next(3, 10);
-                string name = "";
+                StringBuilder builder = new StringBuilder();
+
+                //string name = "";
+                char ch;
                 for (int j = 0; j <= len; j++)
                 {
-                    int letter = rand.Next('a', 'z');
-                    name.Append((char)letter);
+                    ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * rand.NextDouble() + 65)));
+                    builder.Append(ch);
                 }
                 //UserGenerator u = new UserGenerator(name, name, "fan");
                 // u.generate();
                 // UserTemplate user = u.getUser();
 
                 User user = new User();
-                user.username = name;
-                user.rank = i;
+                user.username = builder.ToString();
+                user.rank = i+1;
                 UserRanking.Items.Add(user);
 
                 users.Append(user);
