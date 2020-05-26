@@ -15,6 +15,11 @@
     <Page.Resources>
         <data:CartesianGraphData x:Key="CartesianGraphData"/>
         <local:ValueColorConverter x:Key="ValueColorConverter"/>
+        <Style TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontFamily" Value="{DynamicResource Aller}"/>
+            </Style.Setters>
+        </Style>
     </Page.Resources>
     
     <Grid>
