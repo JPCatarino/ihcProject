@@ -148,6 +148,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\UserGenerator.cs" />
+    <Compile Include="Data\CartesianGraphData.cs" />
     <Compile Include="Pages\MapDetails.xaml.cs">
       <DependentUpon>MapDetails.xaml</DependentUpon>
     </Compile>
@@ -549,6 +550,9 @@
   <ItemGroup>
     <Resource Include="assets\images\icons\others\star_empty.png" />
     <Resource Include="assets\images\icons\others\star_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\icons\others\vs.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.3.1.2\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.3.1.2\build\MaterialDesignThemes.targets')" />

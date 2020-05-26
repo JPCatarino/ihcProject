@@ -8,8 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ComparePage">
 
-
-    <Grid>
+    <Grid ScrollViewer.CanContentScroll="True" Height="700" Background="#FFFFFF">
         <Grid.Resources>
         </Grid.Resources>
         <Grid.ColumnDefinitions>
@@ -27,69 +26,56 @@
             <RowDefinition Height="120"></RowDefinition>
             <RowDefinition Height="30"></RowDefinition>
             <RowDefinition Height="10"></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition Height ="100"></RowDefinition>
-            <RowDefinition Height="20"></RowDefinition>
-            
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height ="40"></RowDefinition>
+            <RowDefinition Height="300" ></RowDefinition>
+            <RowDefinition Height ="40"></RowDefinition>
+
         </Grid.RowDefinitions>
-        <!--maybe user player avatars and an iamge saying Versus instead of using text
-        <Image></Image>
-        <Image></Image>
-        <Image></Image>
-        -->
-        <!-- User Data -->
+        
+        
+            <!-- User Data -->
         <Image Name="UserPic" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" />
-        <TextBox Name="UserName" Grid.Column="1" Grid.Row="2" TextAlignment="Center" Height="Auto" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0" ></TextBox>
-        <TextBox Name="UserRank" Grid.Column="1" Grid.Row="4" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
-        <TextBox Name="UserAccuracy" Grid.Column="1" Grid.Row="5" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="0"></TextBox>
-        <TextBox Name="UserPlayCnt" Grid.Column="1" Grid.Row="6" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="0"></TextBox>
-        <TextBox Name="UserLvl" Grid.Column="1" Grid.Row="7" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="0"></TextBox>
-        <TextBox Name="UserPP" Grid.Column="1" Grid.Row="8" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="0"></TextBox>
-        <TextBox Name="UserTScore" Grid.Column="1" Grid.Row="9" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="UserName" Grid.Column="1" Grid.Row="2" TextAlignment="Center" Height="Auto" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0" ></TextBox>
+        <TextBox Background="Transparent" Name="UserRank" Grid.Column="1" Grid.Row="4" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Center" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="UserAccuracy" Grid.Column="1" Grid.Row="5" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="UserPlayCnt" Grid.Column="1" Grid.Row="6" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="UserLvl" Grid.Column="1" Grid.Row="7" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="UserPP" Grid.Column="1" Grid.Row="8" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="UserTScore" Grid.Column="1" Grid.Row="9" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="0"></TextBox>
         <!-- Vs Data -->
         <Image Name="VSimg" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" ></Image>
         <!--<TextBox Grid.Column="3" Grid.Row="1" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Vs</TextBox>-->
-        <TextBox Grid.Column="3" Grid.Row="4" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Rank</TextBox>
-        <TextBox Grid.Column="3" Grid.Row="5" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Accuracy</TextBox>
-        <TextBox Grid.Column="3" Grid.Row="6" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Play Count</TextBox>
-        <TextBox Grid.Column="3" Grid.Row="7" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Level</TextBox>
-        <TextBox Grid.Column="3" Grid.Row="8" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Performance Points</TextBox>
-        <TextBox Grid.Column="3" Grid.Row="9" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Total Score</TextBox>
+        <TextBox Background="Transparent" Grid.Column="3" Grid.Row="4" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Rank</TextBox>
+        <TextBox Background="Transparent" Grid.Column="3" Grid.Row="5" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Accuracy</TextBox>
+        <TextBox Background="Transparent" Grid.Column="3" Grid.Row="6" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Play Count</TextBox>
+        <TextBox Background="Transparent" Grid.Column="3" Grid.Row="7" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Level</TextBox>
+        <TextBox Background="Transparent" Grid.Column="3" Grid.Row="8" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Performance Points</TextBox>
+        <TextBox Background="Transparent" Grid.Column="3" Grid.Row="9" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0">Total Score</TextBox>
         <!-- Compare Data -->
         <Image Name="ComparePic" Source="{Binding b}" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill"></Image>
-        <TextBox Name="CompareName" Grid.Column="5" Grid.Row="2" TextAlignment="Center" Height="Auto" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
-        <TextBox Name="CompareRank" Grid.Column="5" Grid.Row="4" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
-        <TextBox Name="CompareAccuracy" Grid.Column="5" Grid.Row="5" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
-        <TextBox Name="ComparePlayCnt" Grid.Column="5" Grid.Row="6" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
-        <TextBox Name="CompareLvl" Grid.Column="5" Grid.Row="7" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
-        <TextBox Name="ComparePP" Grid.Column="5" Grid.Row="8" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
-        <TextBox Name="CompareTScore" Grid.Column="5" Grid.Row="9" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="CompareName" Grid.Column="5" Grid.Row="2" TextAlignment="Center" Height="Auto" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="CompareRank" Grid.Column="5" Grid.Row="4" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="CompareAccuracy" Grid.Column="5" Grid.Row="5" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="ComparePlayCnt" Grid.Column="5" Grid.Row="6" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="CompareLvl" Grid.Column="5" Grid.Row="7" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="ComparePP" Grid.Column="5" Grid.Row="8" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
+        <TextBox Background="Transparent" Name="CompareTScore" Grid.Column="5" Grid.Row="9" TextAlignment="Center" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Transparent" IsReadOnly="True" BorderThickness="0"></TextBox>
 
-        <lvc:CartesianChart Name="Chart" Margin="50,297,50,0" 
-                            Grid.Row="10"
-                            RenderTransformOrigin="0.495,0.632"
-                            Width="700">
-            <lvc:CartesianChart.Series>
-                <lvc:LineSeries Name="charta" LineSmoothness="1" StrokeThickness="10" 
-                                DataLabels="False" FontSize="20" Foreground="#6B303030"
-                                Stroke="HotPink" Fill="Transparent" PointGeometrySize="0"
-                                />
-                <lvc:LineSeries Name="chartb" LineSmoothness="1" StrokeThickness="10" 
-                                DataLabels="False" FontSize="20" Foreground="#6B303030"
-                                Stroke="HotPink" Fill="Transparent" PointGeometrySize="0"/>
-            </lvc:CartesianChart.Series>
+        <lvc:CartesianChart Background="Transparent" Name="LChart" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="5"
+                            LegendLocation="Right">
             <lvc:CartesianChart.AxisX>
-                <lvc:Axis IsEnabled="False" ShowLabels="False"/>
+                <lvc:Axis Name="XAXIS" IsEnabled="True" Title="Month" ShowLabels="True"/>
             </lvc:CartesianChart.AxisX>
             <lvc:CartesianChart.AxisY>
-                <lvc:Axis Foreground="White" FontSize="14">
+                <lvc:Axis Name="YAXIS" IsEnabled="True" Title="Performance Points" FontSize="14">
                     <lvc:Axis.Separator>
-                        <lvc:Separator StrokeThickness="1" Stroke="Transparent" StrokeDashArray="8" Step="100" />
+                        <lvc:Separator StrokeThickness="1" Stroke="Transparent" StrokeDashArray="8" Step="1000"  />
                     </lvc:Axis.Separator>
                 </lvc:Axis>
             </lvc:CartesianChart.AxisY>
