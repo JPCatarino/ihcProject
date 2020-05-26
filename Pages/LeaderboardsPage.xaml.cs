@@ -25,6 +25,8 @@ namespace ihcProject.Pages
     {
         //UserTemplate User;
         ObservableCollection<User> users;
+        ObservableCollection<User> country;
+
 
         public LeaderboardsPage()
         {
@@ -76,8 +78,10 @@ namespace ihcProject.Pages
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            User user = (User)UserRanking.SelectedItem;
+
             var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
-            PlayerWindow.hmb_player.goToRivalProfilePage("Rival User");
+            PlayerWindow.hmb_player.goToRivalProfilePage(user.username);
 
         }
         private void BtnGlobal_Click(object sender, RoutedEventArgs e)

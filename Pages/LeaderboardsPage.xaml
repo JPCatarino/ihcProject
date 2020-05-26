@@ -37,7 +37,7 @@
         <Button Name="BtnYou"        Click="BtnYou_Click" Content="You"        HorizontalAlignment="Center" Height="45" Margin="250,1,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
 
         <DataGrid x:Name="UserRanking" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalAlignment="Center" Height="800" 
-                  VerticalAlignment="Top" Width="600" Margin="0,35,0,0" Grid.Row="2" ItemsSource="{Binding UserTemplate}" >
+                  VerticalAlignment="Top" Width="600" Margin="0,35,0,0" Grid.Row="2" ItemsSource="{Binding UserTemplate}"  SelectedItem="{Binding Path=SelectedCustomer, Mode=TwoWay}">
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Pink"/>
