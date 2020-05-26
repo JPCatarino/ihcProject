@@ -953,5 +953,157 @@
       "od": 1.0265739061993426,
       "hp": 1.0177159374662284
     }
+  },
+  {
+    "avatar_url": "../assets/images/avatars/boy-0.png",
+    "country_code": null,
+    "default_group": null,
+    "id": 0,
+    "is_active": false,
+    "is_bot": false,
+    "is_online": false,
+    "is_supporter": false,
+    "last_visit": "0001-01-01T00:00:00",
+    "pm_friends_only": false,
+    "profile_colour": null,
+    "username": "e",
+    "password": "e",
+    "role": "Player",
+    "cover_url": null,
+    "discord": null,
+    "has_supported": false,
+    "interests": null,
+    "join_date": "0001-01-01T00:00:00",
+    "kudosu": null,
+    "lastfm": null,
+    "location": null,
+    "max_blocks": 0,
+    "max_friends": 0,
+    "occupation": null,
+    "playmode": null,
+    "playstyle": null,
+    "post_count": 0,
+    "profile_order": null,
+    "skype": null,
+    "title": null,
+    "twitter": null,
+    "website": null,
+    "country": {
+      "code": null,
+      "name": "Libya"
+    },
+    "cover": null,
+    "account_history": null,
+    "active_tournament_banner": null,
+    "badges": null,
+    "favourite_beatmapset_count": 0,
+    "follower_count": 0,
+    "graveyard_beatmapset_count": 0,
+    "loved_beatmapset_count": 0,
+    "monthly_playcounts": null,
+    "weekly_playcount": {
+      "total_count": 232,
+      "count_standard": 49,
+      "count_taiko": 95,
+      "count_ctb": 84,
+      "count_mania": 4
+    },
+    "previous_usernames": null,
+    "ranked_and_approved_beatmapset_count": 0,
+    "replays_watched_counts": null,
+    "scores_first_count": 0,
+    "statistics": {
+      "level": {
+        "current": 49,
+        "progress": 0
+      },
+      "pp": 880,
+      "pp_change": 139,
+      "pp_rank": 0,
+      "ranked_score": 557272140,
+      "total_score": 1142803201,
+      "hit_accuracy": 89.916690136267192,
+      "play_count": 49351,
+      "play_count_daily": 26,
+      "play_time": 0,
+      "total_hits": 0,
+      "maximum_combo": 0,
+      "replays_watched_by_others": 0,
+      "is_ranked": false,
+      "grade_counts": null,
+      "rank": {
+        "global": 954,
+        "country": 929,
+        "rank_change": 7
+      },
+      "daily_performance_gain": 190,
+      "weekly_performance_gain": 989,
+      "monthly_performance_gain": 16841,
+      "yearly_performance_gain": 99624,
+      "daily_rank_gain": 17,
+      "weekly_rank_gain": 50,
+      "monthly_rank_gain": -88,
+      "yearly_rank_gain": -7941
+    },
+    "recent_high_scores": {
+      "maps": [
+        "Mare Maris",
+        "Akari no Arika",
+        "veil",
+        "CHAIN",
+        "Rubber Band"
+      ],
+      "ranks": [
+        34,
+        29,
+        2,
+        15,
+        8
+      ],
+      "mods": null,
+      "dates": [
+        "2018-07-09T17:05:52",
+        "2008-08-04T18:06:43",
+        "2006-07-18T20:46:07",
+        "2013-09-07T09:13:53",
+        "2000-07-10T19:05:44"
+      ],
+      "pps": [
+        1033,
+        1048,
+        992,
+        1093,
+        1008
+      ],
+      "scores": [
+        11114949,
+        9784580,
+        9124114,
+        10487037,
+        11499963
+      ]
+    },
+    "support_level": 0,
+    "unranked_beatmapset_count": 0,
+    "user_achievements": null,
+    "rankHistory": null,
+    "profile_choices": {
+      "cb1_item": 0,
+      "cb2_item": 0,
+      "cb3_item": 0,
+      "cb4_item": 0,
+      "pss_item": 0
+    },
+    "profile_specs": {
+      "star": 5.4625105613202374,
+      "speed": 6.9500140817603162,
+      "ad": 6.4541795749469566,
+      "avgBeatmapTime": "04:02",
+      "avgBPM": 312,
+      "cs": 7.9416830953870354,
+      "ar": 6.4541795749469566,
+      "od": 5.4625105613202374,
+      "hp": 3.9750070408801581
+    }
   }
 ]
