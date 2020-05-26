@@ -98,13 +98,13 @@ namespace ihcProject.Pages
 
         private void beatmapBtt_2_Click(object sender, RoutedEventArgs e)
         {
-            MapDetails deiatilsWindow = new MapDetails();
+            MapDetails2 deiatilsWindow = new MapDetails2();
             deiatilsWindow.ShowDialog();
         }
 
         private void beatmapBtt_3_Click(object sender, RoutedEventArgs e)
         {
-            MapDetails deiatilsWindow = new MapDetails();
+            MapDetails3 deiatilsWindow = new MapDetails3();
             deiatilsWindow.ShowDialog();
         }
     }

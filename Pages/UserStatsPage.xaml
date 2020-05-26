@@ -18,7 +18,7 @@
             <RowDefinition Height="60"/>
             <RowDefinition Height="200"/>
             <RowDefinition Height="180"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="200"/>
             <RowDefinition Height="180"/>
             <RowDefinition Height="90"/>
             <RowDefinition Height="200"/>
@@ -36,12 +36,12 @@
         </Grid.ColumnDefinitions>
         <uc:PlayerHeader Width="Auto" VerticalAlignment="Top" Height="200" Grid.ColumnSpan="2"/>
 
-        <TextBlock Foreground="#303960" Padding="20" Text="Overview" FontSize="30" Grid.ColumnSpan="2" Grid.Row="1" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
+        <TextBlock Foreground="#303960" Padding="20" Text="Overview" FontSize="30" Grid.ColumnSpan="2" Grid.Row="1" FontWeight="Bold" HorizontalAlignment="Center"/>
         <TextBlock Foreground="#303960" Padding="15" HorizontalAlignment="Center" Text="Stats"  FontSize="20" Grid.Column="0" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
         <TextBlock Foreground="#303960" Padding="15" HorizontalAlignment="Center" Text="Averages" TextAlignment="Right" FontSize="20" Grid.Column="1" Grid.Row="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller"/>
 
         <!--Stats tab-->
-        <Grid Grid.Row="3" Background="#2fc4b2">
+        <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -53,21 +53,21 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Padding="10" Text="Total score:" FontSize="14" FontWeight="Bold" />
-            <TextBlock Grid.Row="1" Padding="10" Text="Ranked score:" FontSize="14" FontWeight="Bold" />
-            <TextBlock Grid.Row="2" Padding="10" Text="Updated:" FontSize="14" FontWeight="Bold" />
-            <TextBlock Grid.Row="3" Padding="10" Text="Total plays:" FontSize="14" FontWeight="Bold" />
-            <TextBlock Grid.Row="4" Padding="10" Text="Average play count (weekly):" FontSize="14" FontWeight="Bold"/>
+            <TextBlock Foreground="#cc0e74" Grid.Row="0" Padding="10" Text="Total score :" FontSize="14" FontWeight="Bold" />
+            <TextBlock Foreground="#cc0e74" Grid.Row="1" Padding="10" Text="Ranked score :" FontSize="14" FontWeight="Bold" />
+            <TextBlock Foreground="#cc0e74" Grid.Row="2" Padding="10" Text="Updated :" FontSize="14" FontWeight="Bold" />
+            <TextBlock Foreground="#cc0e74" Grid.Row="3" Padding="10" Text="Total plays :" FontSize="14" FontWeight="Bold" />
+            <TextBlock Foreground="#cc0e74" Grid.Row="4" Padding="10" Text="Average play count (weekly) :" FontSize="14" FontWeight="Bold"/>
 
             <TextBlock Grid.Row="0" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.total_score}" FontSize="12" HorizontalAlignment="Center"/>
             <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.ranked_score}" FontSize="12" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" Text="{Binding last_visit}" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" Text="26.05.2020" FontSize="12" HorizontalAlignment="Center"/>
             <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.play_count}" FontSize="12" HorizontalAlignment="Center"/>
             <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.play_count_daily}" FontSize="12" HorizontalAlignment="Center"/>
         </Grid>
 
         <!--Averages tab-->
-        <Grid Grid.Row="3" Grid.Column="1" Background="#12947f">
+        <Grid Grid.Row="3" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -82,14 +82,14 @@
             </Grid.RowDefinitions>
 
             <!--Headers-->
-            <TextBlock Grid.Row="0" Grid.Column="1" Padding="10" Text="Performance gain" FontSize="14"  HorizontalAlignment="Center" FontWeight="Bold"/>
-            <TextBlock Grid.Row="0" Grid.Column="2" Padding="10" Text="Rank gain" FontSize="14"  HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock Foreground="#cc0e74" Grid.Row="0" Grid.Column="1" Padding="10" Text="Performance gain" FontSize="14"  HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock Foreground="#cc0e74" Grid.Row="0" Grid.Column="2" Padding="10" Text="Rank gain" FontSize="14"  HorizontalAlignment="Center" FontWeight="Bold"/>
 
             <!--Side panels-->
-            <TextBlock Grid.Row="1" Padding="10" Text="Daily" FontSize="14"  HorizontalAlignment="Right" FontWeight="Bold"/>
-            <TextBlock Grid.Row="2" Padding="10" Text="Weekly" FontSize="14"  HorizontalAlignment="Right" FontWeight="Bold"/>
-            <TextBlock Grid.Row="3" Padding="10" Text="Monthly" FontSize="14"  HorizontalAlignment="Right" FontWeight="Bold"/>
-            <TextBlock Grid.Row="4" Padding="10" Text="Yearly" FontSize="14"  HorizontalAlignment="Right" FontWeight="Bold"/>
+            <TextBlock Foreground="#cc0e74" Grid.Row="1" Padding="10" Text="Daily :" FontSize="14" FontWeight="Bold" Margin="40, 0, 0, 0"/>
+            <TextBlock Foreground="#cc0e74" Grid.Row="2" Padding="10" Text="Weekly :" FontSize="14" FontWeight="Bold" Margin="40, 0, 0, 0"/>
+            <TextBlock Foreground="#cc0e74" Grid.Row="3" Padding="10" Text="Monthly :" FontSize="14" FontWeight="Bold" Margin="40, 0, 0, 0"/>
+            <TextBlock Foreground="#cc0e74" Grid.Row="4" Padding="10" Text="Yearly :" FontSize="14" FontWeight="Bold" Margin="40, 0, 0, 0"/>
 
             <!--Data-->
             <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.daily_performance_gain}" FontSize="12"  HorizontalAlignment="Center"/>
@@ -107,18 +107,67 @@
         <TextBlock Foreground="#303960" Padding="20, 100, 20, 20" Text="Recent High Scores" FontSize="30" Grid.ColumnSpan="2" Grid.Row="4" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
 
         <!--Recent hi-scores-->
-        <DataGrid Grid.Row="5" Grid.ColumnSpan="2">
-            <DataGrid.Columns>
-                <!-- Binding="{Binding variable}" attach as header attr-->
-                <DataGridTextColumn Header="Date" Width="*"/>
-                <DataGridTextColumn Header="Rank" Width="*"/>
-                <DataGridTextColumn Header="Performance points" Width="*"/>
-                <DataGridTextColumn Header="Score" Width="*"/>
-                <DataGridTextColumn Header="Map title" Width="*"/>
-                <DataGridTextColumn Header="Modifiers" Width="*"/>
-            </DataGrid.Columns>
-            
-        </DataGrid>
+        <Grid Grid.Row="5" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Foreground="#cc0e74" Text="Date" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Foreground="#cc0e74" Text="Rank" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1"/>
+            <TextBlock Foreground="#cc0e74" Text="PP" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2"/>
+            <TextBlock Foreground="#cc0e74" Text="Score" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3"/>
+            <TextBlock Foreground="#cc0e74" Text="Map details" TextWrapping="Wrap" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4"/>
+            <TextBlock Foreground="#cc0e74" Text="Mods" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5"/>
+
+            <TextBlock Text="{Binding Path=recent_high_scores.dates[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.ranks[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.pps[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.scores[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.maps[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="4"/>
+            <TextBlock Text="DT, HR" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="5"/>
+
+            <TextBlock Text="{Binding Path=recent_high_scores.dates[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.ranks[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.pps[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.scores[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.maps[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="4"/>
+            <TextBlock Text="FL, DT" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="5"/>
+
+            <TextBlock Text="{Binding Path=recent_high_scores.dates[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.ranks[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.pps[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.scores[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.maps[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="4"/>
+            <TextBlock Text="HD, DT, HR" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="5"/>
+
+            <TextBlock Text="{Binding Path=recent_high_scores.dates[4]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.ranks[4]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.pps[4]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="2"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.scores[4]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="3"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.maps[4]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="4"/>
+            <TextBlock Text="FL, DT" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="5"/>
+
+            <TextBlock Text="{Binding Path=recent_high_scores.dates[3]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.ranks[3]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.pps[3]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="2"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.scores[3]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="3"/>
+            <TextBlock Text="{Binding Path=recent_high_scores.maps[3]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="4"/>
+            <TextBlock Text="HD, DT, HR" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="5"/>
+
+        </Grid>
 
         <!--Pie Charts-->
         <TextBlock Foreground="#303960" Padding="20, 100, 20, 20" Text="Charts" FontSize="30" Grid.Row="6" Grid.ColumnSpan="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
@@ -147,7 +196,7 @@
         <!--Cartesian Charts-->
        
         <!--PP-->
-        <TextBlock Foreground="#303960" Padding="15, 50, 15, 15" Text="Performance Points" FontSize="20" Grid.Row="9" HorizontalAlignment="Center"/>
+        <TextBlock DataContext="UserStats" Foreground="#303960" Padding="15, 50, 15, 15" Text="Performance Points" FontSize="20" Grid.Row="9" HorizontalAlignment="Center"/>
         <Wpf:CartesianChart Grid.Row="10" DataContext="UserStats" Series="{Binding seriesCollection}">
             <Wpf:CartesianChart.AxisY>
                 <Wpf:Axis Title="PP"/>
@@ -157,7 +206,7 @@
             </Wpf:CartesianChart.AxisX>
         </Wpf:CartesianChart>
         
-        <!--Rank (fix Y axis)-->
+        <!--Rank-->
         <TextBlock Foreground="#303960" Padding="15, 50, 15, 15" Text="Ranking" FontSize="20" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center"/>
             <Wpf:CartesianChart Grid.Row="10" Grid.Column="1" Series="{Binding seriesCollection2}">
             <Wpf:CartesianChart.AxisY>
@@ -180,7 +229,7 @@
         </Wpf:CartesianChart>
 
         <TextBlock Foreground="#303960" Padding="20, 100, 20, 20" Text="High score beatmap details" FontSize="30" Grid.Row="13" Grid.ColumnSpan="2" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
-            <Grid Grid.Row="14" Grid.ColumnSpan="2">
+        <Grid Grid.Row="14" Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -196,33 +245,33 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Date" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Text="Rank" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1"/>
-            <TextBlock Text="PP" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2"/>
-            <TextBlock Text="Score" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3"/>
-            <TextBlock Text="Map details" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4"/>
-            <TextBlock Text="Mods" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5"/>
+            <TextBlock Foreground="#cc0e74" Text="Date" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Foreground="#cc0e74" Text="Rank" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1"/>
+            <TextBlock Foreground="#cc0e74" Text="PP" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2"/>
+            <TextBlock Foreground="#cc0e74" Text="Score" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3"/>
+            <TextBlock Foreground="#cc0e74" Text="Map details" TextWrapping="Wrap" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4"/>
+            <TextBlock Foreground="#cc0e74" Text="Mods" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5"/>
 
 
             <TextBlock Text="{Binding Path=recent_high_scores.dates[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
             <TextBlock Text="{Binding Path=recent_high_scores.ranks[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"/>
             <TextBlock Text="{Binding Path=recent_high_scores.pps[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
             <TextBlock Text="{Binding Path=recent_high_scores.scores[0]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"/>
-            <Button x:Name="beatmapBtt_1" Content="{Binding Path=recent_high_scores.maps[0]}" Grid.Row="1" Grid.Column="4" Click="beatmapBtt_1_Click"/>
+            <Button x:Name="beatmapBtt_1" Content="{Binding Path=recent_high_scores.maps[0]}" Background="#db569d" Height="40" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="4" Click="beatmapBtt_1_Click"/>
             <TextBlock Text="DT, HR" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="5"/>
 
             <TextBlock Text="{Binding Path=recent_high_scores.dates[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
             <TextBlock Text="{Binding Path=recent_high_scores.ranks[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"/>
             <TextBlock Text="{Binding Path=recent_high_scores.pps[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2"/>
             <TextBlock Text="{Binding Path=recent_high_scores.scores[1]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3"/>
-            <Button x:Name="beatmapBtt_2" Content="{Binding Path=recent_high_scores.maps[1]}" Grid.Row="2" Grid.Column="4" Click="beatmapBtt_2_Click"/>
+            <Button x:Name="beatmapBtt_2" Content="{Binding Path=recent_high_scores.maps[1]}" Background="#db569d" Height="40" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="4" Click="beatmapBtt_2_Click"/>
             <TextBlock Text="FL, DT" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="5"/>
 
             <TextBlock Text="{Binding Path=recent_high_scores.dates[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"/>
             <TextBlock Text="{Binding Path=recent_high_scores.ranks[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1"/>
             <TextBlock Text="{Binding Path=recent_high_scores.pps[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2"/>
             <TextBlock Text="{Binding Path=recent_high_scores.scores[2]}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3"/>
-            <Button x:Name="beatmapBtt_3" Content="{Binding Path=recent_high_scores.maps[2]}" Grid.Row="3" Grid.Column="4" Click="beatmapBtt_3_Click"/>
+            <Button x:Name="beatmapBtt_3" Content="{Binding Path=recent_high_scores.maps[2]}" Background="#db569d" Height="40" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="4" Click="beatmapBtt_3_Click"/>
             <TextBlock Text="HD, DT, HR" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="5"/>
 
         </Grid>
