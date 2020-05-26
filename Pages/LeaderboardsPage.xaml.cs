@@ -23,8 +23,8 @@ namespace ihcProject.Pages
     /// </summary>
     public partial class LeaderboardsPage : Page
     {
-        UserTemplate User;
-        ObservableCollection<UserTemplate> users;
+        //UserTemplate User;
+        ObservableCollection<User> users;
 
         public LeaderboardsPage()
         {
@@ -34,12 +34,12 @@ namespace ihcProject.Pages
 
             users = getUsers();
 
-            UserRanking.Items.Add(users);
+            //UserRanking.Items.Add(users);
         }
-        public ObservableCollection<UserTemplate> getUsers()
+        public ObservableCollection<User> getUsers()
         {
             Random rand = new Random();
-            ObservableCollection<UserTemplate> users = new ObservableCollection<UserTemplate>();
+            ObservableCollection<User> users = new ObservableCollection<User>();
 
             for (int i = 0; i < 100; i++)
             {
@@ -50,10 +50,16 @@ namespace ihcProject.Pages
                     int letter = rand.Next('a', 'z');
                     name.Append((char)letter);
                 }
-                UserGenerator u = new UserGenerator(name, name, "fan");
-                UserRanking.Items.Add(u);
+                //UserGenerator u = new UserGenerator(name, name, "fan");
+                // u.generate();
+                // UserTemplate user = u.getUser();
 
-                users.Append(u.getUser());
+                User user = new User();
+                user.username = name;
+                user.rank = i;
+                UserRanking.Items.Add(user);
+
+                users.Append(user);
             }
             return users;
         }
@@ -86,6 +92,17 @@ namespace ihcProject.Pages
             var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
             PlayerWindow.hmb_player.goToRivalProfilePage("Rival User");
 
+        }
+        public class User
+        {
+            public int rank { get; set; }
+            public string username{ get; set; }
+            public string accuracy { get; set; }
+            public string rerformance { get; set; }
+            public string rankedScore { get; set; }
+            public string ss { get; set; }
+            public int s { get; set; }
+            public int a { get; set; }
         }
     }
 }
