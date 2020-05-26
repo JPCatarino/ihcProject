@@ -6,11 +6,22 @@
       xmlns:local="clr-namespace:ihcProject.Pages"
       xmlns:uc="clr-namespace:ihcProject.Controls"
       xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      xmlns:data="clr-namespace:ihcProject.Data"
       mc:Ignorable="d" 
       d:DesignHeight="3000" d:DesignWidth="800"
       Title="UserStats"
       Background="#fff">
 
+    <Page.Resources>
+        <data:CartesianGraphData x:Key="CartesianGraphData"/>
+        <local:ValueColorConverter x:Key="ValueColorConverter"/>
+        <Style TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontFamily" Value="{DynamicResource Aller}"/>
+            </Style.Setters>
+        </Style>
+    </Page.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
@@ -59,11 +70,11 @@
             <TextBlock Foreground="#cc0e74" Grid.Row="3" Padding="10" Text="Total plays :" FontSize="14" FontWeight="Bold" />
             <TextBlock Foreground="#cc0e74" Grid.Row="4" Padding="10" Text="Average play count (weekly) :" FontSize="14" FontWeight="Bold"/>
 
-            <TextBlock Grid.Row="0" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.total_score}" FontSize="12" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.ranked_score}" FontSize="12" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" Text="26.05.2020" FontSize="12" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.play_count}" FontSize="12" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.play_count_daily}" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.total_score}" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.ranked_score}" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" FontFamily="{DynamicResource Aller}" Text="26.05.2020" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.play_count}" FontSize="12" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.play_count_daily}" FontSize="12" HorizontalAlignment="Center"/>
         </Grid>
 
         <!--Averages tab-->
@@ -92,16 +103,16 @@
             <TextBlock Foreground="#cc0e74" Grid.Row="4" Padding="10" Text="Yearly :" FontSize="14" FontWeight="Bold" Margin="40, 0, 0, 0"/>
 
             <!--Data-->
-            <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.daily_performance_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.weekly_performance_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.monthly_performance_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" Text="{Binding Path=statistics.yearly_performance_gain}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.daily_performance_gain, StringFormat={}{0:+#;-#;''}}" Foreground="{Binding Path=statistics.daily_performance_gain, Converter={StaticResource ValueColorConverter}}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.weekly_performance_gain, StringFormat={}{0:+#;-#;''}}" FontSize="12" Foreground="{Binding Path=statistics.weekly_performance_gain, Converter={StaticResource ValueColorConverter}}"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.monthly_performance_gain, StringFormat={}{0:+#;-#;''}}" FontSize="12" Foreground="{Binding Path=statistics.monthly_performance_gain, Converter={StaticResource ValueColorConverter}}"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="1" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.yearly_performance_gain, StringFormat={}{0:+#;-#;''}}" FontSize="12" Foreground="{Binding Path=statistics.yearly_performance_gain, Converter={StaticResource ValueColorConverter}}"  HorizontalAlignment="Center"/>
             
             <!--Data-->
-            <TextBlock Grid.Row="1" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.daily_rank_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="2" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.weekly_rank_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="3" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.monthly_rank_gain}" FontSize="12"  HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="4" Grid.Column="2" Padding="10" Text="{Binding Path=statistics.yearly_rank_gain}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="2" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.daily_rank_gain, StringFormat={}{0:+#;-#;''}}" Foreground="{Binding Path=statistics.daily_rank_gain, Converter={StaticResource ValueColorConverter}}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="2" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.weekly_rank_gain, StringFormat={}{0:+#;-#;''}}" Foreground="{Binding Path=statistics.weekly_rank_gain, Converter={StaticResource ValueColorConverter}}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="2" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.monthly_rank_gain, StringFormat={}{0:+#;-#;''}}" Foreground="{Binding Path=statistics.monthly_rank_gain, Converter={StaticResource ValueColorConverter}}" FontSize="12"  HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="2" Padding="10" FontFamily="{DynamicResource Aller}" Text="{Binding Path=statistics.yearly_rank_gain, StringFormat={}{0:+#;-#;''}}" Foreground="{Binding Path=statistics.yearly_rank_gain, Converter={StaticResource ValueColorConverter}}" FontSize="12"  HorizontalAlignment="Center"/>
         </Grid>
 
         <TextBlock Foreground="#303960" Padding="20, 100, 20, 20" Text="Recent High Scores" FontSize="30" Grid.ColumnSpan="2" Grid.Row="4" FontWeight="Bold" FontFamily="/ihcProject;component/assets/fonts/Aller/#Aller" HorizontalAlignment="Center"/>
@@ -197,7 +208,7 @@
        
         <!--PP-->
         <TextBlock DataContext="UserStats" Foreground="#303960" Padding="15, 50, 15, 15" Text="Performance Points" FontSize="20" Grid.Row="9" HorizontalAlignment="Center"/>
-        <Wpf:CartesianChart Grid.Row="10" DataContext="UserStats" Series="{Binding seriesCollection}">
+        <Wpf:CartesianChart Grid.Row="10"  DataContext="{StaticResource CartesianGraphData}" Series="{Binding seriesCollection1}" Margin="10, 10, 0, 0">
             <Wpf:CartesianChart.AxisY>
                 <Wpf:Axis Title="PP"/>
             </Wpf:CartesianChart.AxisY>
@@ -208,7 +219,7 @@
         
         <!--Rank-->
         <TextBlock Foreground="#303960" Padding="15, 50, 15, 15" Text="Ranking" FontSize="20" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center"/>
-            <Wpf:CartesianChart Grid.Row="10" Grid.Column="1" Series="{Binding seriesCollection2}">
+        <Wpf:CartesianChart Grid.Row="10" Grid.Column="1" DataContext="{StaticResource CartesianGraphData}" Series="{Binding seriesCollection2}" Margin="0, 0, 10, 10">
             <Wpf:CartesianChart.AxisY>
                 <Wpf:Axis Title="Ranking" MinValue="1500" MaxValue="100"/>
             </Wpf:CartesianChart.AxisY>
@@ -219,7 +230,7 @@
 
         <!--Score-->
         <TextBlock Foreground="#303960" Padding="15, 50, 15, 15" Text="Play count (Monthly)" FontSize="20" Grid.Row="11" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-            <Wpf:CartesianChart Grid.Row="12" Grid.ColumnSpan="2" Series="{Binding seriesCollection3}">
+        <Wpf:CartesianChart Grid.Row="12" DataContext="{StaticResource CartesianGraphData}" Grid.ColumnSpan="2" Series="{Binding seriesCollection3}">
             <Wpf:CartesianChart.AxisY>
                 <Wpf:Axis Title="Plays"/>
             </Wpf:CartesianChart.AxisY>

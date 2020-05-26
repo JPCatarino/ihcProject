@@ -955,7 +955,7 @@
     }
   },
   {
-    "avatar_url": "../assets/images/avatars/boy-0.png",
+    "avatar_url": "../assets/images/avatars/boy-7.png",
     "country_code": null,
     "default_group": null,
     "id": 0,
@@ -990,7 +990,7 @@
     "website": null,
     "country": {
       "code": null,
-      "name": "Libya"
+      "name": "Eritrea"
     },
     "cover": null,
     "account_history": null,
@@ -1002,11 +1002,11 @@
     "loved_beatmapset_count": 0,
     "monthly_playcounts": null,
     "weekly_playcount": {
-      "total_count": 232,
-      "count_standard": 49,
-      "count_taiko": 95,
-      "count_ctb": 84,
-      "count_mania": 4
+      "total_count": 258,
+      "count_standard": 27,
+      "count_taiko": 78,
+      "count_ctb": 58,
+      "count_mania": 95
     },
     "previous_usernames": null,
     "ranked_and_approved_beatmapset_count": 0,
@@ -1014,17 +1014,17 @@
     "scores_first_count": 0,
     "statistics": {
       "level": {
-        "current": 49,
+        "current": 27,
         "progress": 0
       },
-      "pp": 880,
-      "pp_change": 139,
+      "pp": 18382,
+      "pp_change": 35,
       "pp_rank": 0,
-      "ranked_score": 557272140,
-      "total_score": 1142803201,
-      "hit_accuracy": 89.916690136267192,
-      "play_count": 49351,
-      "play_count_daily": 26,
+      "ranked_score": 130855606,
+      "total_score": 290317489,
+      "hit_accuracy": 85.548097195824653,
+      "play_count": 48864,
+      "play_count_daily": 38,
       "play_time": 0,
       "total_hits": 0,
       "maximum_combo": 0,
@@ -1032,55 +1032,55 @@
       "is_ranked": false,
       "grade_counts": null,
       "rank": {
-        "global": 954,
-        "country": 929,
-        "rank_change": 7
+        "global": 783,
+        "country": 669,
+        "rank_change": 13
       },
-      "daily_performance_gain": 190,
-      "weekly_performance_gain": 989,
-      "monthly_performance_gain": 16841,
-      "yearly_performance_gain": 99624,
-      "daily_rank_gain": 17,
-      "weekly_rank_gain": 50,
-      "monthly_rank_gain": -88,
-      "yearly_rank_gain": -7941
+      "daily_performance_gain": 247,
+      "weekly_performance_gain": 1208,
+      "monthly_performance_gain": 27922,
+      "yearly_performance_gain": 82762,
+      "daily_rank_gain": 14,
+      "weekly_rank_gain": 3,
+      "monthly_rank_gain": 169,
+      "yearly_rank_gain": -9659
     },
     "recent_high_scores": {
       "maps": [
-        "Mare Maris",
+        "Dramatic Star",
+        "A Garagem da Vizinha",
+        "eastward",
         "Akari no Arika",
-        "veil",
-        "CHAIN",
-        "Rubber Band"
+        "anticrystal"
       ],
       "ranks": [
-        34,
-        29,
-        2,
-        15,
-        8
+        11,
+        38,
+        23,
+        31,
+        34
       ],
       "mods": null,
       "dates": [
-        "2018-07-09T17:05:52",
-        "2008-08-04T18:06:43",
-        "2006-07-18T20:46:07",
-        "2013-09-07T09:13:53",
-        "2000-07-10T19:05:44"
+        "2011-06-02T10:41:47",
+        "2018-10-14T08:45:30",
+        "2007-01-14T12:31:01",
+        "2014-04-13T22:18:32",
+        "2018-04-02T09:40:18"
       ],
       "pps": [
-        1033,
-        1048,
-        992,
-        1093,
-        1008
+        1069,
+        907,
+        918,
+        1095,
+        1094
       ],
       "scores": [
-        11114949,
-        9784580,
-        9124114,
-        10487037,
-        11499963
+        11465340,
+        10237551,
+        11698498,
+        9085295,
+        11472767
       ]
     },
     "support_level": 0,
@@ -1095,15 +1095,15 @@
       "pss_item": 0
     },
     "profile_specs": {
-      "star": 5.4625105613202374,
-      "speed": 6.9500140817603162,
-      "ad": 6.4541795749469566,
-      "avgBeatmapTime": "04:02",
-      "avgBPM": 312,
-      "cs": 7.9416830953870354,
-      "ar": 6.4541795749469566,
-      "od": 5.4625105613202374,
-      "hp": 3.9750070408801581
+      "star": 3.4966437381210942,
+      "speed": 4.3288583174947926,
+      "ad": 4.051453457703559,
+      "avgBeatmapTime": "02:56",
+      "avgBPM": 247,
+      "cs": 4.8836680370772578,
+      "ar": 4.051453457703559,
+      "od": 3.4966437381210942,
+      "hp": 2.6644291587473963
     }
   }
 ]
