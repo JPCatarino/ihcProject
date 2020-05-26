@@ -50,11 +50,11 @@
                 <DataGridTextColumn Header=" Rank" Width="60" Binding="{Binding rank}"/>
                 <DataGridTextColumn Header=" User Name" Width="100" Binding ="{Binding username}"/>
                 <DataGridTextColumn Header=" Accuracy" Width="70" Binding ="{Binding accuracy}"/>
-                <DataGridTextColumn Header=" Performance" Width="110" Binding ="{Binding username}"/>
-                <DataGridTextColumn Header=" Ranked Score" Width="115" Binding ="{Binding username}"/>
-                <DataGridTextColumn Header=" SS" Width="40" Binding ="{Binding username}"/>
-                <DataGridTextColumn Header=" S" Width="40" Binding ="{Binding username}"/>
-                <DataGridTextColumn Header=" A" Width="40" Binding ="{Binding username}"/>
+                <DataGridTextColumn Header=" Performance" Width="110" Binding ="{Binding performance}"/>
+                <DataGridTextColumn Header=" Ranked Score" Width="115" Binding ="{Binding rankedScore}"/>
+                <DataGridTextColumn Header=" SS" Width="40" Binding ="{Binding ss}"/>
+                <DataGridTextColumn Header=" S" Width="40" Binding ="{Binding s}"/>
+                <DataGridTextColumn Header=" A" Width="40" Binding ="{Binding a}"/>
 
 
             </DataGrid.Columns>

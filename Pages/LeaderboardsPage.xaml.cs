@@ -60,6 +60,14 @@ namespace ihcProject.Pages
                 User user = new User();
                 user.username = builder.ToString();
                 user.rank = i+1;
+                user.accuracy = rand.Next(90,100);
+                user.performance = rand.Next(40000, 48000);
+                user.rankedScore = rand.Next(40000, 48000);
+                user.ss = rand.Next(100, 5800);
+                user.s = rand.Next(100, 5000);
+                user.a = rand.Next(100, 5000);
+
+
                 UserRanking.Items.Add(user);
 
                 users.Append(user);
@@ -100,10 +108,10 @@ namespace ihcProject.Pages
         {
             public int rank { get; set; }
             public string username{ get; set; }
-            public string accuracy { get; set; }
-            public string rerformance { get; set; }
-            public string rankedScore { get; set; }
-            public string ss { get; set; }
+            public int accuracy { get; set; }
+            public int performance { get; set; }
+            public int rankedScore { get; set; }
+            public int ss { get; set; }
             public int s { get; set; }
             public int a { get; set; }
         }
