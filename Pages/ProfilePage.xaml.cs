@@ -38,13 +38,14 @@ namespace ihcProject.Pages
             InitializeComponent();
         }
 
-        public ProfilePage(string rvname)
+        public ProfilePage(string rvname, int rank)
         {
             var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
             UserGenerator rivalGen = new UserGenerator(rvname, "...", "Player");
             cUserData = PlayerWindow.cUserData;
             rivalGen.generateRival();
             rivalUserData = rivalGen.getUser();
+            rivalUserData.statistics.rank.global = rank;
             DataContext = rivalUserData;
             Console.WriteLine(rvname);
             InitializeComponent();

@@ -40,8 +40,8 @@ namespace ihcProject.Controls
             this.navFrame.Navigate(new ComparePage(rv));
         }
 
-        public void goToRivalProfilePage(string rvname) {
-            this.navFrame.Navigate(new ProfilePage(rvname));
+        public void goToRivalProfilePage(string rvname, int rank) {
+            this.navFrame.Navigate(new ProfilePage(rvname, rank));
         }
 
         private void HamburgerMenu_ItemClick(object sender, MahApps.Metro.Controls.ItemClickEventArgs e)
