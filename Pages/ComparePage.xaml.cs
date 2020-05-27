@@ -44,10 +44,10 @@ namespace ihcProject.Pages
             UserPic.Source = loadimage(cUserData.avatar_url);
             UserName.Text = cUserData.username.ToString();
             UserRank.Text = cUserData.statistics.rank.global.ToString();
-            UserPP.Text = cUserData.statistics.pp.ToString();
+            UserPP.Text = cUserData.statistics.pp.ToString("N0");
             UserLvl.Text = cUserData.statistics.level.current.ToString();
-            UserPlayCnt.Text = cUserData.statistics.play_count.ToString();
-            UserTScore.Text = cUserData.statistics.total_score.ToString();
+            UserPlayCnt.Text = cUserData.statistics.play_count.ToString("N0");
+            UserTScore.Text = cUserData.statistics.total_score.ToString("N0");
             if (ulen > 4) { UserAccuracy.Text = cUserData.statistics.hit_accuracy.ToString().Substring(0, 4) + "%"; }
             else { UserAccuracy.Text = cUserData.statistics.hit_accuracy.ToString() + "%"; }
             //Compare Data Definition
@@ -56,10 +56,10 @@ namespace ihcProject.Pages
             ComparePic.Source = loadimage(RivalUser.avatar_url);
             CompareName.Text = RivalUser.username.ToString();
             CompareRank.Text = RivalUser.statistics.rank.global.ToString();
-            ComparePP.Text = RivalUser.statistics.pp.ToString();
+            ComparePP.Text = RivalUser.statistics.pp.ToString("N0");
             CompareLvl.Text = RivalUser.statistics.level.current.ToString();
-            ComparePlayCnt.Text = RivalUser.statistics.play_count.ToString();
-            CompareTScore.Text = RivalUser.statistics.total_score.ToString();
+            ComparePlayCnt.Text = RivalUser.statistics.play_count.ToString("N0");
+            CompareTScore.Text = RivalUser.statistics.total_score.ToString("N0");
             CompareAccuracy.Text = RivalUser.statistics.hit_accuracy.ToString().Substring(0,4);
             if (rlen > 4) { CompareAccuracy.Text = RivalUser.statistics.hit_accuracy.ToString().Substring(0, 4) + "%"; }
             else { CompareAccuracy.Text = RivalUser.statistics.hit_accuracy.ToString() + "%"; }
