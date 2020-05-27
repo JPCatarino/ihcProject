@@ -5,6 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ihcProject.Pages"
       xmlns:uc="clr-namespace:ihcProject.Controls" 
+      xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
       xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
       mc:Ignorable="d" 
       d:DesignHeight="1200" d:DesignWidth="1232"
@@ -18,7 +19,11 @@
                     <Setter Property="Width" Value="530"></Setter>
                 </Style.Setters>
             </Style>
-
+            <Style x:Key="Underline" TargetType="{x:Type TextBlock}">
+                <Style.Setters>
+                    <Setter Property="TextDecorations" Value="Underline"/>
+                </Style.Setters>
+            </Style>
         </Grid.Resources>
 
         <Grid.Background>
@@ -35,7 +40,7 @@
         <Button Name="BtnCountry"    Click="BtnCountry_Click" Content="Country"    HorizontalAlignment="Center" Height="45" Margin="0,1,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
         <Button Name="BtnYou"        Click="BtnYou_Click" Content="You"        HorizontalAlignment="Center" Height="45" Margin="250,1,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
 
-        <DataGrid x:Name="UserRanking" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalAlignment="Center" Height="800" 
+        <DataGrid Style="{DynamicResource AzureDataGrid}" x:Name="UserRanking" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalAlignment="Center" Height="800" 
                   VerticalAlignment="Top" Width="600" Margin="0,35,0,0" Grid.Row="2" ItemsSource="{Binding UserTemplate}" SelectionChanged="dataGrid_SelectionChanged"  SelectedItem="{Binding Path=SelectedCustomer, Mode=TwoWay}">
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
@@ -46,14 +51,14 @@
             </DataGrid.Resources>
             <!-- Columns -->
             <DataGrid.Columns>
-                <DataGridTextColumn Header=" Rank" Width="60" Binding="{Binding rank}"/>
-                <DataGridTextColumn Header=" User Name" Width="100" Binding ="{Binding username}"/>
-                <DataGridTextColumn Header=" Accuracy" Width="70" Binding ="{Binding accuracy}"/>
-                <DataGridTextColumn Header=" Performance" Width="110" Binding ="{Binding performance, StringFormat={}{0:N0}}"/>
-                <DataGridTextColumn Header=" Ranked Score" Width="115" Binding ="{Binding rankedScore, StringFormat={}{0:N0}}"/>
-                <DataGridTextColumn Header=" SS" Width="40" Binding ="{Binding ss}"/>
-                <DataGridTextColumn Header=" S" Width="40" Binding ="{Binding s}"/>
-                <DataGridTextColumn Header=" A" Width="40" Binding ="{Binding a}"/>
+                <DataGridTextColumn FontFamily="{DynamicResource Aller}" Header=" Rank" Width="60" Binding="{Binding rank}"/>
+                <DataGridTextColumn ElementStyle="{StaticResource Underline}" FontFamily="{DynamicResource Aller}" Header=" User Name" Width="100" Binding ="{Binding username}"/>
+                <DataGridTextColumn FontFamily="{DynamicResource Aller}" Header=" Accuracy" Width="70" Binding ="{Binding accuracy}"/>
+                <DataGridTextColumn FontFamily="{DynamicResource Aller}" Header=" Performance" Width="110" Binding ="{Binding performance, StringFormat={}{0:N0}}"/>
+                <DataGridTextColumn FontFamily="{DynamicResource Aller}" Header=" Ranked Score" Width="115" Binding ="{Binding rankedScore, StringFormat={}{0:N0}}"/>
+                <DataGridTextColumn FontFamily="{DynamicResource Aller}" Header=" SS" Width="40" Binding ="{Binding ss}"/>
+                <DataGridTextColumn FontFamily="{DynamicResource Aller}" Header=" S" Width="40" Binding ="{Binding s}"/>
+                <DataGridTextColumn FontFamily="{DynamicResource Aller}" Header=" A" Width="40" Binding ="{Binding a}"/>
             </DataGrid.Columns>
         </DataGrid>
 

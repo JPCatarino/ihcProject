@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ihcProject.Classes;
+using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 
 
 namespace ihcProject.Pages
@@ -91,29 +93,24 @@ namespace ihcProject.Pages
             PlayerWindow.hmb_player.goToRivalProfilePage(user.username);
         }
 
-        private void BtnGlobal_Click(object sender, RoutedEventArgs e)
+        private async void BtnGlobal_Click(object sender, RoutedEventArgs e)
         {
-
-
 
         }
-        private void BtnYou_Click(object sender, RoutedEventArgs e)
+        private async void BtnYou_Click(object sender, RoutedEventArgs e)
         {
-            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
-            PlayerWindow.hmb_player.goToRivalProfilePage("Rival User");
-
+            var metroWindow = (Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault() as MetroWindow);
+            await metroWindow.ShowMessageAsync("Not Implemented", "This functionality is not yet implemented. We're sorry!", MessageDialogStyle.Affirmative);
         }
-        private void BtnCountry_Click(object sender, RoutedEventArgs e)
+        private async void BtnCountry_Click(object sender, RoutedEventArgs e)
         {
-            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
-            PlayerWindow.hmb_player.goToRivalProfilePage("Rival User");
-
+            var metroWindow = (Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault() as MetroWindow);
+            await metroWindow.ShowMessageAsync("Not Implemented", "This functionality is not yet implemented. We're sorry!", MessageDialogStyle.Affirmative);
         }
-        private void Search_Click(object sender, RoutedEventArgs e)
+        private async void Search_Click(object sender, RoutedEventArgs e)
         {
-            var PlayerWindow = Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault();
-            PlayerWindow.hmb_player.goToRivalProfilePage("Rival User");
-
+            var metroWindow = (Application.Current.Windows.OfType<PlayerWindow>().LastOrDefault() as MetroWindow);
+            await metroWindow.ShowMessageAsync("Not Implemented", "This functionality is not yet implemented. We're sorry!", MessageDialogStyle.Affirmative);
         }
         public class User
         {
